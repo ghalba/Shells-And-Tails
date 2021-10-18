@@ -1799,6 +1799,7 @@ Received Import Request.
   artifactKey: Guid(c62cfa1474e6ead4ba855af7caaa20dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/cherifa.unity using Guid(c62cfa1474e6ead4ba855af7caaa20dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f56efecd53b862e3d9cfc7118867293') in 0.008742 seconds 
   Import took 0.020602 seconds .
+<<<<<<< Updated upstream
 
 ========================================================================
 Received Prepare
@@ -1871,5 +1872,6 @@ Received Import Request.
   artifactKey: Guid(743b8f5e8ea4cf9469326670630c987d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Materials/scroll 1.png using Guid(743b8f5e8ea4cf9469326670630c987d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6a958ceecf2525ffc8dd50f036db727') in 0.050078 seconds 
   Import took 0.054909 seconds .
+=======
+>>>>>>> Stashed changes
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
