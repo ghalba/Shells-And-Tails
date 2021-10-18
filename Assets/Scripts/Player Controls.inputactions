@@ -75,7 +75,7 @@
                 {
                     "name": "up",
                     "id": "ada55eb4-23f3-4425-94f4-8cf100f454b8",
-                    "path": "<Gamepad>/dpad/up",
+                    "path": "<Gamepad>/leftStick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
@@ -86,7 +86,7 @@
                 {
                     "name": "down",
                     "id": "18105186-7ce4-4f9f-9e55-96aac65c35b7",
-                    "path": "<Gamepad>/dpad/down",
+                    "path": "<Gamepad>/leftStick/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
@@ -97,7 +97,7 @@
                 {
                     "name": "left",
                     "id": "76d127d6-d043-4fc1-ba05-4c886fab2505",
-                    "path": "<Gamepad>/dpad/left",
+                    "path": "<Gamepad>/leftStick/left",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
@@ -108,7 +108,7 @@
                 {
                     "name": "right",
                     "id": "1bb0f539-b486-4f09-91b7-8cbdcf78f7f1",
-                    "path": "<Gamepad>/dpad/right",
+                    "path": "<Gamepad>/leftStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
@@ -210,7 +210,7 @@
                     "path": "<Gamepad>/leftStick/up",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "FreeLook",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -221,7 +221,7 @@
                     "path": "<Gamepad>/rightStick/down",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "FreeLook",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -229,10 +229,10 @@
                 {
                     "name": "left",
                     "id": "2bfbc46d-f142-4631-87c1-662b03008a2a",
-                    "path": "",
+                    "path": "<Gamepad>/leftStick/left",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "FreeLook",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -240,10 +240,10 @@
                 {
                     "name": "right",
                     "id": "edf881e8-7a79-4360-8a90-8ee74dd7fbb7",
-                    "path": "",
+                    "path": "<Gamepad>/leftStick/right",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "FreeLook",
                     "isComposite": false,
                     "isPartOfComposite": true
