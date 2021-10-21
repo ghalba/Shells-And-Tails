@@ -6,95 +6,108 @@ using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
-    private CharacterController mycc;
-    private Rigidbody rb;
-    private Vector2 walkInput;
-    private float jumpInput;
-    private Vector3 velocity;
-    [SerializeField] float Speed;
-    [SerializeField] float jumpforce;
-    private float angle;
-    public float turnspeed=8f;
-    private float smoothinputvelocity;
-    private float smoothmovetime;
-    private float smoothinputMagnitude;
-    private bool grounded;
-    public Animator myanimator;
+    [SerializeField]
+    private float maximumSpeed;
 
+    [SerializeField]
+    private float rotationSpeed;
 
+    [SerializeField]
+    private float jumpSpeed;
 
+    [SerializeField]
+    private float jumpButtonGracePeriod;
+
+    [SerializeField]
+    private Transform cameraTransform;
+
+    private Animator animator;
+    private CharacterController characterController;
+    private float ySpeed;
+    private float originalStepOffset;
+    private float? lastGroundedTime;
+    private float? jumpButtonPressedTime;
+
+    // Start is called before the first frame update
     void Start()
     {
-        mycc = GetComponent<CharacterController>();
-        rb = GetComponent<Rigidbody>();
-        myanimator = GetComponent<Animator>();
-    }
-    public void OnWalk(InputAction.CallbackContext context)
-    {
-        walkInput = context.ReadValue<Vector2>();
-        //mycc.Move(Vector3.right * Speed);
-    }
-    public void OnJump(InputAction.CallbackContext context)
-    {
-        jumpInput = context.ReadValue<float>();
+        animator = GetComponent<Animator>();
+        characterController = GetComponent<CharacterController>();
+        originalStepOffset = characterController.stepOffset;
     }
 
-    private void FixedUpdate()
+    // Update is called once per frame
+    void Update()
     {
-        if (walkInput.x != 0 || walkInput.y != 0)
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+
+        Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+        float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
+
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
         {
-            move();
-            myanimator.SetBool("ismoving", true);
-            Debug.Log("moved");
+            inputMagnitude /= 2;
         }
 
+        animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
+
+        float speed = inputMagnitude * maximumSpeed;
+        movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
+        movementDirection.Normalize();
+
+        ySpeed += Physics.gravity.y * Time.deltaTime;
+
+        if (characterController.isGrounded)
+        {
+            lastGroundedTime = Time.time;
+        }
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            jumpButtonPressedTime = Time.time;
+        }
+
+        if (Time.time - lastGroundedTime <= jumpButtonGracePeriod)
+        {
+            characterController.stepOffset = originalStepOffset;
+            ySpeed = -0.5f;
+
+            if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod)
+            {
+                ySpeed = jumpSpeed;
+                jumpButtonPressedTime = null;
+                lastGroundedTime = null;
+            }
+        }
         else
         {
-            myanimator.SetBool("ismoving", false);
-
-        }
-        if (jumpInput!=0&&grounded)
-        {
-            rb.velocity += jumpforce * Vector3.up;
-            myanimator.SetTrigger("isJumping");
-            Debug.Log("jumped");
+            characterController.stepOffset = 0;
         }
 
-        rb.MoveRotation(Quaternion.Euler(Vector3.up * angle));
-            rb.MovePosition(rb.position + velocity * Time.deltaTime);
+        Vector3 velocity = movementDirection * speed;
+        velocity.y = ySpeed;
 
-    }
-    public void move()
-    {
-        Vector3 inputDirection = Vector3.zero;
+        characterController.Move(velocity * Time.deltaTime);
 
-        inputDirection = new Vector3(walkInput.x, 0, walkInput.y).normalized;
-
-
-        float inputMagnitude = inputDirection.magnitude;
-        smoothinputMagnitude = Mathf.SmoothDamp(smoothinputMagnitude, inputMagnitude, ref smoothinputvelocity, smoothmovetime);
-
-        float targetAngle = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg;
-        angle = Mathf.LerpAngle(angle, targetAngle, Time.deltaTime * turnspeed * inputMagnitude);
-
-        rb.velocity = new Vector3(walkInput.x * Speed, rb.velocity.y, walkInput.y * Speed);
- 
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "ground")
+        if (movementDirection != Vector3.zero)
         {
-            Debug.Log("is grounded");
-            myanimator.SetBool("JumpEnd",true);
-            grounded = true;
+            Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
     }
-    private void OnCollisionExit(Collision collision)
+
+    private void OnApplicationFocus(bool focus)
     {
-        if (collision.gameObject.tag == "ground")
+        if (focus)
         {
-            myanimator.SetBool("JumpEnd", false);
-            grounded = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }
+
