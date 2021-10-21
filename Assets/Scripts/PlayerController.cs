@@ -41,6 +41,18 @@ public class PlayerController : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
+        if (horizontalInput != 0 || verticalInput != 0)
+        {
+            
+            animator.SetBool("ismoving", true);
+            Debug.Log("moved");
+        }
+
+        else
+        {
+            animator.SetBool("ismoving", false);
+
+        }
 
         Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
         float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
@@ -50,7 +62,7 @@ public class PlayerController : MonoBehaviour
             inputMagnitude /= 2;
         }
 
-        animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
+       // animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
 
         float speed = inputMagnitude * maximumSpeed;
         movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
@@ -78,6 +90,7 @@ public class PlayerController : MonoBehaviour
                 ySpeed = jumpSpeed;
                 jumpButtonPressedTime = null;
                 lastGroundedTime = null;
+                animator.SetTrigger("isJumping");
             }
         }
         else
