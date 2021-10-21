@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 inputDirection = Vector3.zero;
 
-            inputDirection = new Vector3(walkInput.x, 0, walkInput.y).normalized;
+        inputDirection = new Vector3(walkInput.x, 0, walkInput.y).normalized;
 
 
         float inputMagnitude = inputDirection.magnitude;
@@ -76,18 +76,7 @@ public class PlayerController : MonoBehaviour
 
         float targetAngle = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg;
         angle = Mathf.LerpAngle(angle, targetAngle, Time.deltaTime * turnspeed * inputMagnitude);
-        /*float y = Mathf.Atan2(walkInput.x, walkInput.y) * Mathf.Rad2Deg;
-        Vector3 Direction = new Vector3(walkInput.x, 0, walkInput.y);
-        Direction.Normalize();
 
-        Quaternion rot = Quaternion.LookRotation(Direction, Vector3.up);
-
-        if (Direction !=Vector3.zero)
-        {
-            transform.forward = Direction;
-        }
-        transform.rotation = rot;
-        */
         rb.velocity = new Vector3(walkInput.x * Speed, rb.velocity.y, walkInput.y * Speed);
  
     }
