@@ -7,15 +7,9 @@ public class CharacterSelection : MonoBehaviour
 {
     [SerializeField]
     private InputAction RL;
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
-    }
+        RL.performed+=
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

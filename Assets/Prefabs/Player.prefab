@@ -293,6 +293,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: c3f4d6be-e410-4555-8884-a9eb9dbec33a
     m_ActionName: Movement/Shoot[/XInputControllerWindows/buttonEast,/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e3c725ad-b3df-4a7a-8aeb-e0b9bb28f15a
+    m_ActionName: Movement/FreeLook[/XInputControllerWindows/leftStick/up,/XInputControllerWindows/rightStick/down,/XInputControllerWindows/leftStick/left,/XInputControllerWindows/leftStick/right]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
@@ -328,8 +332,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79964771e81f29b45adf6787ca25d5b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2
-  jumpforce: 2
+  movement:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 018c23c9-4c05-4425-9dfb-5653241cb85d
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  jump:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 6742e158-c5af-4f82-945f-ae4378474ebd
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  Stealth:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: eefe00dd-b970-47b9-a6b9-815cc8873196
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  maximumSpeed: 0
+  rotationSpeed: 0
+  jumpSpeed: 0
+  jumpButtonGracePeriod: 0
+  cameraTransform: {fileID: 0}
 --- !u!54 &102104953717580232
 Rigidbody:
   m_ObjectHideFlags: 0

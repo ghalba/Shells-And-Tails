@@ -113,7 +113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5600166295454079285, guid: 1b1d7bfac24ee9f4d85fc29fe2428083, type: 3}
       propertyPath: m_Name
-      value: Rabbit Variant
+      value: Rabbit Variant Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5600166295454079285, guid: 1b1d7bfac24ee9f4d85fc29fe2428083, type: 3}
       propertyPath: m_IsActive
@@ -124,12 +124,24 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5803189122995607155, guid: 1b1d7bfac24ee9f4d85fc29fe2428083, type: 3}
+      propertyPath: jump.m_Id
+      value: de9d6881-fc97-4945-ab7e-f9568ca37cb2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803189122995607155, guid: 1b1d7bfac24ee9f4d85fc29fe2428083, type: 3}
       propertyPath: jumpSpeed
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5803189122995607155, guid: 1b1d7bfac24ee9f4d85fc29fe2428083, type: 3}
+      propertyPath: Stealth.m_Id
+      value: a66c8f86-606e-46ea-83ca-5ea387a89e0c
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803189122995607155, guid: 1b1d7bfac24ee9f4d85fc29fe2428083, type: 3}
       propertyPath: maximumSpeed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803189122995607155, guid: 1b1d7bfac24ee9f4d85fc29fe2428083, type: 3}
+      propertyPath: movement.m_Id
+      value: 619a06e1-6f22-4366-a8b7-a0d0ce700053
       objectReference: {fileID: 0}
     - target: {fileID: 5803189122995607155, guid: 1b1d7bfac24ee9f4d85fc29fe2428083, type: 3}
       propertyPath: rotationSpeed

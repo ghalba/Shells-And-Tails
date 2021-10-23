@@ -95,6 +95,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79964771e81f29b45adf6787ca25d5b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movement:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 66e00278-e4e5-4254-9e77-39ca423ed817
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  jump:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d889b682-2d4b-48f5-a562-5a500900373d
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  Stealth:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 6496a473-b4ff-4ea6-9dfb-177114539dae
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
   maximumSpeed: 5
   rotationSpeed: 720
   jumpSpeed: 6
@@ -173,7 +197,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 53aca128a8b2b9747b62706d61ae7222, type: 2}
     - target: {fileID: 919132149155446097, guid: 30c629c5114b69b4bb388d1f335a008c, type: 3}
       propertyPath: m_Name
-      value: Turtle
+      value: Turtle Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 30c629c5114b69b4bb388d1f335a008c, type: 3}
       propertyPath: m_IsActive
