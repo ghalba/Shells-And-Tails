@@ -3,9 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
+    private float horizontalInput;
+    private float verticalInput;
+    [SerializeField]
+    private InputAction movement;
+    [SerializeField]
+    private InputAction jump;
+
     [SerializeField]
     private float maximumSpeed;
 
@@ -27,6 +35,26 @@ public class PlayerController : MonoBehaviour
     private float originalStepOffset;
     private float? lastGroundedTime;
     private float? jumpButtonPressedTime;
+    private void Awake()
+    {
+        
+        movement.performed += OnMovementPreformed;
+        movement.canceled += OnMovementPreformed;
+    }
+    private void OnEnable()
+    {
+        movement.Enable();
+    }
+    private void OnDisable()
+    {
+        movement.Disable();
+    }
+    private void OnMovementPreformed(InputAction.CallbackContext context)
+    {
+        var dir = movement.ReadValue<Vector2>();
+        horizontalInput = dir.x;
+        verticalInput = dir.y;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -39,8 +67,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        //float horizontalInput = Input.GetAxis("Horizontal");
+        //float verticalInput = Input.GetAxis("Vertical");
         if (horizontalInput != 0 || verticalInput != 0)
         {
             

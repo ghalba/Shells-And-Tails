@@ -11,8 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cherifa.unity
     guid: c62cfa1474e6ead4ba855af7caaa20dc
-  - enabled: 1
-    path: Assets/Scenes/TestgameScene.unity
-    guid: f1ce8d8775d6de74e822d40559f680a1
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b13209e0d4a41a4469c7c18be7aafb65, type: 2}
