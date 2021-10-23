@@ -9,7 +9,7 @@ public class CharacterSelection : MonoBehaviour
     private InputAction RL;
     private void Awake()
     {
-        RL.performed+=
+        //RL.performed+=
 
     }
 }
