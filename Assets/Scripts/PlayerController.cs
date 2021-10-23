@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     private InputAction movement;
     [SerializeField]
     private InputAction jump;
+    [SerializeField]
+    private InputAction Stealth;
 
     [SerializeField]
     private float maximumSpeed;
@@ -35,11 +37,14 @@ public class PlayerController : MonoBehaviour
     private float originalStepOffset;
     private float? lastGroundedTime;
     private float? jumpButtonPressedTime;
-    private float jumping;
+    private float _jump;
+    private float _Stealth;
     private void Awake()
     {
         jump.performed += ONJumpPreformed;
         jump.canceled += ONJumpPreformed;
+        Stealth.performed += ONStealthPreformed;
+        Stealth.canceled += ONStealthPreformed;
         movement.performed += OnMovementPreformed;
         movement.canceled += OnMovementPreformed;
     }
@@ -47,11 +52,13 @@ public class PlayerController : MonoBehaviour
     {
         jump.Enable();
         movement.Enable();
+        Stealth.Enable();
     }
     private void OnDisable()
     {
         jump.Disable();
         movement.Disable();
+        Stealth.Disable();
     }
     private void OnMovementPreformed(InputAction.CallbackContext context)
     {
@@ -61,9 +68,12 @@ public class PlayerController : MonoBehaviour
     }
     private void ONJumpPreformed(InputAction.CallbackContext context)
     {
-        jumping = jump.ReadValue<float>();
+        _jump = jump.ReadValue<float>();
     }
-
+    private void ONStealthPreformed(InputAction.CallbackContext context)
+    {
+        _Stealth = Stealth.ReadValue<float>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -91,7 +101,7 @@ public class PlayerController : MonoBehaviour
         Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
         float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
 
-        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        if (_Stealth!=0)
         {
             inputMagnitude /= 2;
         }
@@ -109,7 +119,7 @@ public class PlayerController : MonoBehaviour
             lastGroundedTime = Time.time;
         }
 
-        if (jumping!=0)
+        if (_jump!=0)
         {
             jumpButtonPressedTime = Time.time;
         }
