@@ -35,18 +35,22 @@ public class PlayerController : MonoBehaviour
     private float originalStepOffset;
     private float? lastGroundedTime;
     private float? jumpButtonPressedTime;
+    private float jumping;
     private void Awake()
     {
-        
+        jump.performed += ONJumpPreformed;
+        jump.canceled += ONJumpPreformed;
         movement.performed += OnMovementPreformed;
         movement.canceled += OnMovementPreformed;
     }
     private void OnEnable()
     {
+        jump.Enable();
         movement.Enable();
     }
     private void OnDisable()
     {
+        jump.Disable();
         movement.Disable();
     }
     private void OnMovementPreformed(InputAction.CallbackContext context)
@@ -54,6 +58,10 @@ public class PlayerController : MonoBehaviour
         var dir = movement.ReadValue<Vector2>();
         horizontalInput = dir.x;
         verticalInput = dir.y;
+    }
+    private void ONJumpPreformed(InputAction.CallbackContext context)
+    {
+        jumping = jump.ReadValue<float>();
     }
 
     // Start is called before the first frame update
@@ -67,8 +75,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //float horizontalInput = Input.GetAxis("Horizontal");
-        //float verticalInput = Input.GetAxis("Vertical");
         if (horizontalInput != 0 || verticalInput != 0)
         {
             
@@ -103,7 +109,7 @@ public class PlayerController : MonoBehaviour
             lastGroundedTime = Time.time;
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if (jumping!=0)
         {
             jumpButtonPressedTime = Time.time;
         }
