@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
     private float? jumpButtonPressedTime;
     private float _jump;
     private float _Stealth;
+
     private void Awake()
     {
         jump.performed += ONJumpPreformed;
@@ -89,7 +90,7 @@ public class PlayerController : MonoBehaviour
         {
             
             animator.SetBool("ismoving", true);
-            Debug.Log("moved");
+            
         }
 
         else

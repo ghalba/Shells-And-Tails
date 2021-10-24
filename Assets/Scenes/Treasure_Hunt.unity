@@ -5774,11 +5774,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2708782596840054574, guid: 739e8f6f778248440a05e4b7ef75c79a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000004278879
+      value: 0.000000004278879
       objectReference: {fileID: 0}
     - target: {fileID: 2708782596840054574, guid: 739e8f6f778248440a05e4b7ef75c79a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 4.4149776e-10
+      value: -4.4149776e-10
       objectReference: {fileID: 0}
     - target: {fileID: 2708782596964033486, guid: 739e8f6f778248440a05e4b7ef75c79a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5806,11 +5806,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2708782596982704890, guid: 739e8f6f778248440a05e4b7ef75c79a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000000042701656
+      value: 0.000000004270164
       objectReference: {fileID: 0}
     - target: {fileID: 2708782596982704890, guid: 739e8f6f778248440a05e4b7ef75c79a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 5.1905036e-10
+      value: -5.190502e-10
       objectReference: {fileID: 0}
     - target: {fileID: 2708782597188584600, guid: 739e8f6f778248440a05e4b7ef75c79a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5982,11 +5982,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2708782598242410126, guid: 739e8f6f778248440a05e4b7ef75c79a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000000431485
+      value: 0.0000000043148485
       objectReference: {fileID: 0}
     - target: {fileID: 2708782598242410126, guid: 739e8f6f778248440a05e4b7ef75c79a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 5.1361926e-10
+      value: -5.136189e-10
       objectReference: {fileID: 0}
     - target: {fileID: 2708782598677210241, guid: 739e8f6f778248440a05e4b7ef75c79a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10409,7 +10409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2293224176197714748, guid: bd67cc571cc32f04499227f156ac0635, type: 3}
       propertyPath: movement.m_SingletonActionBindings.Array.data[1].m_Path
-      value: <Keyboard>/z
+      value: <Keyboard>/w
       objectReference: {fileID: 0}
     - target: {fileID: 2293224176197714748, guid: bd67cc571cc32f04499227f156ac0635, type: 3}
       propertyPath: movement.m_SingletonActionBindings.Array.data[2].m_Name
