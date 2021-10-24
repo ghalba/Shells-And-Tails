@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class CharacterSelection : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class CharacterSelection : MonoBehaviour
         RL.performed += ONRLPreformed;
         RL.canceled += ONRLPreformed;
         _ready.performed += Ready;
+
+        PlayerPrefs.DeleteKey("Character0");
+        PlayerPrefs.DeleteKey("Character1");
     }
     private void OnEnable()
     {
@@ -51,7 +55,12 @@ public class CharacterSelection : MonoBehaviour
         int currentPlayer = (transform.name == "P1" ? 0 : 1);
         n++;
         isReady = true;
-        PlayerPrefs.SetInt("CharacterNumber" + currentPlayer, _currentChild); PlayerPrefs.Save();
+        string chosenCharacter = "";
+        if (currentPlayer == 0)
+            chosenCharacter = _currentChild == 0 ? "Turtle" : "Rabbit";
+        else chosenCharacter = _currentChild == 0 ? "Rabbit" : "Turtle";
+
+        PlayerPrefs.SetString("Character" + currentPlayer, chosenCharacter); PlayerPrefs.Save();
 
         if (n == 2)
             AllReady();
@@ -59,6 +68,7 @@ public class CharacterSelection : MonoBehaviour
     void AllReady()
     {
         Debug.Log("All Ready");
+        SceneManager.LoadScene("Treasure_Hunt");
     }
 
     private void SwitchCharacter(int _CurrentChild)

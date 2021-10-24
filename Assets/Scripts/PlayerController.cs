@@ -9,12 +9,9 @@ public class PlayerController : MonoBehaviour
 {
     private float horizontalInput;
     private float verticalInput;
-    [SerializeField]
-    private InputAction movement;
-    [SerializeField]
-    private InputAction jump;
-    [SerializeField]
-    private InputAction Stealth;
+    public InputAction movement;
+    public InputAction jump;
+    public InputAction Stealth;
 
     [SerializeField]
     private float maximumSpeed;
@@ -28,8 +25,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float jumpButtonGracePeriod;
 
-    [SerializeField]
-    private Transform cameraTransform;
+    public Transform cameraTransform;
 
     private Animator animator;
     private CharacterController characterController;
