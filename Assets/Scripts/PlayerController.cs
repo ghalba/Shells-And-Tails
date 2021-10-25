@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
         var dir = movement.ReadValue<Vector2>();
         horizontalInput = dir.x;
         verticalInput = dir.y;
+        Debug.Log(gameObject.name);
     }
     private void ONJumpPreformed(InputAction.CallbackContext context)
     {

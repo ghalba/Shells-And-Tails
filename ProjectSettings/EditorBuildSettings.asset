@@ -18,10 +18,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Treasure_Hunt.unity
     guid: ba574ec8968eaee42819035e64347d40
   - enabled: 0
-    path: Assets/Scenes/Menu.unity
+    path: 
     guid: bd76afc746b1c6e4bba43bdabbf22171
   - enabled: 1
     path: Assets/Scenes/Main_Menu.unity
     guid: 5754ea39f4f764643a13a6a82ab58bb7
+  - enabled: 1
+    path: Assets/Scenes/Test_Main_Menu 1.unity
+    guid: 3feda6decf16d844ea85291e3903f0ef
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b13209e0d4a41a4469c7c18be7aafb65, type: 2}

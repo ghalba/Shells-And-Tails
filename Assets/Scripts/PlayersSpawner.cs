@@ -66,7 +66,7 @@ public class PlayersSpawner : MonoBehaviour
         pC.cameraTransform = (pNumber == 0 ? camera1.transform : camera2.transform);
         pC.movement = (pNumber == 0 ? ivsClavier.movement : ivsManette.movement);
         pC.jump = (pNumber == 0 ? ivsClavier.jump : ivsManette.jump);
-        pC.Stealth = (pNumber == 0 ? ivsClavier.Stealth : ivsManette.Stealth) ;
+        pC.Stealth = (pNumber == 0 ? ivsClavier.Stealth : ivsManette.Stealth);
         P2.GetChild(1).gameObject.SetActive(true);
         currentFinalPlayer.SetActive(true);
         Debug.Log("Spawned " + pNumber);
