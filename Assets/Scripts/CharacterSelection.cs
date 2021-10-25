@@ -51,7 +51,7 @@ public class CharacterSelection : MonoBehaviour
     {
         if (isReady) 
             return;
-        Debug.Log("ready");
+        Debug.Log(transform.name + " ready");
         int currentPlayer = (transform.name == "P1" ? 0 : 1);
         n++;
         isReady = true;
@@ -60,10 +60,12 @@ public class CharacterSelection : MonoBehaviour
             chosenCharacter = _currentChild == 0 ? "Turtle" : "Rabbit";
         else chosenCharacter = _currentChild == 0 ? "Rabbit" : "Turtle";
 
+        Debug.Log("Player" + (currentPlayer+1) + " chose " + chosenCharacter);
         PlayerPrefs.SetString("Character" + currentPlayer, chosenCharacter); PlayerPrefs.Save();
 
         if (n == 2)
             AllReady();
+        return;
     }
     void AllReady()
     {
