@@ -130,10 +130,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79964771e81f29b45adf6787ca25d5b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2
-  jumpforce: 2
-  turnspeed: 8
-  myanimator: {fileID: 1447248171456245054}
+  movement:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 79428ee6-4588-41af-8c9f-14958be04781
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  jump:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 4cd67a9e-a935-4594-8c4d-ec730cd05246
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  Stealth:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 74badfd4-0d75-4a9f-8ed9-5e3100140481
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  maximumSpeed: 0
+  rotationSpeed: 0
+  jumpSpeed: 0
+  jumpButtonGracePeriod: 0
+  cameraTransform: {fileID: 0}
 --- !u!1001 &4717133868395324516
 PrefabInstance:
   m_ObjectHideFlags: 0
