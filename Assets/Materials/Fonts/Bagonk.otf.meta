@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: af7b8ae67f28a7f42b546a2c99714931
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Bagonk
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 45c31e27ec396474bbb82b3c96e4a1cb, type: 3}
+  - {fileID: 12800000, guid: 1fb4b37cc00138e449dac67a19b78f70, type: 3}
+  - {fileID: 12800000, guid: b7ed2c6d0b680774cb2e0386f18a746f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
