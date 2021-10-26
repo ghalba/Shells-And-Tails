@@ -15,6 +15,8 @@ public class CharacterSelection : MonoBehaviour
     private int _currentChild;
     public static int n = 0;
     bool isReady = false;
+    public Animator anim;
+    public static bool Allready = false;
 
     private void Awake()
     {
@@ -52,6 +54,8 @@ public class CharacterSelection : MonoBehaviour
         if (isReady) 
             return;
         Debug.Log(transform.name + " ready");
+        anim = transform.GetChild(0).GetComponent<Animator>();
+        anim.SetTrigger("GettingUp");
         int currentPlayer = (transform.name == "P1" ? 0 : 1);
         n++;
         isReady = true;
@@ -69,8 +73,9 @@ public class CharacterSelection : MonoBehaviour
     }
     void AllReady()
     {
+        Allready = true;
         Debug.Log("All Ready");
-        SceneManager.LoadScene("Treasure_Hunt");
+        //SceneManager.LoadScene("Treasure_Hunt");
     }
 
     private void SwitchCharacter(int _CurrentChild)
