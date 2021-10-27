@@ -5,12 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    //public Camera cam;
     private Animator anim;
 
-    public bool Allready { get; private set; }
 
-    public void PlayGame ()
+
+    public void PlayGame()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         anim = gameObject.GetComponent<Animator>();
@@ -23,12 +22,5 @@ public class MainMenu : MonoBehaviour
         Debug.Log("QUIT!");
         Application.Quit();
     }
-    private void Update()
-    {
-        if (Allready)
-        {
-            anim = gameObject.GetComponent<Animator>();
-            anim.SetTrigger("Ready");
-        }
-    }
 }
+

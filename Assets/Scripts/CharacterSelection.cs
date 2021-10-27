@@ -12,11 +12,13 @@ public class CharacterSelection : MonoBehaviour
     [SerializeField]
     private InputAction _ready;
     private float _RL;
-    private int _currentChild;
+    public int _currentChild;
     public static int n = 0;
     bool isReady = false;
-    public Animator anim;
-    public static bool Allready = false;
+    private Animator anim;
+    public Camera _cam;
+    private Animator _camAnim;
+    public GameObject Coin;
 
     private void Awake()
     {
@@ -50,20 +52,21 @@ public class CharacterSelection : MonoBehaviour
         }
     }
     void Ready(InputAction.CallbackContext context)
-    {
+    {        
         if (isReady) 
             return;
-        Debug.Log(transform.name + " ready");
-        anim = transform.GetChild(0).GetComponent<Animator>();
-        anim.SetTrigger("GettingUp");
+        Debug.Log(transform.name + " ready");       
         int currentPlayer = (transform.name == "P1" ? 0 : 1);
+        anim = transform.GetChild(_currentChild).GetComponent<Animator>();
+        anim.SetTrigger("GettingUp");
+        RL.Disable();
         n++;
         isReady = true;
         string chosenCharacter = "";
         if (currentPlayer == 0)
             chosenCharacter = _currentChild == 0 ? "Turtle" : "Rabbit";
-        else chosenCharacter = _currentChild == 0 ? "Rabbit" : "Turtle";
-
+        else chosenCharacter = _currentChild == 0 ? "Turtle": "Rabbit";
+        
         Debug.Log("Player" + (currentPlayer+1) + " chose " + chosenCharacter);
         PlayerPrefs.SetString("Character" + currentPlayer, chosenCharacter); PlayerPrefs.Save();
 
@@ -73,9 +76,11 @@ public class CharacterSelection : MonoBehaviour
     }
     void AllReady()
     {
-        Allready = true;
+        _camAnim = _cam.GetComponent<Animator>();
+        _camAnim.SetTrigger("Ready");
+        Coin.gameObject.SetActive(true);
         Debug.Log("All Ready");
-        //SceneManager.LoadScene("Treasure_Hunt");
+        SceneManager.LoadScene("Treasure_Hunt");
     }
 
     private void SwitchCharacter(int _CurrentChild)
@@ -91,4 +96,5 @@ public class CharacterSelection : MonoBehaviour
             transform.GetChild(0).gameObject.SetActive(false);
         }
     }
+
 }
