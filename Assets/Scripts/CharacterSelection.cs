@@ -80,7 +80,7 @@ public class CharacterSelection : MonoBehaviour
         _camAnim.SetTrigger("Ready");
         Coin.gameObject.SetActive(true);
         Debug.Log("All Ready");
-        SceneManager.LoadScene("Treasure_Hunt");
+        //SceneManager.LoadScene("Treasure_Hunt");
     }
 
     private void SwitchCharacter(int _CurrentChild)
