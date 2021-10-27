@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public InputAction movement;
     public InputAction jump;
     public InputAction Stealth;
-
+    public bool candoublejump;
     [SerializeField]
     private float maximumSpeed;
 
@@ -61,8 +61,7 @@ public class PlayerController : MonoBehaviour
     {
         var dir = movement.ReadValue<Vector2>();
         horizontalInput = dir.x;
-        verticalInput = dir.y;
-        Debug.Log(gameObject.name);
+        verticalInput = dir.y;        
     }
     private void ONJumpPreformed(InputAction.CallbackContext context)
     {

@@ -11,13 +11,13 @@ public class displayScore : MonoBehaviour
     {
         n=transform.GetChild(0).GetComponent<Score>()._score;
         Coins[n-1].gameObject.SetActive(true);
-        if (n == 3)
+        /*if (n >= 3)
         {
             Winer = gameObject.name;
             PlayerPrefs.SetString("Winer", Winer); PlayerPrefs.Save();
             Debug.Log("End");
             Time.timeScale = 0;
-        }
+        }*/
     }
 
 
