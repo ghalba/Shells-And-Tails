@@ -10,7 +10,8 @@ public class displayScore : MonoBehaviour
     private void Update()
     {
         n=transform.GetChild(0).GetComponent<Score>()._score;
-        Coins[n-1].gameObject.SetActive(true);
+        
+        if (n > 0) { Coins[n - 1].gameObject.SetActive(true); }
         /*if (n >= 3)
         {
             Winer = gameObject.name;

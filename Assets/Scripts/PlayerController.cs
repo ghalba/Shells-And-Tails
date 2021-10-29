@@ -135,14 +135,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetTrigger("isJumping");
                 candoublejump = true;
             }
-            if (candoublejump&&_jump!=0)
-            {
-                ySpeed = jumpSpeed;
-                jumpButtonPressedTime = null;
-                lastGroundedTime = null;
-                animator.SetTrigger("isJumping");
-                candoublejump = false;
-            }
+
         }
         else
         {
