@@ -49,9 +49,14 @@ public class Guard : MonoBehaviour
         playervisibletimer = Mathf.Clamp(playervisibletimer, 0, timetospotplayer);
         spotlight.color = Color.Lerp(originalSpotlightColour, Color.red, playervisibletimer / timetospotplayer);
         if (playervisibletimer >= timetospotplayer) {
-            if (onguardspotedPlayer != null) {
+            Debug.Log("spotted");
+            //seif : lena guard spota lplayer kamel el code bech tresert el player meloul
+
+           /* if (onguardspotedPlayer != null) {
                 onguardspotedPlayer();
-            }
+                 
+            //parti hethi zeyda ama 5aleha just in case
+            }*/
         }
     }
 

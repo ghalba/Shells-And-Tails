@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement:
-    m_Name: 
+    m_Name: Movement
     m_Type: 0
     m_ExpectedControlType: 
     m_Id: 79428ee6-4588-41af-8c9f-14958be04781
@@ -139,7 +139,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
   jump:
-    m_Name: 
+    m_Name: Jump
     m_Type: 0
     m_ExpectedControlType: 
     m_Id: 4cd67a9e-a935-4594-8c4d-ec730cd05246
@@ -147,13 +147,14 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
   Stealth:
-    m_Name: 
+    m_Name: Stealth
     m_Type: 0
     m_ExpectedControlType: 
     m_Id: 74badfd4-0d75-4a9f-8ed9-5e3100140481
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
+  candoublejump: 0
   maximumSpeed: 0
   rotationSpeed: 0
   jumpSpeed: 0

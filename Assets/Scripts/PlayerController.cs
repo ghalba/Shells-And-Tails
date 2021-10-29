@@ -7,6 +7,7 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
+
     private float horizontalInput;
     private float verticalInput;
     public InputAction movement;
@@ -35,7 +36,7 @@ public class PlayerController : MonoBehaviour
     private float? jumpButtonPressedTime;
     private float _jump;
     private float _Stealth;
-
+    bool disabled;
     private void Awake()
     {
         jump.performed += ONJumpPreformed;
@@ -151,6 +152,8 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
     }
+
+
 
     private void OnApplicationFocus(bool focus)
     {
