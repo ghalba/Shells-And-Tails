@@ -902,6 +902,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:ValidateRendererFeatures 
 UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs:59)
 
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
+<<<<<<< Updated upstream
 
 Mono: successfully reloaded assembly
 - Completed reload, in  2.485 seconds
@@ -1025,9 +1026,345 @@ Received Import Request.
   artifactKey: Guid(79964771e81f29b45adf6787ca25d5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/PlayerController.cs using Guid(79964771e81f29b45adf6787ca25d5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '503a96a8b70f651402c1fa2f6866b1ca') in 0.010691 seconds 
   Import took 0.019581 seconds .
+=======
+>>>>>>> Stashed changes
 
+Mono: successfully reloaded assembly
+- Completed reload, in  2.485 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2486ms)
+		BeginReloadAssembly (183ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (70ms)
+		EndReloadAssembly (2202ms)
+			LoadAssemblies (188ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (938ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (167ms)
+			SetupLoadedEditorAssemblies (652ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (125ms)
+				ProcessInitializeOnLoadAttributes (503ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (36ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.5 MB.
+System memory in use after: 162.7 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3777.
+Total: 6.289500 ms (FindLiveObjects: 0.510100 ms CreateObjectMapping: 0.111400 ms MarkObjects: 5.628900 ms  DeleteObjects: 0.036900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005138 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.03 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GrassBendRenderer is missing RendererFeatures
+This could be due to missing scripts or compile error.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogError (object,UnityEngine.Object)
+UnityEngine.Rendering.Universal.ScriptableRendererData:ValidateRendererFeatures () (at Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs:135)
+UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs:59)
+
+(Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.458 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1458ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1229ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (418ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (436ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (122ms)
+				ProcessInitializeOnLoadAttributes (291ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.5 MB.
+System memory in use after: 162.7 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3779.
+Total: 5.975600 ms (FindLiveObjects: 0.410800 ms CreateObjectMapping: 0.095800 ms MarkObjects: 5.437100 ms  DeleteObjects: 0.030400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
+  Time since last request: 950.486767 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(79964771e81f29b45adf6787ca25d5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(79964771e81f29b45adf6787ca25d5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf3b7d52b24e4260540f35e9ebaf812e') in 0.007875 seconds 
+  Import took 0.014444 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005071 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.03 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GrassBendRenderer is missing RendererFeatures
+This could be due to missing scripts or compile error.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogError (object,UnityEngine.Object)
+UnityEngine.Rendering.Universal.ScriptableRendererData:ValidateRendererFeatures () (at Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs:135)
+UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs:59)
+
+(Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.575 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1575ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1342ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (527ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (444ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (300ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.5 MB.
+System memory in use after: 162.7 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3781.
+Total: 4.429000 ms (FindLiveObjects: 0.383500 ms CreateObjectMapping: 0.099200 ms MarkObjects: 3.916600 ms  DeleteObjects: 0.028600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005064 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GrassBendRenderer is missing RendererFeatures
+This could be due to missing scripts or compile error.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogError (object,UnityEngine.Object)
+UnityEngine.Rendering.Universal.ScriptableRendererData:ValidateRendererFeatures () (at Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs:135)
+UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs:59)
+
+(Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.730 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1730ms)
+		BeginReloadAssembly (137ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1507ms)
+			LoadAssemblies (147ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (399ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (656ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (141ms)
+				ProcessInitializeOnLoadAttributes (488ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (27ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.5 MB.
+System memory in use after: 162.8 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3783.
+Total: 5.050000 ms (FindLiveObjects: 0.563300 ms CreateObjectMapping: 0.127100 ms MarkObjects: 4.320500 ms  DeleteObjects: 0.036900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005193 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GrassBendRenderer is missing RendererFeatures
+This could be due to missing scripts or compile error.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogError (object,UnityEngine.Object)
+UnityEngine.Rendering.Universal.ScriptableRendererData:ValidateRendererFeatures () (at Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs:135)
+UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs:59)
+
+(Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.683 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1684ms)
+		BeginReloadAssembly (156ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1445ms)
+			LoadAssemblies (169ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (482ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (504ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (134ms)
+				ProcessInitializeOnLoadAttributes (331ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (59ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.04 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.5 MB.
+System memory in use after: 162.8 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3785.
+Total: 9.933700 ms (FindLiveObjects: 1.358200 ms CreateObjectMapping: 0.397000 ms MarkObjects: 8.140800 ms  DeleteObjects: 0.035700 ms)
+=======
+  Time since last request: 539.669615 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(79964771e81f29b45adf6787ca25d5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(79964771e81f29b45adf6787ca25d5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '503a96a8b70f651402c1fa2f6866b1ca') in 0.010691 seconds 
+  Import took 0.019581 seconds .
+>>>>>>> Stashed changes
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+<<<<<<< Updated upstream
+=======
   Time since last request: 950.486767 seconds.
   path: Assets/Scripts/PlayerController.cs
   artifactKey: Guid(79964771e81f29b45adf6787ca25d5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -1237,6 +1574,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+>>>>>>> Stashed changes
   Time since last request: 45.573469 seconds.
   path: Assets/Scripts/PlayerController.cs
   artifactKey: Guid(79964771e81f29b45adf6787ca25d5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -1497,6 +1835,7 @@ Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.6 MB.
 System memory in use after: 162.8 MB.
+<<<<<<< Updated upstream
 
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3793.
 Total: 8.001800 ms (FindLiveObjects: 0.632100 ms CreateObjectMapping: 0.367100 ms MarkObjects: 6.954200 ms  DeleteObjects: 0.046000 ms)
@@ -1567,6 +1906,11 @@ System memory in use after: 162.8 MB.
 
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3795.
 Total: 4.840300 ms (FindLiveObjects: 0.393800 ms CreateObjectMapping: 0.091300 ms MarkObjects: 4.320500 ms  DeleteObjects: 0.032400 ms)
+=======
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3793.
+Total: 8.001800 ms (FindLiveObjects: 0.632100 ms CreateObjectMapping: 0.367100 ms MarkObjects: 6.954200 ms  DeleteObjects: 0.046000 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1581,10 +1925,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005241 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
+=======
+Registered in 0.006725 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -1598,6 +1949,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.427 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1427ms)
@@ -1625,15 +1977,49 @@ Domain Reload Profiling:
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (27ms)
+=======
+- Completed reload, in  1.984 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1985ms)
+		BeginReloadAssembly (189ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1696ms)
+			LoadAssemblies (160ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (531ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (677ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (521ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (39ms)
+>>>>>>> Stashed changes
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.6 MB.
 System memory in use after: 162.8 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3797.
 Total: 5.139300 ms (FindLiveObjects: 0.370100 ms CreateObjectMapping: 0.103900 ms MarkObjects: 4.634800 ms  DeleteObjects: 0.028600 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3795.
+Total: 4.840300 ms (FindLiveObjects: 0.393800 ms CreateObjectMapping: 0.091300 ms MarkObjects: 4.320500 ms  DeleteObjects: 0.032400 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1648,7 +2034,11 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005800 seconds.
+=======
+Registered in 0.005241 seconds.
+>>>>>>> Stashed changes
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
@@ -1665,14 +2055,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.496 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1496ms)
 		BeginReloadAssembly (152ms)
+=======
+- Completed reload, in  1.427 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1427ms)
+		BeginReloadAssembly (139ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (56ms)
 		EndReloadAssembly (1257ms)
 			LoadAssemblies (117ms)
@@ -1681,10 +2079,21 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (55ms)
 			SetupLoadedEditorAssemblies (485ms)
+=======
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1205ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (388ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (440ms)
+>>>>>>> Stashed changes
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
+<<<<<<< Updated upstream
 				BeforeProcessingInitializeOnLoad (112ms)
 				ProcessInitializeOnLoadAttributes (347ms)
 				ProcessInitializeOnLoadMethodAttributes (5ms)
@@ -1694,13 +2103,29 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (25ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+=======
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (302ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (27ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.6 MB.
 System memory in use after: 162.8 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3799.
 Total: 6.676900 ms (FindLiveObjects: 0.735500 ms CreateObjectMapping: 0.234600 ms MarkObjects: 5.667100 ms  DeleteObjects: 0.037300 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3797.
+Total: 5.139300 ms (FindLiveObjects: 0.370100 ms CreateObjectMapping: 0.103900 ms MarkObjects: 4.634800 ms  DeleteObjects: 0.028600 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1715,10 +2140,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.006430 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
+=======
+Registered in 0.005800 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -1732,14 +2164,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  2.162 seconds
 Domain Reload Profiling:
 	ReloadAssembly (2163ms)
 		BeginReloadAssembly (147ms)
+=======
+- Completed reload, in  1.496 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1496ms)
+		BeginReloadAssembly (152ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (49ms)
 		EndReloadAssembly (1878ms)
 			LoadAssemblies (139ms)
@@ -1761,13 +2201,41 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (33ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+=======
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (1257ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (385ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (485ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (347ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.6 MB.
 System memory in use after: 162.8 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3801.
 Total: 4.817400 ms (FindLiveObjects: 0.369400 ms CreateObjectMapping: 0.203600 ms MarkObjects: 4.215300 ms  DeleteObjects: 0.027700 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3799.
+Total: 6.676900 ms (FindLiveObjects: 0.735500 ms CreateObjectMapping: 0.234600 ms MarkObjects: 5.667100 ms  DeleteObjects: 0.037300 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1782,10 +2250,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.006230 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.03 ms, found 2 plugins.
+=======
+Registered in 0.006430 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -1799,14 +2274,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.811 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1811ms)
 		BeginReloadAssembly (143ms)
+=======
+- Completed reload, in  2.162 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2163ms)
+		BeginReloadAssembly (147ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (51ms)
 		EndReloadAssembly (1579ms)
 			LoadAssemblies (131ms)
@@ -1828,13 +2311,41 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (29ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+=======
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1878ms)
+			LoadAssemblies (139ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (562ms)
+			ReleaseScriptCaches (6ms)
+			RebuildScriptCaches (256ms)
+			SetupLoadedEditorAssemblies (622ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (474ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (33ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.6 MB.
 System memory in use after: 162.8 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3803.
 Total: 5.658900 ms (FindLiveObjects: 0.556400 ms CreateObjectMapping: 0.219800 ms MarkObjects: 4.828900 ms  DeleteObjects: 0.052000 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3801.
+Total: 4.817400 ms (FindLiveObjects: 0.369400 ms CreateObjectMapping: 0.203600 ms MarkObjects: 4.215300 ms  DeleteObjects: 0.027700 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1849,10 +2360,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.008714 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
+=======
+Registered in 0.006230 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.03 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -1866,14 +2384,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.447 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1447ms)
 		BeginReloadAssembly (153ms)
+=======
+- Completed reload, in  1.811 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1811ms)
+		BeginReloadAssembly (143ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (46ms)
 		EndReloadAssembly (1192ms)
 			LoadAssemblies (136ms)
@@ -1895,13 +2421,41 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (26ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+=======
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1579ms)
+			LoadAssemblies (131ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (609ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (515ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (153ms)
+				ProcessInitializeOnLoadAttributes (331ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.6 MB.
 System memory in use after: 162.8 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3805.
 Total: 4.716200 ms (FindLiveObjects: 0.375100 ms CreateObjectMapping: 0.127300 ms MarkObjects: 4.182400 ms  DeleteObjects: 0.029600 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3803.
+Total: 5.658900 ms (FindLiveObjects: 0.556400 ms CreateObjectMapping: 0.219800 ms MarkObjects: 4.828900 ms  DeleteObjects: 0.052000 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1916,10 +2470,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005814 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+=======
+Registered in 0.008714 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -1933,6 +2494,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.735 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1736ms)
@@ -1962,13 +2524,49 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (36ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
+=======
+- Completed reload, in  1.447 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1447ms)
+		BeginReloadAssembly (153ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (1192ms)
+			LoadAssemblies (136ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (388ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (425ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (292ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.6 MB.
 System memory in use after: 162.8 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3807.
 Total: 5.594000 ms (FindLiveObjects: 0.397600 ms CreateObjectMapping: 0.138300 ms MarkObjects: 5.020600 ms  DeleteObjects: 0.035200 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3805.
+Total: 4.716200 ms (FindLiveObjects: 0.375100 ms CreateObjectMapping: 0.127300 ms MarkObjects: 4.182400 ms  DeleteObjects: 0.029600 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1983,10 +2581,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005646 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+=======
+Registered in 0.005814 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -2000,6 +2605,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.517 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1518ms)
@@ -2029,13 +2635,49 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (28ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 2.48 ms, found 2 plugins.
+=======
+- Completed reload, in  1.735 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1736ms)
+		BeginReloadAssembly (174ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1433ms)
+			LoadAssemblies (164ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (477ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (530ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (179ms)
+				ProcessInitializeOnLoadAttributes (318ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (36ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.6 MB.
 System memory in use after: 162.8 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3809.
 Total: 7.284100 ms (FindLiveObjects: 0.508200 ms CreateObjectMapping: 0.164400 ms MarkObjects: 6.560000 ms  DeleteObjects: 0.049300 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3807.
+Total: 5.594000 ms (FindLiveObjects: 0.397600 ms CreateObjectMapping: 0.138300 ms MarkObjects: 5.020600 ms  DeleteObjects: 0.035200 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2050,10 +2692,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.012562 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.50 ms, found 2 plugins.
+=======
+Registered in 0.005646 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -2067,6 +2716,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.664 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1665ms)
@@ -2103,6 +2753,44 @@ System memory in use after: 162.9 MB.
 
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3811.
 Total: 5.893900 ms (FindLiveObjects: 0.440700 ms CreateObjectMapping: 0.149800 ms MarkObjects: 5.268800 ms  DeleteObjects: 0.032800 ms)
+=======
+- Completed reload, in  1.517 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1518ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1270ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (452ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (442ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (305ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.6 MB.
+System memory in use after: 162.8 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3809.
+Total: 7.284100 ms (FindLiveObjects: 0.508200 ms CreateObjectMapping: 0.164400 ms MarkObjects: 6.560000 ms  DeleteObjects: 0.049300 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2117,10 +2805,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005134 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+=======
+Registered in 0.012562 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.50 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -2134,6 +2829,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.420 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1421ms)
@@ -2163,13 +2859,49 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (26ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.17 ms, found 2 plugins.
+=======
+- Completed reload, in  1.664 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1665ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1440ms)
+			LoadAssemblies (127ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (453ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (541ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (117ms)
+				ProcessInitializeOnLoadAttributes (383ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (21ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (62ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.6 MB.
 System memory in use after: 162.9 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3813.
 Total: 5.197800 ms (FindLiveObjects: 0.621800 ms CreateObjectMapping: 0.133000 ms MarkObjects: 4.407600 ms  DeleteObjects: 0.030600 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3811.
+Total: 5.893900 ms (FindLiveObjects: 0.440700 ms CreateObjectMapping: 0.149800 ms MarkObjects: 5.268800 ms  DeleteObjects: 0.032800 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2184,10 +2916,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.006749 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+=======
+Registered in 0.005134 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -2201,14 +2940,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.808 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1808ms)
 		BeginReloadAssembly (170ms)
+=======
+- Completed reload, in  1.420 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1421ms)
+		BeginReloadAssembly (131ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (78ms)
 		EndReloadAssembly (1556ms)
 			LoadAssemblies (118ms)
@@ -2223,20 +2970,47 @@ Domain Reload Profiling:
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (183ms)
 				ProcessInitializeOnLoadAttributes (401ms)
+=======
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1196ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (381ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (455ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (128ms)
+				ProcessInitializeOnLoadAttributes (304ms)
+>>>>>>> Stashed changes
 				ProcessInitializeOnLoadMethodAttributes (5ms)
 				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
+<<<<<<< Updated upstream
 			AwakeInstancesAfterBackupRestoration (29ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+=======
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.17 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.6 MB.
 System memory in use after: 162.9 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3815.
 Total: 5.556600 ms (FindLiveObjects: 0.456000 ms CreateObjectMapping: 0.111800 ms MarkObjects: 4.914900 ms  DeleteObjects: 0.071100 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3813.
+Total: 5.197800 ms (FindLiveObjects: 0.621800 ms CreateObjectMapping: 0.133000 ms MarkObjects: 4.407600 ms  DeleteObjects: 0.030600 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2251,10 +3025,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.004870 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
+=======
+Registered in 0.006749 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -2268,14 +3049,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.614 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1615ms)
 		BeginReloadAssembly (157ms)
+=======
+- Completed reload, in  1.808 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1808ms)
+		BeginReloadAssembly (170ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (50ms)
 		EndReloadAssembly (1372ms)
 			LoadAssemblies (139ms)
@@ -2284,26 +3073,52 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (84ms)
 			SetupLoadedEditorAssemblies (457ms)
+=======
+			CreateAndSetChildDomain (78ms)
+		EndReloadAssembly (1556ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (377ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (607ms)
+>>>>>>> Stashed changes
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
+<<<<<<< Updated upstream
 				BeforeProcessingInitializeOnLoad (115ms)
 				ProcessInitializeOnLoadAttributes (320ms)
+=======
+				BeforeProcessingInitializeOnLoad (183ms)
+				ProcessInitializeOnLoadAttributes (401ms)
+>>>>>>> Stashed changes
 				ProcessInitializeOnLoadMethodAttributes (5ms)
 				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
+<<<<<<< Updated upstream
 			AwakeInstancesAfterBackupRestoration (25ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+=======
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.6 MB.
 System memory in use after: 162.9 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3817.
 Total: 4.322800 ms (FindLiveObjects: 0.455600 ms CreateObjectMapping: 0.104400 ms MarkObjects: 3.726500 ms  DeleteObjects: 0.034700 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3815.
+Total: 5.556600 ms (FindLiveObjects: 0.456000 ms CreateObjectMapping: 0.111800 ms MarkObjects: 4.914900 ms  DeleteObjects: 0.071100 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2318,10 +3133,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.008315 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 2.66 ms, found 2 plugins.
+=======
+Registered in 0.004870 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -2335,6 +3157,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  2.375 seconds
 Domain Reload Profiling:
 	ReloadAssembly (2376ms)
@@ -2364,13 +3187,49 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (43ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 2.75 ms, found 2 plugins.
+=======
+- Completed reload, in  1.614 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1615ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1372ms)
+			LoadAssemblies (139ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (465ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (84ms)
+			SetupLoadedEditorAssemblies (457ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (320ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.6 MB.
 System memory in use after: 162.9 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3819.
 Total: 7.281400 ms (FindLiveObjects: 1.490300 ms CreateObjectMapping: 0.188000 ms MarkObjects: 5.559900 ms  DeleteObjects: 0.040900 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3817.
+Total: 4.322800 ms (FindLiveObjects: 0.455600 ms CreateObjectMapping: 0.104400 ms MarkObjects: 3.726500 ms  DeleteObjects: 0.034700 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2385,10 +3244,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.016815 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
+=======
+Registered in 0.008315 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.66 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -2402,6 +3268,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.981 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1982ms)
@@ -2431,13 +3298,49 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (39ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
+=======
+- Completed reload, in  2.375 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2376ms)
+		BeginReloadAssembly (214ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (69ms)
+		EndReloadAssembly (2017ms)
+			LoadAssemblies (201ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (597ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (93ms)
+			SetupLoadedEditorAssemblies (804ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (172ms)
+				ProcessInitializeOnLoadAttributes (592ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (43ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.75 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.6 MB.
 System memory in use after: 162.9 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3821.
 Total: 8.154000 ms (FindLiveObjects: 0.373000 ms CreateObjectMapping: 0.103600 ms MarkObjects: 7.486600 ms  DeleteObjects: 0.188800 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3819.
+Total: 7.281400 ms (FindLiveObjects: 1.490300 ms CreateObjectMapping: 0.188000 ms MarkObjects: 5.559900 ms  DeleteObjects: 0.040900 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2452,10 +3355,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005069 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+=======
+Registered in 0.016815 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -2469,6 +3379,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.454 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1454ms)
@@ -2505,6 +3416,44 @@ System memory in use after: 162.9 MB.
 
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3823.
 Total: 5.828700 ms (FindLiveObjects: 0.508200 ms CreateObjectMapping: 0.104900 ms MarkObjects: 5.176400 ms  DeleteObjects: 0.036500 ms)
+=======
+- Completed reload, in  1.981 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1982ms)
+		BeginReloadAssembly (202ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (92ms)
+		EndReloadAssembly (1695ms)
+			LoadAssemblies (152ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (491ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (696ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (133ms)
+				ProcessInitializeOnLoadAttributes (536ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (39ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.6 MB.
+System memory in use after: 162.9 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3821.
+Total: 8.154000 ms (FindLiveObjects: 0.373000 ms CreateObjectMapping: 0.103600 ms MarkObjects: 7.486600 ms  DeleteObjects: 0.188800 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2519,10 +3468,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.016316 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+=======
+Registered in 0.005069 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -2536,14 +3492,21 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.676 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1677ms)
+=======
+- Completed reload, in  1.454 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1454ms)
+>>>>>>> Stashed changes
 		BeginReloadAssembly (135ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (42ms)
 		EndReloadAssembly (1458ms)
 			LoadAssemblies (122ms)
@@ -2565,13 +3528,41 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (28ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+=======
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1235ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (410ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (437ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (113ms)
+				ProcessInitializeOnLoadAttributes (302ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (27ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.7 MB.
 System memory in use after: 162.9 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3825.
 Total: 5.133500 ms (FindLiveObjects: 0.456500 ms CreateObjectMapping: 0.140100 ms MarkObjects: 4.500900 ms  DeleteObjects: 0.033900 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3823.
+Total: 5.828700 ms (FindLiveObjects: 0.508200 ms CreateObjectMapping: 0.104900 ms MarkObjects: 5.176400 ms  DeleteObjects: 0.036500 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2586,10 +3577,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005162 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
+=======
+Registered in 0.016316 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -2603,14 +3601,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.713 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1714ms)
 		BeginReloadAssembly (133ms)
+=======
+- Completed reload, in  1.676 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1677ms)
+		BeginReloadAssembly (135ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (40ms)
 		EndReloadAssembly (1496ms)
 			LoadAssemblies (159ms)
@@ -2632,13 +3638,41 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (29ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.72 ms, found 2 plugins.
+=======
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1458ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (422ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (596ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (449ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.7 MB.
 System memory in use after: 162.9 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3827.
 Total: 14.360500 ms (FindLiveObjects: 1.452500 ms CreateObjectMapping: 0.274500 ms MarkObjects: 12.560500 ms  DeleteObjects: 0.070400 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3825.
+Total: 5.133500 ms (FindLiveObjects: 0.456500 ms CreateObjectMapping: 0.140100 ms MarkObjects: 4.500900 ms  DeleteObjects: 0.033900 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2653,10 +3687,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.008242 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
+=======
+Registered in 0.005162 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -2670,14 +3711,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.561 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1562ms)
 		BeginReloadAssembly (136ms)
+=======
+- Completed reload, in  1.713 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1714ms)
+		BeginReloadAssembly (133ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (43ms)
 		EndReloadAssembly (1341ms)
 			LoadAssemblies (118ms)
@@ -2699,13 +3748,41 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (46ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
+=======
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1496ms)
+			LoadAssemblies (159ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (572ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (509ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (130ms)
+				ProcessInitializeOnLoadAttributes (353ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.72 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.7 MB.
 System memory in use after: 162.9 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3829.
 Total: 5.234100 ms (FindLiveObjects: 0.415400 ms CreateObjectMapping: 0.350700 ms MarkObjects: 4.441100 ms  DeleteObjects: 0.025500 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3827.
+Total: 14.360500 ms (FindLiveObjects: 1.452500 ms CreateObjectMapping: 0.274500 ms MarkObjects: 12.560500 ms  DeleteObjects: 0.070400 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2720,10 +3797,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.004963 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.18 ms, found 2 plugins.
+=======
+Registered in 0.008242 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -2737,14 +3821,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.577 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1577ms)
 		BeginReloadAssembly (135ms)
+=======
+- Completed reload, in  1.561 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1562ms)
+		BeginReloadAssembly (136ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (42ms)
 		EndReloadAssembly (1350ms)
 			LoadAssemblies (115ms)
@@ -2766,13 +3858,41 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (26ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
+=======
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1341ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (413ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (513ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (348ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (46ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.7 MB.
 System memory in use after: 162.9 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3831.
 Total: 8.019300 ms (FindLiveObjects: 0.462100 ms CreateObjectMapping: 0.162800 ms MarkObjects: 7.355000 ms  DeleteObjects: 0.037400 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3829.
+Total: 5.234100 ms (FindLiveObjects: 0.415400 ms CreateObjectMapping: 0.350700 ms MarkObjects: 4.441100 ms  DeleteObjects: 0.025500 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2787,10 +3907,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.006396 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.34 ms, found 2 plugins.
+=======
+Registered in 0.004963 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -2804,15 +3931,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.743 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1743ms)
+=======
+- Completed reload, in  1.577 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1577ms)
+>>>>>>> Stashed changes
 		BeginReloadAssembly (135ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (42ms)
+<<<<<<< Updated upstream
 		EndReloadAssembly (1524ms)
 			LoadAssemblies (135ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -2833,13 +3967,40 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (27ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+=======
+		EndReloadAssembly (1350ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (395ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (540ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (126ms)
+				ProcessInitializeOnLoadAttributes (390ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.7 MB.
 System memory in use after: 162.9 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3833.
 Total: 4.852100 ms (FindLiveObjects: 0.409500 ms CreateObjectMapping: 0.118900 ms MarkObjects: 4.290500 ms  DeleteObjects: 0.031300 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3831.
+Total: 8.019300 ms (FindLiveObjects: 0.462100 ms CreateObjectMapping: 0.162800 ms MarkObjects: 7.355000 ms  DeleteObjects: 0.037400 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2854,10 +4015,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005907 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
+=======
+Registered in 0.006396 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -2871,14 +4039,21 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.426 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1427ms)
+=======
+- Completed reload, in  1.743 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1743ms)
+>>>>>>> Stashed changes
 		BeginReloadAssembly (135ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (41ms)
 		EndReloadAssembly (1207ms)
 			LoadAssemblies (116ms)
@@ -2900,13 +4075,41 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (26ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
+=======
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1524ms)
+			LoadAssemblies (135ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (382ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (693ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (279ms)
+				ProcessInitializeOnLoadAttributes (387ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (27ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.7 MB.
 System memory in use after: 162.9 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3835.
 Total: 4.891300 ms (FindLiveObjects: 0.358100 ms CreateObjectMapping: 0.084200 ms MarkObjects: 4.414000 ms  DeleteObjects: 0.033200 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3833.
+Total: 4.852100 ms (FindLiveObjects: 0.409500 ms CreateObjectMapping: 0.118900 ms MarkObjects: 4.290500 ms  DeleteObjects: 0.031300 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2921,10 +4124,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005260 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.30 ms, found 2 plugins.
+=======
+Registered in 0.005907 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -2938,14 +4148,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.618 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1619ms)
 		BeginReloadAssembly (136ms)
+=======
+- Completed reload, in  1.426 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1427ms)
+		BeginReloadAssembly (135ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (42ms)
 		EndReloadAssembly (1399ms)
 			LoadAssemblies (119ms)
@@ -2960,20 +4178,47 @@ Domain Reload Profiling:
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (132ms)
 				ProcessInitializeOnLoadAttributes (436ms)
+=======
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1207ms)
+			LoadAssemblies (116ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (393ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (439ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (300ms)
+>>>>>>> Stashed changes
 				ProcessInitializeOnLoadMethodAttributes (5ms)
 				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
+<<<<<<< Updated upstream
 			AwakeInstancesAfterBackupRestoration (27ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+=======
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.7 MB.
 System memory in use after: 162.9 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3837.
 Total: 5.807600 ms (FindLiveObjects: 0.476000 ms CreateObjectMapping: 0.138400 ms MarkObjects: 5.151600 ms  DeleteObjects: 0.039200 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3835.
+Total: 4.891300 ms (FindLiveObjects: 0.358100 ms CreateObjectMapping: 0.084200 ms MarkObjects: 4.414000 ms  DeleteObjects: 0.033200 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2988,10 +4233,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005164 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
+=======
+Registered in 0.005260 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -3005,6 +4257,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.655 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1656ms)
@@ -3034,13 +4287,49 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (33ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.28 ms, found 2 plugins.
+=======
+- Completed reload, in  1.618 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1619ms)
+		BeginReloadAssembly (136ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1399ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (388ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (87ms)
+			SetupLoadedEditorAssemblies (602ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (132ms)
+				ProcessInitializeOnLoadAttributes (436ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (27ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.7 MB.
 System memory in use after: 162.9 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3839.
 Total: 8.877000 ms (FindLiveObjects: 0.473000 ms CreateObjectMapping: 0.119800 ms MarkObjects: 8.247100 ms  DeleteObjects: 0.034400 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3837.
+Total: 5.807600 ms (FindLiveObjects: 0.476000 ms CreateObjectMapping: 0.138400 ms MarkObjects: 5.151600 ms  DeleteObjects: 0.039200 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -3055,10 +4344,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.020476 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+=======
+Registered in 0.005164 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -3072,6 +4368,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.797 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1797ms)
@@ -3108,6 +4405,44 @@ System memory in use after: 163.0 MB.
 
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3841.
 Total: 7.886900 ms (FindLiveObjects: 0.522300 ms CreateObjectMapping: 0.142100 ms MarkObjects: 7.185300 ms  DeleteObjects: 0.034800 ms)
+=======
+- Completed reload, in  1.655 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1656ms)
+		BeginReloadAssembly (154ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1406ms)
+			LoadAssemblies (170ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (449ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (480ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (128ms)
+				ProcessInitializeOnLoadAttributes (328ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (33ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.7 MB.
+System memory in use after: 162.9 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3839.
+Total: 8.877000 ms (FindLiveObjects: 0.473000 ms CreateObjectMapping: 0.119800 ms MarkObjects: 8.247100 ms  DeleteObjects: 0.034400 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -3122,10 +4457,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005952 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
+=======
+Registered in 0.020476 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -3139,14 +4481,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.621 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1622ms)
 		BeginReloadAssembly (158ms)
+=======
+- Completed reload, in  1.797 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1797ms)
+		BeginReloadAssembly (135ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (60ms)
 		EndReloadAssembly (1377ms)
 			LoadAssemblies (141ms)
@@ -3163,18 +4513,45 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadAttributes (347ms)
 				ProcessInitializeOnLoadMethodAttributes (5ms)
 				AfterProcessingInitializeOnLoad (11ms)
+=======
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (1580ms)
+			LoadAssemblies (227ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (521ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (441ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (307ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (10ms)
+>>>>>>> Stashed changes
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (28ms)
 Platform modules already initialized, skipping
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+=======
+Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.7 MB.
 System memory in use after: 163.0 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3843.
 Total: 4.895600 ms (FindLiveObjects: 0.406000 ms CreateObjectMapping: 0.125900 ms MarkObjects: 4.333600 ms  DeleteObjects: 0.028600 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3841.
+Total: 7.886900 ms (FindLiveObjects: 0.522300 ms CreateObjectMapping: 0.142100 ms MarkObjects: 7.185300 ms  DeleteObjects: 0.034800 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -3189,10 +4566,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.007054 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+=======
+Registered in 0.005952 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -3208,6 +4592,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 Mono: successfully reloaded assembly
 - Completed reload, in  1.621 seconds
 Domain Reload Profiling:
+<<<<<<< Updated upstream
 	ReloadAssembly (1621ms)
 		BeginReloadAssembly (141ms)
 			ExecutionOrderSort (0ms)
@@ -3228,20 +4613,53 @@ Domain Reload Profiling:
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (129ms)
 				ProcessInitializeOnLoadAttributes (424ms)
+=======
+	ReloadAssembly (1622ms)
+		BeginReloadAssembly (158ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1377ms)
+			LoadAssemblies (141ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (492ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (487ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (347ms)
+>>>>>>> Stashed changes
 				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (10ms)
+				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
+<<<<<<< Updated upstream
 			AwakeInstancesAfterBackupRestoration (29ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+=======
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.7 MB.
 System memory in use after: 163.0 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3845.
 Total: 6.574800 ms (FindLiveObjects: 0.980700 ms CreateObjectMapping: 0.182500 ms MarkObjects: 5.374800 ms  DeleteObjects: 0.034000 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3843.
+Total: 4.895600 ms (FindLiveObjects: 0.406000 ms CreateObjectMapping: 0.125900 ms MarkObjects: 4.333600 ms  DeleteObjects: 0.028600 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -3256,10 +4674,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005464 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
+=======
+Registered in 0.007054 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -3273,14 +4698,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.636 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1636ms)
 		BeginReloadAssembly (138ms)
+=======
+- Completed reload, in  1.621 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1621ms)
+		BeginReloadAssembly (141ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (45ms)
 		EndReloadAssembly (1415ms)
 			LoadAssemblies (120ms)
@@ -3297,18 +4730,45 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadAttributes (336ms)
 				ProcessInitializeOnLoadMethodAttributes (5ms)
 				AfterProcessingInitializeOnLoad (13ms)
+=======
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1392ms)
+			LoadAssemblies (124ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (385ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (576ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (424ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (10ms)
+>>>>>>> Stashed changes
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (29ms)
 Platform modules already initialized, skipping
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 1.62 ms, found 2 plugins.
+=======
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.7 MB.
 System memory in use after: 163.0 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3847.
 Total: 6.954200 ms (FindLiveObjects: 0.546300 ms CreateObjectMapping: 0.192300 ms MarkObjects: 6.164700 ms  DeleteObjects: 0.048600 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3845.
+Total: 6.574800 ms (FindLiveObjects: 0.980700 ms CreateObjectMapping: 0.182500 ms MarkObjects: 5.374800 ms  DeleteObjects: 0.034000 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -3323,10 +4783,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.017221 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+=======
+Registered in 0.005464 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -3340,14 +4807,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.635 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1636ms)
 		BeginReloadAssembly (135ms)
+=======
+- Completed reload, in  1.636 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1636ms)
+		BeginReloadAssembly (138ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (41ms)
 		EndReloadAssembly (1414ms)
 			LoadAssemblies (142ms)
@@ -3356,10 +4831,21 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (53ms)
 			SetupLoadedEditorAssemblies (579ms)
+=======
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1415ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (434ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (124ms)
+			SetupLoadedEditorAssemblies (494ms)
+>>>>>>> Stashed changes
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
+<<<<<<< Updated upstream
 				BeforeProcessingInitializeOnLoad (119ms)
 				ProcessInitializeOnLoadAttributes (434ms)
 				ProcessInitializeOnLoadMethodAttributes (7ms)
@@ -3369,13 +4855,29 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (31ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
+=======
+				BeforeProcessingInitializeOnLoad (132ms)
+				ProcessInitializeOnLoadAttributes (336ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.62 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.7 MB.
 System memory in use after: 163.0 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3849.
 Total: 5.223600 ms (FindLiveObjects: 0.388600 ms CreateObjectMapping: 0.114200 ms MarkObjects: 4.680800 ms  DeleteObjects: 0.037800 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3847.
+Total: 6.954200 ms (FindLiveObjects: 0.546300 ms CreateObjectMapping: 0.192300 ms MarkObjects: 6.164700 ms  DeleteObjects: 0.048600 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -3390,10 +4892,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.006265 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
+=======
+Registered in 0.017221 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -3407,6 +4916,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.498 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1499ms)
@@ -3443,6 +4953,44 @@ System memory in use after: 163.0 MB.
 
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3851.
 Total: 5.494700 ms (FindLiveObjects: 0.383900 ms CreateObjectMapping: 0.099500 ms MarkObjects: 4.973600 ms  DeleteObjects: 0.035800 ms)
+=======
+- Completed reload, in  1.635 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1636ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1414ms)
+			LoadAssemblies (142ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (417ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (579ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (434ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.16 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.7 MB.
+System memory in use after: 163.0 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3849.
+Total: 5.223600 ms (FindLiveObjects: 0.388600 ms CreateObjectMapping: 0.114200 ms MarkObjects: 4.680800 ms  DeleteObjects: 0.037800 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -3457,10 +5005,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.022038 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+=======
+Registered in 0.006265 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -3474,6 +5029,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.602 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1602ms)
@@ -3490,10 +5046,29 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (56ms)
 			SetupLoadedEditorAssemblies (556ms)
+=======
+- Completed reload, in  1.498 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1499ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1273ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (406ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (471ms)
+>>>>>>> Stashed changes
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
+<<<<<<< Updated upstream
 				BeforeProcessingInitializeOnLoad (119ms)
 				ProcessInitializeOnLoadAttributes (406ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
@@ -3503,13 +5078,29 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (28ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+=======
+				BeforeProcessingInitializeOnLoad (147ms)
+				ProcessInitializeOnLoadAttributes (301ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.8 MB.
 System memory in use after: 163.0 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3853.
 Total: 6.239000 ms (FindLiveObjects: 0.524000 ms CreateObjectMapping: 0.182100 ms MarkObjects: 5.492500 ms  DeleteObjects: 0.038500 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3851.
+Total: 5.494700 ms (FindLiveObjects: 0.383900 ms CreateObjectMapping: 0.099500 ms MarkObjects: 4.973600 ms  DeleteObjects: 0.035800 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -3524,10 +5115,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005033 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+=======
+Registered in 0.022038 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -3541,14 +5139,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.577 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1578ms)
 		BeginReloadAssembly (146ms)
+=======
+- Completed reload, in  1.602 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1602ms)
+		BeginReloadAssembly (141ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (43ms)
 		EndReloadAssembly (1348ms)
 			LoadAssemblies (127ms)
@@ -3565,18 +5171,45 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadAttributes (419ms)
 				ProcessInitializeOnLoadMethodAttributes (5ms)
 				AfterProcessingInitializeOnLoad (11ms)
+=======
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1378ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (424ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (556ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (406ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (12ms)
+>>>>>>> Stashed changes
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (28ms)
 Platform modules already initialized, skipping
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 1.43 ms, found 2 plugins.
+=======
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.8 MB.
 System memory in use after: 163.0 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3855.
 Total: 8.550900 ms (FindLiveObjects: 1.025500 ms CreateObjectMapping: 0.249800 ms MarkObjects: 7.093400 ms  DeleteObjects: 0.179900 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3853.
+Total: 6.239000 ms (FindLiveObjects: 0.524000 ms CreateObjectMapping: 0.182100 ms MarkObjects: 5.492500 ms  DeleteObjects: 0.038500 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -3591,10 +5224,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.008545 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
+=======
+Registered in 0.005033 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -3608,14 +5248,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.670 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1671ms)
 		BeginReloadAssembly (150ms)
+=======
+- Completed reload, in  1.577 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1578ms)
+		BeginReloadAssembly (146ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (47ms)
 		EndReloadAssembly (1424ms)
 			LoadAssemblies (124ms)
@@ -3624,10 +5272,21 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (2ms)
 			RebuildScriptCaches (56ms)
 			SetupLoadedEditorAssemblies (582ms)
+=======
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1348ms)
+			LoadAssemblies (127ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (384ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (559ms)
+>>>>>>> Stashed changes
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
+<<<<<<< Updated upstream
 				BeforeProcessingInitializeOnLoad (148ms)
 				ProcessInitializeOnLoadAttributes (412ms)
 				ProcessInitializeOnLoadMethodAttributes (5ms)
@@ -3637,13 +5296,29 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (27ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.57 ms, found 2 plugins.
+=======
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (419ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.43 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.8 MB.
 System memory in use after: 163.0 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3857.
 Total: 6.401800 ms (FindLiveObjects: 0.966800 ms CreateObjectMapping: 0.238800 ms MarkObjects: 5.021800 ms  DeleteObjects: 0.171500 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3855.
+Total: 8.550900 ms (FindLiveObjects: 1.025500 ms CreateObjectMapping: 0.249800 ms MarkObjects: 7.093400 ms  DeleteObjects: 0.179900 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -3658,10 +5333,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005460 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+=======
+Registered in 0.008545 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -3675,6 +5357,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.558 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1559ms)
@@ -3691,10 +5374,29 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (2ms)
 			RebuildScriptCaches (56ms)
 			SetupLoadedEditorAssemblies (467ms)
+=======
+- Completed reload, in  1.670 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1671ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1424ms)
+			LoadAssemblies (124ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (458ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (582ms)
+>>>>>>> Stashed changes
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
+<<<<<<< Updated upstream
 				BeforeProcessingInitializeOnLoad (114ms)
 				ProcessInitializeOnLoadAttributes (329ms)
 				ProcessInitializeOnLoadMethodAttributes (6ms)
@@ -3704,13 +5406,29 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (26ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 2.07 ms, found 2 plugins.
+=======
+				BeforeProcessingInitializeOnLoad (148ms)
+				ProcessInitializeOnLoadAttributes (412ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (27ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.57 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.8 MB.
 System memory in use after: 163.0 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3859.
 Total: 7.573100 ms (FindLiveObjects: 1.192400 ms CreateObjectMapping: 0.324800 ms MarkObjects: 6.006100 ms  DeleteObjects: 0.046200 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3857.
+Total: 6.401800 ms (FindLiveObjects: 0.966800 ms CreateObjectMapping: 0.238800 ms MarkObjects: 5.021800 ms  DeleteObjects: 0.171500 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -3725,10 +5443,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.006149 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
+=======
+Registered in 0.005460 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -3742,14 +5467,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.728 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1728ms)
 		BeginReloadAssembly (145ms)
+=======
+- Completed reload, in  1.558 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1559ms)
+		BeginReloadAssembly (133ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (43ms)
 		EndReloadAssembly (1491ms)
 			LoadAssemblies (128ms)
@@ -3771,13 +5504,41 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (26ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 2.05 ms, found 2 plugins.
+=======
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1342ms)
+			LoadAssemblies (124ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (455ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (467ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (329ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.07 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.8 MB.
 System memory in use after: 163.0 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3861.
 Total: 7.868300 ms (FindLiveObjects: 0.570200 ms CreateObjectMapping: 0.187000 ms MarkObjects: 7.072300 ms  DeleteObjects: 0.037200 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3859.
+Total: 7.573100 ms (FindLiveObjects: 1.192400 ms CreateObjectMapping: 0.324800 ms MarkObjects: 6.006100 ms  DeleteObjects: 0.046200 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -3792,10 +5553,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005861 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.52 ms, found 2 plugins.
+=======
+Registered in 0.006149 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -3809,6 +5577,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.497 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1497ms)
@@ -3838,13 +5607,49 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (25ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+=======
+- Completed reload, in  1.728 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1728ms)
+		BeginReloadAssembly (145ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1491ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (421ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (675ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (154ms)
+				ProcessInitializeOnLoadAttributes (489ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.05 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.8 MB.
 System memory in use after: 163.0 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3863.
 Total: 5.643700 ms (FindLiveObjects: 0.448300 ms CreateObjectMapping: 0.130800 ms MarkObjects: 5.033300 ms  DeleteObjects: 0.029600 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3861.
+Total: 7.868300 ms (FindLiveObjects: 0.570200 ms CreateObjectMapping: 0.187000 ms MarkObjects: 7.072300 ms  DeleteObjects: 0.037200 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -3859,10 +5664,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.012861 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+=======
+Registered in 0.005861 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.52 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -3876,14 +5688,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.833 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1834ms)
 		BeginReloadAssembly (150ms)
+=======
+- Completed reload, in  1.497 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1497ms)
+		BeginReloadAssembly (135ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (49ms)
 		EndReloadAssembly (1579ms)
 			LoadAssemblies (135ms)
@@ -3905,13 +5725,41 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (26ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+=======
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1280ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (454ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (447ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (121ms)
+				ProcessInitializeOnLoadAttributes (299ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.8 MB.
 System memory in use after: 163.0 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3865.
 Total: 5.235700 ms (FindLiveObjects: 0.485600 ms CreateObjectMapping: 0.135100 ms MarkObjects: 4.578400 ms  DeleteObjects: 0.034500 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3863.
+Total: 5.643700 ms (FindLiveObjects: 0.448300 ms CreateObjectMapping: 0.130800 ms MarkObjects: 5.033300 ms  DeleteObjects: 0.029600 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -3926,10 +5774,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005281 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+=======
+Registered in 0.012861 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -3943,14 +5798,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.489 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1490ms)
 		BeginReloadAssembly (134ms)
+=======
+- Completed reload, in  1.833 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1834ms)
+		BeginReloadAssembly (150ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (43ms)
 		EndReloadAssembly (1271ms)
 			LoadAssemblies (116ms)
@@ -3979,6 +5842,36 @@ System memory in use after: 163.1 MB.
 
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3867.
 Total: 9.206900 ms (FindLiveObjects: 0.429800 ms CreateObjectMapping: 0.429000 ms MarkObjects: 8.247800 ms  DeleteObjects: 0.097100 ms)
+=======
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1579ms)
+			LoadAssemblies (135ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (410ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (195ms)
+			SetupLoadedEditorAssemblies (572ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (117ms)
+				ProcessInitializeOnLoadAttributes (432ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.8 MB.
+System memory in use after: 163.0 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3865.
+Total: 5.235700 ms (FindLiveObjects: 0.485600 ms CreateObjectMapping: 0.135100 ms MarkObjects: 4.578400 ms  DeleteObjects: 0.034500 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -3993,10 +5886,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.021807 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+=======
+Registered in 0.005281 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -4010,14 +5910,22 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  1.602 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1603ms)
 		BeginReloadAssembly (146ms)
+=======
+- Completed reload, in  1.489 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1490ms)
+		BeginReloadAssembly (134ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (45ms)
 		EndReloadAssembly (1377ms)
 			LoadAssemblies (241ms)
@@ -4026,26 +5934,52 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (61ms)
 			SetupLoadedEditorAssemblies (455ms)
+=======
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1271ms)
+			LoadAssemblies (116ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (402ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (494ms)
+>>>>>>> Stashed changes
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
+<<<<<<< Updated upstream
 				BeforeProcessingInitializeOnLoad (137ms)
 				ProcessInitializeOnLoadAttributes (294ms)
+=======
+				BeforeProcessingInitializeOnLoad (126ms)
+				ProcessInitializeOnLoadAttributes (345ms)
+>>>>>>> Stashed changes
 				ProcessInitializeOnLoadMethodAttributes (5ms)
 				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
+<<<<<<< Updated upstream
 			AwakeInstancesAfterBackupRestoration (29ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
+=======
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.57 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.8 MB.
 System memory in use after: 163.1 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3869.
 Total: 6.253700 ms (FindLiveObjects: 0.462500 ms CreateObjectMapping: 0.140000 ms MarkObjects: 5.615600 ms  DeleteObjects: 0.033800 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3867.
+Total: 9.206900 ms (FindLiveObjects: 0.429800 ms CreateObjectMapping: 0.429000 ms MarkObjects: 8.247800 ms  DeleteObjects: 0.097100 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -4060,10 +5994,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.007061 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+=======
+Registered in 0.021807 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 GrassBendRenderer is missing RendererFeatures
 This could be due to missing scripts or compile error.
@@ -4077,6 +6018,7 @@ UnityEngine.Rendering.Universal.ScriptableRendererData:OnValidate () (at Library
 (Filename: Library/PackageCache/com.unity.render-pipelines.universal@10.6.0/Runtime/ScriptableRendererData.cs Line: 135)
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  2.106 seconds
 Domain Reload Profiling:
 	ReloadAssembly (2115ms)
@@ -4106,13 +6048,49 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (30ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+=======
+- Completed reload, in  1.602 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1603ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1377ms)
+			LoadAssemblies (241ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (420ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (455ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (294ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 162.8 MB.
 System memory in use after: 163.1 MB.
 
+<<<<<<< Updated upstream
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3871.
 Total: 5.700300 ms (FindLiveObjects: 0.395700 ms CreateObjectMapping: 0.094300 ms MarkObjects: 5.163400 ms  DeleteObjects: 0.043800 ms)
+=======
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3869.
+Total: 6.253700 ms (FindLiveObjects: 0.462500 ms CreateObjectMapping: 0.140000 ms MarkObjects: 5.615600 ms  DeleteObjects: 0.033800 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -4124,4 +6102,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
