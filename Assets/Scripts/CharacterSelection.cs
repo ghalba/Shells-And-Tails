@@ -18,7 +18,7 @@ public class CharacterSelection : MonoBehaviour
     private Animator anim;
     public Camera _cam;
     private Animator _camAnim;
-    public GameObject Coin;
+    //public GameObject Coin;
 
     private void Awake()
     {
@@ -78,7 +78,7 @@ public class CharacterSelection : MonoBehaviour
     {
         _camAnim = _cam.GetComponent<Animator>();
         _camAnim.SetTrigger("Ready");
-        Coin.gameObject.SetActive(true);
+        //Coin.gameObject.SetActive(true);
         Debug.Log("All Ready");
         //SceneManager.LoadScene("Treasure_Hunt");
     }
