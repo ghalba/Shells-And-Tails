@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public InputAction movement;
     public InputAction jump;
     public InputAction Stealth;
-    public bool candoublejump;
+    public bool candoublejump=true;
     [SerializeField]
     private float maximumSpeed;
 
@@ -133,6 +133,15 @@ public class PlayerController : MonoBehaviour
                 jumpButtonPressedTime = null;
                 lastGroundedTime = null;
                 animator.SetTrigger("isJumping");
+                candoublejump = true;
+            }
+            if (candoublejump&&_jump!=0)
+            {
+                ySpeed = jumpSpeed;
+                jumpButtonPressedTime = null;
+                lastGroundedTime = null;
+                animator.SetTrigger("isJumping");
+                candoublejump = false;
             }
         }
         else
