@@ -8437,6 +8437,73 @@ Transform:
   m_Father: {fileID: 1799305458}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &266596849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 266596851}
+  - component: {fileID: 266596850}
+  m_Layer: 0
+  m_Name: JoystickButtons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &266596850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266596849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a735af175d411546a89ed2370fa279b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement:
+    m_Name: Movement
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: fd89f147-1977-4a0e-bd01-d41fd4339a4b
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  jump:
+    m_Name: Jump
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a670bf13-b464-4cb8-b299-9d6a456d0ac4
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  Stealth:
+    m_Name: Stealth
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: ea5b136d-bd9e-4a79-b5bf-4a5d45c4b2c2
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+--- !u!4 &266596851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266596849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -21.15364, y: 3.3026023, z: 33.084896}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &270387449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17323,6 +17390,121 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 2ac644d62d8f99345a2effcb8a1a9e23, type: 3}
+--- !u!1 &584990426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 584990428}
+  - component: {fileID: 584990427}
+  m_Layer: 0
+  m_Name: KeyboardButtons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &584990427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584990426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a735af175d411546a89ed2370fa279b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement:
+    m_Name: Movement
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 05d78b95-5f4a-408a-af5c-40ea7d68d42f
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: dbc51acd-c6fd-49cf-808f-c57d38369cef
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 4
+    - m_Name: up
+      m_Id: e1b0accc-e090-4d32-8c78-7c13b761015e
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 870fe7fa-7568-482e-a4b8-235f8b53d1f8
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 3d5035a8-94c8-423f-8ef3-4d09286c3bd9
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: right
+      m_Id: a41ad6cc-be7b-4be8-ac3a-9836df2678bd
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+  jump:
+    m_Name: Jump
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 3a83fbbc-4b60-431e-93a9-d5d65790d86a
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  Stealth:
+    m_Name: Stealth
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a179e505-a281-449f-a162-c00e5e70865d
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: d48b03cb-e78a-45e1-b974-3061532cf6dd
+      m_Path: <Keyboard>/leftShift
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Stealth
+      m_Flags: 0
+--- !u!4 &584990428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584990426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -21.15364, y: 3.3026023, z: 33.084896}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &591647228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39441,6 +39623,14 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -5.1905025e-10
       objectReference: {fileID: 0}
+    - target: {fileID: 2708782598677210254, guid: 739e8f6f778248440a05e4b7ef75c79a, type: 3}
+      propertyPath: m_XAxis.m_InputAxisName
+      value: Joystick X
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708782598677210254, guid: 739e8f6f778248440a05e4b7ef75c79a, type: 3}
+      propertyPath: m_YAxis.m_InputAxisName
+      value: Joystick Y
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 739e8f6f778248440a05e4b7ef75c79a, type: 3}
 --- !u!1 &1374805902 stripped
@@ -43194,7 +43384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 211092407564749946, guid: bd67cc571cc32f04499227f156ac0635, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 695282506544289472, guid: bd67cc571cc32f04499227f156ac0635, type: 3}
       propertyPath: m_RootOrder
@@ -59248,8 +59438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b28872c5a5f53c84ebde60ab84fb3a47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ivsManette: {fileID: 0}
-  ivsClavier: {fileID: 0}
+  ivsManette: {fileID: 266596850}
+  ivsClavier: {fileID: 584990427}
   Camera1: {fileID: 821957558}
   Camera2: {fileID: 842883564}
   camera1: {fileID: 184445428}
@@ -59586,6 +59776,14 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 424122072, guid: 859c2b7d79abd4a45a75d54bad4d8a61, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424122072, guid: 859c2b7d79abd4a45a75d54bad4d8a61, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 62e92f76c23556b4e8e13acbd82ecf1b, type: 2}
     - target: {fileID: 424122073, guid: 859c2b7d79abd4a45a75d54bad4d8a61, type: 3}
       propertyPath: jump.m_Name
       value: Jump
@@ -59661,6 +59859,10 @@ PrefabInstance:
     - target: {fileID: 5667283347054544569, guid: 859c2b7d79abd4a45a75d54bad4d8a61, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5667283347054544569, guid: 859c2b7d79abd4a45a75d54bad4d8a61, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 859c2b7d79abd4a45a75d54bad4d8a61, type: 3}
@@ -61557,6 +61759,14 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 424122072, guid: 859c2b7d79abd4a45a75d54bad4d8a61, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424122072, guid: 859c2b7d79abd4a45a75d54bad4d8a61, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 62e92f76c23556b4e8e13acbd82ecf1b, type: 2}
     - target: {fileID: 424122073, guid: 859c2b7d79abd4a45a75d54bad4d8a61, type: 3}
       propertyPath: jump.m_Name
       value: Jump
@@ -61628,6 +61838,14 @@ PrefabInstance:
     - target: {fileID: 5667283347054544569, guid: 859c2b7d79abd4a45a75d54bad4d8a61, type: 3}
       propertyPath: m_Name
       value: Turtle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5667283347054544569, guid: 859c2b7d79abd4a45a75d54bad4d8a61, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5667283347054544569, guid: 859c2b7d79abd4a45a75d54bad4d8a61, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 859c2b7d79abd4a45a75d54bad4d8a61, type: 3}
