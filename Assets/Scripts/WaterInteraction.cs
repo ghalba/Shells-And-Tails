@@ -8,10 +8,11 @@ public class WaterInteraction : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.name == "Rabbit")
         {
-            Debug.Log(other.gameObject.name+"ena bhim");
-            other.gameObject.transform.position=transform.GetChild(0).position;        
+            other.GetComponent<CharacterController>().gameObject.SetActive(false);
+            other.gameObject.transform.position=transform.GetChild(0).position;
+            other.GetComponent<CharacterController>().gameObject.SetActive(true);
         }
     }
 
