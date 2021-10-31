@@ -15,7 +15,7 @@ public class Guard2 : MonoBehaviour
     public float viewDistance;
     public LayerMask viewMask;
     float viewAngle;
-    float playervisibletimer;
+    public float playervisibletimer;
 
     public Transform pathHolder;
     Transform player;
