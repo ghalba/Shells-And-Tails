@@ -14,7 +14,7 @@ public class PlayersSpawner : MonoBehaviour
     public Transform P2;
     public static PlayersSpawner Instance = null;
 
-    void Start()
+    void Awake()
     {
         if (Instance == null)
         {
@@ -38,11 +38,13 @@ public class PlayersSpawner : MonoBehaviour
                 Camera1.LookAt = focus;
                 Camera1.Follow = focus;
                 currentFinalPlayer = P1.GetChild(0).gameObject;
+                P1.GetChild(0).gameObject.tag = "player2";
             } else
             {
                 Camera2.LookAt = focus;
                 Camera2.Follow = focus;
                 currentFinalPlayer = P2.GetChild(0).gameObject;
+                P1.GetChild(1).gameObject.tag = "player2";
             }
             
             
@@ -54,12 +56,14 @@ public class PlayersSpawner : MonoBehaviour
                 Camera1.LookAt = focus;
                 Camera1.Follow = focus;
                 currentFinalPlayer = P1.GetChild(1).gameObject;
+                P2.GetChild(0).gameObject.tag = "Player";
             }
             else
             {
                 Camera2.LookAt = focus;
                 Camera2.Follow = focus;
                 currentFinalPlayer = P2.GetChild(1).gameObject;
+                P2.GetChild(1).gameObject.tag = "Player";
             }
         }
         PlayerController pC = currentFinalPlayer.GetComponent<PlayerController>();

@@ -1,8 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Guard : MonoBehaviour
+public class Guard2 : MonoBehaviour
 {
     public static event System.Action onguardspotedPlayer;
 
@@ -23,8 +23,8 @@ public class Guard : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        
+        player = GameObject.FindGameObjectWithTag("player2").transform;
+
 
         viewAngle = spotlight.spotAngle;
         originalSpotlightColour = spotlight.color;
@@ -43,23 +43,27 @@ public class Guard : MonoBehaviour
     void Update()
     {
 
-        if (CanSeePlayer()) {
+        if (CanSeePlayer())
+        {
             playervisibletimer += Time.deltaTime;
 
-        } else {
+        }
+        else
+        {
             playervisibletimer -= Time.deltaTime;
         }
         playervisibletimer = Mathf.Clamp(playervisibletimer, 0, timetospotplayer);
         spotlight.color = Color.Lerp(originalSpotlightColour, Color.red, playervisibletimer / timetospotplayer);
-        if (playervisibletimer >= timetospotplayer) {
+        if (playervisibletimer >= timetospotplayer)
+        {
             Debug.Log("spotted");
             //seif : lena guard spota lplayer kamel el code bech tresert el player meloul
 
-           /* if (onguardspotedPlayer != null) {
-                onguardspotedPlayer();
-                 
-            //parti hethi zeyda ama 5aleha just in case
-            }*/
+            /* if (onguardspotedPlayer != null) {
+                 onguardspotedPlayer();
+
+             //parti hethi zeyda ama 5aleha just in case
+             }*/
         }
     }
 
