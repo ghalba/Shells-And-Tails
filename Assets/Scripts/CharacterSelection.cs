@@ -19,7 +19,7 @@ public class CharacterSelection : MonoBehaviour
     public Camera _cam;
     private Animator _camAnim;
     public GameObject _Coin;
-    //public GameObject Coin;
+    public Canvas canvas;
 
     private void Awake()
     {
@@ -81,10 +81,15 @@ public class CharacterSelection : MonoBehaviour
         _camAnim.SetTrigger("Ready");
         Debug.Log("All Ready");
 
-            _Coin.gameObject.SetActive(true);
-            _Coin.GetComponent<Animator>().SetTrigger("Flip");
-                              
-        //SceneManager.LoadScene("Treasure_Hunt");
+        /*_Coin.gameObject.SetActive(true);
+        _Coin.GetComponent<Animator>().SetTrigger("Flip");*/
+        StartCoroutine(Timer());                    
+        
+    }
+    IEnumerator Timer()
+    {
+        yield return new WaitForSeconds(3);
+        canvas.transform.GetChild(3).gameObject.SetActive(true);
     }
 
     private void SwitchCharacter(int _CurrentChild)
