@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Food : MonoBehaviour
 {
-    public bool delivered;
+    public bool _delivered;
+    public bool _selected;
 
+    private void OnTriggerEnter(Collider other)
+    {
+        
+    }
 }

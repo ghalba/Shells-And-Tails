@@ -175,6 +175,7 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Stealth
       m_Flags: 0
+  candoublejump: 1
   maximumSpeed: 5
   rotationSpeed: 360
   jumpSpeed: 5
@@ -323,7 +324,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 53aca128a8b2b9747b62706d61ae7222, type: 2}
     - target: {fileID: 919132149155446097, guid: 30c629c5114b69b4bb388d1f335a008c, type: 3}
       propertyPath: m_Name
-      value: Turtle
+      value: Turtle Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30c629c5114b69b4bb388d1f335a008c, type: 3}

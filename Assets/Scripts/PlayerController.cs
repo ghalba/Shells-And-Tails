@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     private float _jump;
     private float _Stealth;
     bool disabled;
+    Rigidbody rb;
     private void Awake()
     {
         jump.performed += ONJumpPreformed;
@@ -45,6 +46,10 @@ public class PlayerController : MonoBehaviour
         Stealth.canceled += ONStealthPreformed;
         movement.performed += OnMovementPreformed;
         movement.canceled += OnMovementPreformed;
+    }
+    private void start()
+    {
+        rb = gameObject.GetComponent<Rigidbody>();
     }
     private void OnEnable()
     {
@@ -111,41 +116,47 @@ public class PlayerController : MonoBehaviour
         movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
         movementDirection.Normalize();
 
-        ySpeed += Physics.gravity.y * Time.deltaTime;
+         ySpeed += Physics.gravity.y * Time.deltaTime;
+       
+         if (characterController.isGrounded)
+         {
+             lastGroundedTime = Time.time;
+         }
 
-        if (characterController.isGrounded)
-        {
-            lastGroundedTime = Time.time;
-        }
+         if (_jump!=0)
+         {
+             jumpButtonPressedTime = Time.time;
+         }
 
-        if (_jump!=0)
-        {
-            jumpButtonPressedTime = Time.time;
-        }
+         if (Time.time - lastGroundedTime <= jumpButtonGracePeriod)
+         {
+             characterController.stepOffset = originalStepOffset;
+             ySpeed = -0.5f;
 
-        if (Time.time - lastGroundedTime <= jumpButtonGracePeriod)
-        {
-            characterController.stepOffset = originalStepOffset;
-            ySpeed = -0.5f;
+             if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod)
+             {
+                 ySpeed = jumpSpeed;
+                 jumpButtonPressedTime = null;
+                 lastGroundedTime = null;
+                 animator.SetTrigger("isJumping");
+                 candoublejump = true;
+             }
 
-            if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod)
-            {
-                ySpeed = jumpSpeed;
-                jumpButtonPressedTime = null;
-                lastGroundedTime = null;
-                animator.SetTrigger("isJumping");
-                candoublejump = true;
-            }
-
-        }
-        else
-        {
-            characterController.stepOffset = 0;
-        }
+         }
+         else
+         {
+             characterController.stepOffset = 0;
+         }
+       
 
         Vector3 velocity = movementDirection * speed;
-        velocity.y = ySpeed;
+       /* if ((characterController.isGrounded)&& (_jump != 0))
+        {
+            ySpeed += jumpSpeed;
 
+        }*/
+
+        velocity.y = ySpeed;
         characterController.Move(velocity * Time.deltaTime);
 
         if (movementDirection != Vector3.zero)
