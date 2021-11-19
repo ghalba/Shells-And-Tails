@@ -5,10 +5,20 @@ using UnityEngine;
 public class FoodSpawner : MonoBehaviour
 {
     public GameObject _finishPoint;
-    List<Transform> transforms;
+    public List<Transform> transforms;
     public List<GameObject> Food;
 
-
+    private void Update()
+    {
+        if (Food[0].GetComponent<Food>()._delivered)
+        {
+            Food[0].transform.position = transforms[0].position;
+            Food[0].transform.rotation = transforms[0].rotation;
+            Food[0].transform.SetParent(transforms[0]);
+            Food[0].GetComponent<Food>()._selected = false;
+            Food[0].GetComponent<Food>()._delivered = false;
+        }
+    }
 
 
     private void OnTriggerEnter(Collider other)
