@@ -8,6 +8,7 @@ TagManager:
   - Coin
   - player2
   - player1
+  - FP
   layers:
   - Default
   - TransparentFX
