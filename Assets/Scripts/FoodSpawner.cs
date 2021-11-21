@@ -4,19 +4,24 @@ using UnityEngine;
 
 public class FoodSpawner : MonoBehaviour
 {
-    public GameObject _finishPoint;
     public List<Transform> transforms;
-    public List<GameObject> Food;
+    public GameObject FoodPrefab;
+    private GameObject _food;
+    private void Start()
+    {
+        _food=Instantiate(FoodPrefab, transforms[0].position, Quaternion.identity);
+        
+    }
 
     private void Update()
     {
-        if (Food[0].GetComponent<Food>()._delivered)
+        if (_food.GetComponent<Food>()._delivered)
         {
-            Food[0].transform.position = transforms[0].position;
-            Food[0].transform.rotation = transforms[0].rotation;
-            Food[0].transform.SetParent(transforms[0]);
-            Food[0].GetComponent<Food>()._selected = false;
-            Food[0].GetComponent<Food>()._delivered = false;
+            _food.transform.position = transforms[0].position;
+            _food.transform.rotation = transforms[0].rotation;
+            _food.transform.SetParent(transforms[0]);
+            _food.GetComponent<Food>()._selected = false;
+            _food.GetComponent<Food>()._delivered = false;
         }
     }
 
@@ -26,25 +31,25 @@ public class FoodSpawner : MonoBehaviour
         if (other.tag == "player2")
         {
             Debug.Log(other.name);
-            if (Food[0].GetComponent<Food>()._selected==false) {
-                Food[0].transform.position = other.transform.GetChild(0).position;
-                Food[0].transform.rotation = other.transform.GetChild(0).rotation;
-                
-                Food[0].transform.SetParent(other.transform);
-                Food[0].GetComponent<Food>()._selected = true;
+            if (_food.GetComponent<Food>()._selected==false) {
+                _food.transform.position = other.transform.GetChild(0).position;
+                _food.transform.rotation = other.transform.GetChild(0).rotation;
+
+                _food.transform.SetParent(other.transform);
+                _food.GetComponent<Food>()._selected = true;
             }
 
         }
         if (other.tag == "Player")
         {
             Debug.Log(other.name);
-            if (Food[0].GetComponent<Food>()._selected==false)
+            if (_food.GetComponent<Food>()._selected==false)
             {
-                Food[0].transform.position = other.transform.GetChild(0).position;
-                Food[0].transform.rotation = other.transform.GetChild(0).rotation;
-                
-                Food[0].transform.SetParent(other.transform);
-                Food[0].GetComponent<Food>()._selected = true;
+                _food.transform.position = other.transform.GetChild(0).position;
+                _food.transform.rotation = other.transform.GetChild(0).rotation;
+
+                _food.transform.SetParent(other.transform);
+                _food.GetComponent<Food>()._selected = true;
             }
         }
 
