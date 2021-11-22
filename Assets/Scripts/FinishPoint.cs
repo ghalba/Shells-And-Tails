@@ -8,19 +8,24 @@ public class FinishPoint : MonoBehaviour
     public int ScoreP2;
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.transform.GetChild(5).tag == "Food");
-        if ((other.tag == "Player")&&(other.transform.GetChild(5).tag=="Food"))
+        if (other.tag == "Player")
         {
-            GameObject temp = transform.GetChild(5).gameObject;
-            temp.transform.SetParent(null);
-            Destroy(temp);
-            ScoreP1 += 1;
-        }else if ((other.tag == "player2") && (other.transform.GetChild(5).tag == "Food"))
-        {
-            GameObject temp = transform.GetChild(5).gameObject;
-            temp.transform.SetParent(null);
-            Destroy(temp);
-            ScoreP2 += 1;
+            if(other.transform.GetChild(5).tag == "Food")
+            {
+                Debug.Log("majdi");
+                //transform.GetChild(5).GetComponent<Food>()._delivered = true;
+                Destroy(transform.GetChild(5).gameObject);
+                ScoreP1 += 1;
+            }
+        }else if (other.tag == "player2")
+            {
+            if(other.transform.GetChild(5).tag == "Food")
+            {
+                Debug.Log("majdi2");
+                Destroy(transform.GetChild(5).gameObject);
+                ScoreP2 += 1;
+            }
+
         }
     }
 }

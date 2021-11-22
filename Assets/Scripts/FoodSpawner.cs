@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class FoodSpawner : MonoBehaviour
 {
-    public List<Transform> transforms;
     public GameObject FoodPrefab;
     private GameObject _food;
     private void Start()
     {
-        _food=Instantiate(FoodPrefab, transforms[0].position, Quaternion.identity);
+        _food=Instantiate(FoodPrefab, transform.GetChild(0).position, Quaternion.identity);
         
     }
 
     private void Update()
     {
+        
         if (_food.GetComponent<Food>()._delivered)
         {
-            _food.transform.position = transforms[0].position;
-            _food.transform.rotation = transforms[0].rotation;
-            _food.transform.SetParent(transforms[0]);
+            _food.transform.position = transform.GetChild(0).position;
+            _food.transform.rotation = transform.GetChild(0).rotation;
+            _food.transform.SetParent(transform.GetChild(0));
             _food.GetComponent<Food>()._selected = false;
             _food.GetComponent<Food>()._delivered = false;
         }
