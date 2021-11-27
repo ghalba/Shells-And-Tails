@@ -11,21 +11,6 @@ public class FoodSpawner : MonoBehaviour
         _food=Instantiate(FoodPrefab, transform.GetChild(0).position, Quaternion.identity);
         
     }
-
-    private void Update()
-    {
-        
-        if (_food.GetComponent<Food>()._delivered)
-        {
-            _food.transform.position = transform.GetChild(0).position;
-            _food.transform.rotation = transform.GetChild(0).rotation;
-            _food.transform.SetParent(transform.GetChild(0));
-            _food.GetComponent<Food>()._selected = false;
-            _food.GetComponent<Food>()._delivered = false;
-        }
-    }
-
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "player2")
@@ -37,6 +22,8 @@ public class FoodSpawner : MonoBehaviour
 
                 _food.transform.SetParent(other.transform);
                 _food.GetComponent<Food>()._selected = true;
+                StartCoroutine(Timer(6f));
+                
             }
 
         }
@@ -50,8 +37,15 @@ public class FoodSpawner : MonoBehaviour
 
                 _food.transform.SetParent(other.transform);
                 _food.GetComponent<Food>()._selected = true;
+                StartCoroutine(Timer(6f));
+                
             }
         }
 
+    }
+    IEnumerator Timer(float x)
+    {
+        yield return new WaitForSeconds(x);
+        _food = Instantiate(FoodPrefab, transform.GetChild(0).position, Quaternion.identity);
     }
 }
