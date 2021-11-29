@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     private Animator anim;
-
+    public GameObject _Coin;
 
 
     public void PlayGame()
@@ -16,6 +16,12 @@ public class MainMenu : MonoBehaviour
         anim.SetTrigger("Played");
 
 
+    }
+    public void Flip()
+    {
+        _Coin.GetComponent<Animator>().SetTrigger("Coin");
+        _Coin.GetComponent<coinState>().Flip = true;
+        transform.GetChild(4).gameObject.SetActive(false);
     }
     public void QuitGame()
     {

@@ -18,8 +18,10 @@ public class CharacterSelection : MonoBehaviour
     private Animator anim;
     public Camera _cam;
     private Animator _camAnim;
-    public GameObject _Coin;
     public Canvas canvas;
+    public GameObject Flip;
+    public Material _turtuleMaterial;
+    public Material _rabbitMaterial;
 
     private void Awake()
     {
@@ -80,16 +82,26 @@ public class CharacterSelection : MonoBehaviour
         _camAnim = _cam.GetComponent<Animator>();
         _camAnim.SetTrigger("Ready");
         Debug.Log("All Ready");
-
-        /*_Coin.gameObject.SetActive(true);
-        _Coin.GetComponent<Animator>().SetTrigger("Flip");*/
-        StartCoroutine(Timer());                    
+        StartCoroutine(Timer2());                    
         
+    }
+    IEnumerator Timer3()
+    {
+        yield return new WaitForSeconds(10);
+        canvas.transform.GetChild(3).gameObject.SetActive(true);
     }
     IEnumerator Timer()
     {
+        yield return new WaitUntil(() => Flip.GetComponent<coinState>().Flip==true);
+        //Material 
+        StartCoroutine(Timer3());
+    }
+    IEnumerator Timer2()
+    {
         yield return new WaitForSeconds(3);
-        canvas.transform.GetChild(3).gameObject.SetActive(true);
+        canvas.transform.GetChild(4).gameObject.SetActive(true);
+        StartCoroutine(Timer());
+
     }
 
     private void SwitchCharacter(int _CurrentChild)
