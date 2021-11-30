@@ -87,13 +87,15 @@ public class CharacterSelection : MonoBehaviour
     }
     IEnumerator Timer3()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(6);
         canvas.transform.GetChild(3).gameObject.SetActive(true);
     }
     IEnumerator Timer()
     {
         yield return new WaitUntil(() => Flip.GetComponent<coinState>().Flip==true);
-        //Material 
+        int x = UnityEngine.Random.Range(0,1);
+        Flip.GetComponent<MeshRenderer>().material =(x==0? _turtuleMaterial: _rabbitMaterial);
+        MapSelection.p1CanSelect = (x == 0 ? true: false); 
         StartCoroutine(Timer3());
     }
     IEnumerator Timer2()
