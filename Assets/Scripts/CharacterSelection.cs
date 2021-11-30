@@ -95,7 +95,8 @@ public class CharacterSelection : MonoBehaviour
         yield return new WaitUntil(() => Flip.GetComponent<coinState>().Flip==true);
         int x = UnityEngine.Random.Range(0,1);
         Flip.GetComponent<MeshRenderer>().material =(x==0? _turtuleMaterial: _rabbitMaterial);
-        MapSelection.p1CanSelect = (x == 0 ? true: false); 
+        MapSelection.p1CanSelect = (x == 0 ? true: false);
+        MapSelection.p2CanSelect = (x == 0 ? false : true);
         StartCoroutine(Timer3());
     }
     IEnumerator Timer2()
