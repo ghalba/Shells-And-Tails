@@ -96,20 +96,16 @@ public class MapSelection : MonoBehaviour
     {
         if (p1CanSelect)
         {
-            foreach (string x in completedMaps)
+            if (completedMaps.Find(x => x == MapsName[M]) != null)
             {
-                if(x== MapsName[M])
-                {
-                    Debug.Log("you can't choose this map");
-                    return;
-                }
-                else
-                {
-                    SceneManager.LoadScene(MapsName[M]);
-                    completedMaps.Add(MapsName[M]);
-                    canvas.transform.GetChild(0).gameObject.SetActive(false);
-                }
-
+                Debug.Log("you can't choose this map");
+                return;
+            }
+            else
+            {
+                SceneManager.LoadScene(MapsName[M]);
+                completedMaps.Add(MapsName[M]);
+                canvas.transform.GetChild(0).gameObject.SetActive(false);
             }
 
         }
@@ -118,9 +114,7 @@ public class MapSelection : MonoBehaviour
     {
         if (p2CanSelect)
         {
-            foreach (string x in completedMaps)
-            {
-                if (x == MapsName[M])
+            if(completedMaps.Find(x => x == MapsName[M])!=null)
                 {
                     Debug.Log("you can't choose this map");
                     return;
@@ -132,7 +126,7 @@ public class MapSelection : MonoBehaviour
                     canvas.transform.GetChild(0).gameObject.SetActive(false);
                 }
 
-            }
+            
         }
     }
     
