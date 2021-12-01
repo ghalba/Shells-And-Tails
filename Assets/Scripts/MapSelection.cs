@@ -10,6 +10,7 @@ public class MapSelection : MonoBehaviour
     public static bool p1CanSelect ;
     public static bool p2CanSelect ;
     public int M;
+    public List<string> MapsName;
     public Canvas canvas;
     [SerializeField]
     private InputAction RL;
@@ -89,14 +90,14 @@ public class MapSelection : MonoBehaviour
     {
         if (p1CanSelect)
         {
-            Debug.Log("player 1 Ready");
+            SceneManager.LoadScene(MapsName[M]);
         }
     }
     void Ready2(InputAction.CallbackContext context)
     {
         if (p2CanSelect)
         {
-            Debug.Log("player 2 Ready");
+            SceneManager.LoadScene(MapsName[M]);
         }
     }
 }
