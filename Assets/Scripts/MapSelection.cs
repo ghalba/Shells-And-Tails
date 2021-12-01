@@ -26,7 +26,7 @@ public class MapSelection : MonoBehaviour
     private float _RL2;
     public void Start()
     {
-        mapsNb = 4;
+        mapsNb = 6;
     }
 
     private void Awake()
