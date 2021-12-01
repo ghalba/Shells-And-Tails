@@ -5,26 +5,23 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/cherifa.unity
-    guid: c62cfa1474e6ead4ba855af7caaa20dc
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/Treasure_Hunt.unity
-    guid: ba574ec8968eaee42819035e64347d40
-  - enabled: 0
-    path: 
-    guid: bd76afc746b1c6e4bba43bdabbf22171
   - enabled: 1
     path: Assets/Scenes/Main_Menu.unity
     guid: 5754ea39f4f764643a13a6a82ab58bb7
   - enabled: 1
-    path: Assets/Scenes/Test_Main_Menu 1.unity
-    guid: 3feda6decf16d844ea85291e3903f0ef
+    path: Assets/Scenes/Treasure_Hunt.unity
+    guid: ba574ec8968eaee42819035e64347d40
+  - enabled: 1
+    path: Assets/Scenes/Metal_Gear.unity
+    guid: 644817fabc59006469048845e62339e4
+  - enabled: 1
+    path: Assets/Scenes/Dinner Time.unity
+    guid: 92ebfb33156822f4085c9167168b22fb
+  - enabled: 1
+    path: Assets/Scenes/Party_Animals.unity
+    guid: df90ea101e223c345a4b5e6ddc6177ee
+  - enabled: 1
+    path: Assets/Scenes/Fall Fruit.unity
+    guid: 0262531e5f1e2f946b1dfc059abe9e20
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b13209e0d4a41a4469c7c18be7aafb65, type: 2}
