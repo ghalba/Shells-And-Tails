@@ -10,7 +10,9 @@ public class MapSelection : MonoBehaviour
     public static bool p1CanSelect ;
     public static bool p2CanSelect ;
     public int M;
+    public int mapsNb;
     public List<string> MapsName;
+    public List<string> completedMaps;
     public Canvas canvas;
     [SerializeField]
     private InputAction RL;
@@ -22,7 +24,10 @@ public class MapSelection : MonoBehaviour
     [SerializeField]
     private InputAction _ready2;
     private float _RL2;
-
+    public void Start()
+    {
+        mapsNb = 4;
+    }
 
     private void Awake()
     {
@@ -32,6 +37,7 @@ public class MapSelection : MonoBehaviour
         RL2.performed += ONRL2Preformed;
         RL2.canceled += ONRL2Preformed;
         _ready2.performed += Ready2;
+        DontDestroyOnLoad(this.gameObject);
     }
     private void OnEnable()
     {
@@ -55,12 +61,12 @@ public class MapSelection : MonoBehaviour
             if (_RL == -1)
             {
                 canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(false);
-                M = (M != 0 ? M - 1 : 4);
+                M = (M != 0 ? M - 1 : mapsNb);
                 canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(true);
             }else if(_RL == 1)
             {
                 canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(false);
-                M = (M != 4 ? M + 1 : 0);
+                M = (M != mapsNb ? M + 1 : 0);
                 canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(true);
             }
         }
@@ -90,14 +96,45 @@ public class MapSelection : MonoBehaviour
     {
         if (p1CanSelect)
         {
-            SceneManager.LoadScene(MapsName[M]);
+            foreach (string x in completedMaps)
+            {
+                if(x== MapsName[M])
+                {
+                    Debug.Log("you can't choose this map");
+                    return;
+                }
+                else
+                {
+                    SceneManager.LoadScene(MapsName[M]);
+                    completedMaps.Add(MapsName[M]);
+                    canvas.transform.GetChild(0).gameObject.SetActive(false);
+                }
+
+            }
+
         }
     }
     void Ready2(InputAction.CallbackContext context)
     {
         if (p2CanSelect)
         {
-            SceneManager.LoadScene(MapsName[M]);
+            foreach (string x in completedMaps)
+            {
+                if (x == MapsName[M])
+                {
+                    Debug.Log("you can't choose this map");
+                    return;
+                }
+                else
+                {
+                    SceneManager.LoadScene(MapsName[M]);
+                    completedMaps.Add(MapsName[M]);
+                    canvas.transform.GetChild(0).gameObject.SetActive(false);
+                }
+
+            }
         }
     }
+    
+
 }

@@ -58,8 +58,7 @@ public class CharacterSelection : MonoBehaviour
     void Ready(InputAction.CallbackContext context)
     {        
         if (isReady) 
-            return;
-        Debug.Log(transform.name + " ready");       
+            return;   
         int currentPlayer = (transform.name == "P1" ? 0 : 1);
         anim = transform.GetChild(_currentChild).GetComponent<Animator>();
         anim.SetTrigger("GettingUp");
@@ -70,8 +69,6 @@ public class CharacterSelection : MonoBehaviour
         if (currentPlayer == 0)
             chosenCharacter = _currentChild == 0 ? "Turtle" : "Rabbit";
         else chosenCharacter = _currentChild == 0 ? "Turtle": "Rabbit";
-        
-        Debug.Log("Player" + (currentPlayer+1) + " chose " + chosenCharacter);
         PlayerPrefs.SetString("Character" + currentPlayer, chosenCharacter); PlayerPrefs.Save();
 
         if (n == 2)
@@ -88,7 +85,7 @@ public class CharacterSelection : MonoBehaviour
     }
     IEnumerator Timer3()
     {
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(4);
         canvas2.transform.GetChild(0).gameObject.SetActive(true);
     }
     IEnumerator Timer()
