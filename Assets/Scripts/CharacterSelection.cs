@@ -19,6 +19,7 @@ public class CharacterSelection : MonoBehaviour
     public Camera _cam;
     private Animator _camAnim;
     public Canvas canvas;
+    public Canvas canvas2;
     public GameObject Flip;
     public Material _turtuleMaterial;
     public Material _rabbitMaterial;
@@ -88,7 +89,7 @@ public class CharacterSelection : MonoBehaviour
     IEnumerator Timer3()
     {
         yield return new WaitForSeconds(6);
-        canvas.transform.GetChild(3).gameObject.SetActive(true);
+        canvas2.transform.GetChild(0).gameObject.SetActive(true);
     }
     IEnumerator Timer()
     {

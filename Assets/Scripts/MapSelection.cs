@@ -9,8 +9,8 @@ public class MapSelection : MonoBehaviour
     
     public static bool p1CanSelect ;
     public static bool p2CanSelect ;
-    public int M1;
-    public int M2;
+    public int M;
+    public Canvas canvas;
     [SerializeField]
     private InputAction RL;
     [SerializeField]
@@ -53,7 +53,14 @@ public class MapSelection : MonoBehaviour
         {
             if (_RL == -1)
             {
-              
+                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(false);
+                M = (M != 0 ? M - 1 : 4);
+                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(true);
+            }else if(_RL == 1)
+            {
+                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(false);
+                M = (M != 4 ? M + 1 : 0);
+                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(true);
             }
         }
 
@@ -63,9 +70,17 @@ public class MapSelection : MonoBehaviour
         _RL2 = RL2.ReadValue<float>();
         if (p2CanSelect)
         {
-            if (_RL2 != 0)
+            if (_RL2 == -1)
             {
-                Debug.Log("player 2 Rl");
+                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(false);
+                M = (M != 0 ? M - 1 : 4);
+                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(true);
+            }
+            else if (_RL2 == 1)
+            {
+                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(false);
+                M = (M != 4 ? M + 1 : 0);
+                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(true);
             }
         }
 
