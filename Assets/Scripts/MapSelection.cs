@@ -9,6 +9,7 @@ public class MapSelection : MonoBehaviour
     
     public static bool p1CanSelect ;
     public static bool p2CanSelect ;
+    public static bool ShowUi;
     public int M;
     public int mapsNb;
     public List<string> MapsName;
@@ -28,9 +29,10 @@ public class MapSelection : MonoBehaviour
     {
         mapsNb = 6;
     }
-
+    
     private void Awake()
     {
+       
         RL.performed += ONRLPreformed;
         RL.canceled += ONRLPreformed;
         _ready.performed += Ready;
@@ -41,11 +43,23 @@ public class MapSelection : MonoBehaviour
     }
     private void OnEnable()
     {
+        SceneManager.sceneLoaded += SceneManager_sceneLoaded;
+
         RL.Enable();
         _ready.Enable();
         RL2.Enable();
         _ready2.Enable();
     }
+
+    private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
+    {
+        p1CanSelect = false;
+        p2CanSelect = false;
+        ShowUi = false;
+        Time.timeScale = 1;
+        canvas.transform.GetChild(0).gameObject.SetActive(false);
+    }
+
     private void OnDisable()
     {
         RL.Disable();
@@ -99,13 +113,14 @@ public class MapSelection : MonoBehaviour
             if (completedMaps.Find(x => x == MapsName[M]) != null)
             {
                 Debug.Log("you can't choose this map");
-                return;
+               
             }
             else
             {
+
                 SceneManager.LoadScene(MapsName[M]);
                 completedMaps.Add(MapsName[M]);
-                canvas.transform.GetChild(0).gameObject.SetActive(false);
+                
             }
 
         }
@@ -117,18 +132,26 @@ public class MapSelection : MonoBehaviour
             if(completedMaps.Find(x => x == MapsName[M])!=null)
                 {
                     Debug.Log("you can't choose this map");
-                    return;
+                    
                 }
                 else
                 {
+                    
                     SceneManager.LoadScene(MapsName[M]);
                     completedMaps.Add(MapsName[M]);
-                    canvas.transform.GetChild(0).gameObject.SetActive(false);
+                    
                 }
 
             
         }
     }
-    
 
+    private void Update()
+    {
+        if (ShowUi)
+        {
+            canvas.transform.GetChild(0).gameObject.SetActive(true);
+            ShowUi = false;
+        }
+    }
 }

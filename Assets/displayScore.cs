@@ -24,13 +24,13 @@ public class displayScore : MonoBehaviour
         if (n2 > 0&&!player1) { Coins[n2 - 1].gameObject.SetActive(true); }
         if (n1 >= 3)
         {
-            PlayerPrefs.SetString("Winer", "P1"); PlayerPrefs.Save();
-            Debug.Log("End");
+            MapSelection.p2CanSelect = true;
+            MapSelection.ShowUi = true;
             Time.timeScale = 0;
         }else if (n2 >= 3)
         {
-            PlayerPrefs.SetString("Winer", "P2"); PlayerPrefs.Save();
-            Debug.Log("End");
+            MapSelection.p1CanSelect = true;
+            MapSelection.ShowUi = true;
             Time.timeScale = 0;
         }
     }

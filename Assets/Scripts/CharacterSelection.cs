@@ -91,7 +91,8 @@ public class CharacterSelection : MonoBehaviour
     IEnumerator Timer()
     {
         yield return new WaitUntil(() => Flip.GetComponent<coinState>().Flip==true);
-        int x = UnityEngine.Random.Range(0,1);
+        int x = RandomNumber(0,2);
+        Debug.Log(x);
         Flip.GetComponent<MeshRenderer>().material =(x==0? _turtuleMaterial: _rabbitMaterial);
         MapSelection.p1CanSelect = (x == 0 ? true: false);
         MapSelection.p2CanSelect = (x == 0 ? false : true);
@@ -103,6 +104,15 @@ public class CharacterSelection : MonoBehaviour
         canvas.transform.GetChild(4).gameObject.SetActive(true);
         StartCoroutine(Timer());
 
+    }
+    private static readonly System.Random random = new System.Random();
+    private static readonly object syncLock = new object();
+    public int RandomNumber(int min, int max)
+    {
+        lock (syncLock)
+        { // synchronize
+            return random.Next(min, max);
+        }
     }
 
     private void SwitchCharacter(int _CurrentChild)
