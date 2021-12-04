@@ -150,11 +150,6 @@ public class PlayerController : MonoBehaviour
        
 
         Vector3 velocity = movementDirection * speed;
-       /* if ((characterController.isGrounded)&& (_jump != 0))
-        {
-            ySpeed += jumpSpeed;
-
-        }*/
 
         velocity.y = ySpeed;
         characterController.Move(velocity * Time.deltaTime);

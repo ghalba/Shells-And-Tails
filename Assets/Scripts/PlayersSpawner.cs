@@ -20,8 +20,6 @@ public class PlayersSpawner : MonoBehaviour
         {
             string character0 = PlayerPrefs.GetString("Character0");
             string character1 = PlayerPrefs.GetString("Character1");
-            Debug.Log("Player1 " + character0);
-            Debug.Log("Player2 " + character1);
             SpawnSomeone(character0, 0);
             SpawnSomeone(character1, 1);
         }
@@ -73,6 +71,5 @@ public class PlayersSpawner : MonoBehaviour
         pC.Stealth = (pNumber == 0 ? ivsClavier.Stealth : ivsManette.Stealth);
         //P2.GetChild(1).gameObject.SetActive(true);
         currentFinalPlayer.SetActive(true);
-        Debug.Log("Spawned " + pNumber);
     }
 }
