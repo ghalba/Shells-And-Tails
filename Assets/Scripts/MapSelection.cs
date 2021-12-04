@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,11 @@ public class MapSelection : MonoBehaviour
     public static bool p1CanSelect ;
     public static bool p2CanSelect ;
     public static bool ShowUi;
+    public static int p1wins;
+    public static int p2wins;
+    public TMP_Text p1winsText;
+    public TMP_Text p2winsText;
+    public TMP_Text playerTurnText;
     public int M;
     public int mapsNb;
     public List<string> MapsName;
@@ -53,6 +59,15 @@ public class MapSelection : MonoBehaviour
 
     private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
+        if (p1CanSelect)
+        {
+            p2wins++;
+           
+        }else if(p2CanSelect)
+        {
+            p1wins++;
+            
+        }
         p1CanSelect = false;
         p2CanSelect = false;
         ShowUi = false;
@@ -94,13 +109,13 @@ public class MapSelection : MonoBehaviour
             if (_RL2 == -1)
             {
                 canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(false);
-                M = (M != 0 ? M - 1 : 4);
+                M = (M != 0 ? M - 1 : mapsNb);
                 canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(true);
             }
             else if (_RL2 == 1)
             {
                 canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(false);
-                M = (M != 4 ? M + 1 : 0);
+                M = (M != mapsNb ? M + 1 : 0);
                 canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(true);
             }
         }
@@ -153,5 +168,8 @@ public class MapSelection : MonoBehaviour
             canvas.transform.GetChild(0).gameObject.SetActive(true);
             ShowUi = false;
         }
+        p1winsText.text = ("Player 1 Wins :"+p1wins);
+        p2winsText.text = ("Player 2 Wins :" + p2wins);
+        playerTurnText.text =(p1CanSelect? "Player 1 Turn": "Player 2 Turn") ;
     }
 }
