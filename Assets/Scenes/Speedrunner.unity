@@ -5672,6 +5672,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Rock_Flat_05 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d665c2f5a5ec32745b439bf07bb6ff1d, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d665c2f5a5ec32745b439bf07bb6ff1d, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -5772,6 +5776,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d665c2f5a5ec32745b439bf07bb6ff1d, type: 3}
+--- !u!65 &2110246995
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110246989}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.2325895, y: 0.72019047, z: 2.7532346}
+  m_Center: {x: 0, y: 0.36009523, z: 0}
 --- !u!1 &2130436843 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5183248760198176605, guid: 7da2b0e23a61d374db258ffc53358f97, type: 3}

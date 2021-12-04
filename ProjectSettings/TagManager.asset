@@ -10,6 +10,8 @@ TagManager:
   - player1
   - FP
   - Food
+  - Platform
+  - Bear
   layers:
   - Default
   - TransparentFX

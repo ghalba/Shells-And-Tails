@@ -55,6 +55,9 @@ public class FinishPoint : MonoBehaviour
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                MapSelection.p1CanSelect = ScoreP1 >= ScoreP2;
+                MapSelection.p2CanSelect = ScoreP2 > ScoreP1;
+                
             }
         }
     }
