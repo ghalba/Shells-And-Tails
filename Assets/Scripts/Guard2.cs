@@ -87,23 +87,27 @@ public class Guard2 : MonoBehaviour
 
     IEnumerator FollowPath(Vector3[] waypoints)
     {
-        transform.position = waypoints[0];
-
-        int targetWaypointIndex = 1;
-        Vector3 targetWaypoint = waypoints[targetWaypointIndex];
-        transform.LookAt(targetWaypoint);
-
-        while (true)
+        if (waypoints.Length > 0)
         {
-            transform.position = Vector3.MoveTowards(transform.position, targetWaypoint, speed * Time.deltaTime);
-            if (transform.position == targetWaypoint)
+            transform.position = waypoints[0];
+            int targetWaypointIndex = 1;
+            if (waypoints.Length > targetWaypointIndex)
             {
-                targetWaypointIndex = (targetWaypointIndex + 1) % waypoints.Length;
-                targetWaypoint = waypoints[targetWaypointIndex];
-                yield return new WaitForSeconds(waitTime);
-                yield return StartCoroutine(TurnToFace(targetWaypoint));
+                Vector3 targetWaypoint = waypoints[targetWaypointIndex];
+                transform.LookAt(targetWaypoint);
+                while (true)
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, targetWaypoint, speed * Time.deltaTime);
+                    if (transform.position == targetWaypoint)
+                    {
+                        targetWaypointIndex = (targetWaypointIndex + 1) % waypoints.Length;
+                        targetWaypoint = waypoints[targetWaypointIndex];
+                        yield return new WaitForSeconds(waitTime);
+                        yield return StartCoroutine(TurnToFace(targetWaypoint));
+                    }
+                    yield return null;
+                }
             }
-            yield return null;
         }
     }
 

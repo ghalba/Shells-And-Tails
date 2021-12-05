@@ -9,6 +9,7 @@ public class displayScore : MonoBehaviour
     private int n2;
     GameObject P1;
     GameObject P2;
+    public Canvas canvas;
     public bool player1;
     public string Winer;
     private void Start()
@@ -24,13 +25,17 @@ public class displayScore : MonoBehaviour
         if (n2 > 0&&!player1) { Coins[n2 - 1].gameObject.SetActive(true); }
         if (n1 >= 3)
         {
-            MapSelection.p1CanSelect = true;
+            
+            canvas.gameObject.SetActive(false);
+            MapSelection.p2CanSelect = true;
             MapSelection.ShowUi = true;
             Time.timeScale = 0;
         }
         else if (n2 >= 3)
         {
-            MapSelection.p2CanSelect = true;
+            
+            canvas.gameObject.SetActive(false);
+            MapSelection.p1CanSelect = true;
             MapSelection.ShowUi = true;
             Time.timeScale = 0;
         }
