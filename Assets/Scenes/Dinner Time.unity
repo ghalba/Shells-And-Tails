@@ -1292,6 +1292,46 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Movement
       m_Flags: 8
+    - m_Name: 2D Vector
+      m_Id: 740aba69-8dd9-4472-bead-0226ff45aa99
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 420c0cf2-da70-4b22-abce-66f3e9852de5
+      m_Path: <Gamepad>/dpad/up
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 21fc995b-dd8f-470f-a9d3-0fec17404608
+      m_Path: <Gamepad>/dpad/down
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 70e06303-381b-4b75-82a4-0752d25dfd6a
+      m_Path: <Gamepad>/dpad/left
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 42a272ad-ba0c-4446-a941-c10896570743
+      m_Path: <Gamepad>/dpad/right
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
   jump:
     m_Name: Jump
     m_Type: 0
@@ -1308,6 +1348,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Jump
       m_Flags: 0
+    - m_Name: 
+      m_Id: 42e0ee40-f8df-478d-9e7e-d79f3321faaf
+      m_Path: <Gamepad>/buttonSouth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Jump
+      m_Flags: 0
   Stealth:
     m_Name: Stealth
     m_Type: 0
@@ -1319,6 +1367,14 @@ MonoBehaviour:
     - m_Name: 
       m_Id: e2d8ba94-4aff-4d62-a1ee-84dd6c558e77
       m_Path: <Keyboard>/1
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Stealth
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 7ca287e4-0b20-472d-a236-53cfc5325b3f
+      m_Path: <Gamepad>/buttonNorth
       m_Interactions: 
       m_Processors: 
       m_Groups: 
