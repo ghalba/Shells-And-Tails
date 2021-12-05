@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class SkyFall_win : MonoBehaviour
 {
+    public Canvas canvas;
     private void Update()
     {
         if (transform.position.y < -2f)
         {
+            canvas.gameObject.SetActive(false);
             MapSelection.p1CanSelect = gameObject.tag == "player2";
             MapSelection.p2CanSelect = gameObject.tag == "Player";
             MapSelection.p1wins = (gameObject.tag == "Player" ? MapSelection.p1wins + 1 : MapSelection.p1wins);
