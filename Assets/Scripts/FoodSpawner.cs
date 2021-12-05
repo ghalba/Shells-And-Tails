@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class FoodSpawner : MonoBehaviour
 {
-    public GameObject FoodPrefab;
+    public GameObject[] FoodPrefab;
     private GameObject _food;
     private void Start()
     {
-        _food=Instantiate(FoodPrefab, transform.GetChild(0).position, Quaternion.identity);
+        _food=Instantiate(FoodPrefab[0], transform.GetChild(0).position, Quaternion.identity);
         
     }
     private void OnTriggerEnter(Collider other)
@@ -46,6 +46,7 @@ public class FoodSpawner : MonoBehaviour
     IEnumerator Timer(float x)
     {
         yield return new WaitForSeconds(x);
-        _food = Instantiate(FoodPrefab, transform.GetChild(0).position, Quaternion.identity);
+        int i = Random.Range(0,3);
+        _food = Instantiate(FoodPrefab[i], transform.GetChild(0).position, Quaternion.identity);
     }
 }

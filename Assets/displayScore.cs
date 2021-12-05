@@ -23,23 +23,26 @@ public class displayScore : MonoBehaviour
         n2= P2.GetComponent<Score>()._score;
         if (n1 > 0&&player1) { Coins[n1 - 1].gameObject.SetActive(true); }
         if (n2 > 0&&!player1) { Coins[n2 - 1].gameObject.SetActive(true); }
-        if (n1 >= 3)
-        {
-            
+        if (n1 >= 3&&player1)
+        {           
             canvas.gameObject.SetActive(false);
             MapSelection.p2CanSelect = true;
             MapSelection.ShowUi = true;
+            MapSelection.p1wins++;
             Time.timeScale = 0;
+            Destroy(this);
         }
-        else if (n2 >= 3)
+        else if (n2 >= 3&&player1)
         {
-            
             canvas.gameObject.SetActive(false);
             MapSelection.p1CanSelect = true;
             MapSelection.ShowUi = true;
+            MapSelection.p2wins++;
             Time.timeScale = 0;
+            Destroy(this);
         }
     }
+    
 
 
 }
