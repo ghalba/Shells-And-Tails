@@ -57,6 +57,7 @@ public class Guard2 : MonoBehaviour
         if (playervisibletimer >= timetospotplayer)
         {
             Debug.Log("spotted");
+            player.GetComponent<Respawn>()._respawn = true;
             //seif : lena guard spota lplayer kamel el code bech tresert el player meloul
 
             /* if (onguardspotedPlayer != null) {
