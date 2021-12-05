@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    private Animator anim;
+    public Animator anim;
     public GameObject _Coin;
-
+    
 
     public void PlayGame()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+       
         anim = gameObject.GetComponent<Animator>();
         anim.SetTrigger("Played");
 
@@ -19,9 +19,11 @@ public class MainMenu : MonoBehaviour
     }
     public void Flip()
     {
+        anim = gameObject.GetComponent<Animator>();
+        anim.SetTrigger("CoinFlip");
         _Coin.GetComponent<Animator>().SetTrigger("Coin");
         _Coin.GetComponent<coinState>().Flip = true;
-        transform.GetChild(4).gameObject.SetActive(false);
+       
     }
     public void QuitGame()
     {

@@ -59,8 +59,8 @@ public class FinishPoint : MonoBehaviour
         }
         if (timerIsRunning == false)
         {
-            MapSelection.p1CanSelect = ScoreP1 >= ScoreP2;
-            MapSelection.p2CanSelect = ScoreP2 > ScoreP1;
+            MapSelection.p2CanSelect = ScoreP1 >= ScoreP2;
+            MapSelection.p1CanSelect = ScoreP2 > ScoreP1;
             MapSelection.ShowUi = true;
             MapSelection.p1wins = (ScoreP1 >= ScoreP2 ? MapSelection.p1wins+1: MapSelection.p1wins);
             MapSelection.p2wins = (ScoreP2 > ScoreP1 ? MapSelection.p2wins + 1 : MapSelection.p2wins);
@@ -68,6 +68,7 @@ public class FinishPoint : MonoBehaviour
             S2.text = "";
             Timer.text = "";
             Time.timeScale = 0;
+            Destroy(this);
         }
     }
 

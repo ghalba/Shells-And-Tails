@@ -161,6 +161,7 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
     }
+
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Platform")

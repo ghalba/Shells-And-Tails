@@ -160,8 +160,12 @@ public class MapSelection : MonoBehaviour
             canvas.transform.GetChild(0).gameObject.SetActive(true);
             ShowUi = false;
         }
-        p1winsText.text = ("Player 1 Wins :"+p1wins);
-        p2winsText.text = ("Player 2 Wins :" + p2wins);
+        p1winsText.transform.GetChild(p1wins).gameObject.SetActive(true);
+        p2winsText.transform.GetChild(p2wins).gameObject.SetActive(true);
+        Debug.Log(p1winsText.transform.GetChild(p1wins).name);
+        Debug.Log(p1wins);
+        p1winsText.text = ("Player 1");
+        p2winsText.text = ("Player 2");
         playerTurnText.text =(p1CanSelect? "Player 1 Turn": "Player 2 Turn") ;
     }
 }
