@@ -62,6 +62,8 @@ public class FinishPoint : MonoBehaviour
             MapSelection.p1CanSelect = ScoreP1 >= ScoreP2;
             MapSelection.p2CanSelect = ScoreP2 > ScoreP1;
             MapSelection.ShowUi = true;
+            MapSelection.p1wins = (ScoreP1 >= ScoreP2 ? MapSelection.p1wins+1: MapSelection.p1wins);
+            MapSelection.p2wins = (ScoreP2 > ScoreP1 ? MapSelection.p2wins + 1 : MapSelection.p2wins);
             S1.text = "";
             S2.text = "";
             Timer.text = "";

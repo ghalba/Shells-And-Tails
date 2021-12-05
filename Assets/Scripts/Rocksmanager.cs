@@ -59,8 +59,13 @@ public class Rocksmanager : MonoBehaviour
     }
     IEnumerator Shake()
     {
+        Debug.Log(Rocks[x].name);
         Rocks[x].GetComponent<Shake>()._shake = true;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
+    }
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(3f);
     }
 
     void DisplayTime(float timeToDisplay)

@@ -59,15 +59,7 @@ public class MapSelection : MonoBehaviour
 
     private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
-        if (p1CanSelect)
-        {
-            p2wins++;
-           
-        }else if(p2CanSelect)
-        {
-            p1wins++;
-            
-        }
+
         p1CanSelect = false;
         p2CanSelect = false;
         ShowUi = false;
