@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public InputAction Stealth;
     public bool candoublejump=true;
     [SerializeField]
-    private float maximumSpeed;
+    public float maximumSpeed;
 
     [SerializeField]
     private float rotationSpeed;
