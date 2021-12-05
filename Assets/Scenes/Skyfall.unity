@@ -2770,6 +2770,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 191566704418033231, guid: d2886926f0ad0b541b68fd5804d0f797, type: 3}
+      propertyPath: m_Orbits.Array.data[1].m_Height
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 191566704418033231, guid: d2886926f0ad0b541b68fd5804d0f797, type: 3}
+      propertyPath: m_Orbits.Array.data[1].m_Radius
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 191566704418033231, guid: d2886926f0ad0b541b68fd5804d0f797, type: 3}
+      propertyPath: m_Orbits.Array.data[2].m_Height
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 191566704418033231, guid: d2886926f0ad0b541b68fd5804d0f797, type: 3}
+      propertyPath: m_Orbits.Array.data[2].m_Radius
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 191566704432916149, guid: d2886926f0ad0b541b68fd5804d0f797, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
       value: 0.5
@@ -2793,6 +2809,22 @@ PrefabInstance:
     - target: {fileID: 191566704432916155, guid: d2886926f0ad0b541b68fd5804d0f797, type: 3}
       propertyPath: m_RenderPostProcessing
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 191566705203861867, guid: d2886926f0ad0b541b68fd5804d0f797, type: 3}
+      propertyPath: m_Orbits.Array.data[1].m_Height
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 191566705203861867, guid: d2886926f0ad0b541b68fd5804d0f797, type: 3}
+      propertyPath: m_Orbits.Array.data[1].m_Radius
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 191566705203861867, guid: d2886926f0ad0b541b68fd5804d0f797, type: 3}
+      propertyPath: m_Orbits.Array.data[2].m_Height
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 191566705203861867, guid: d2886926f0ad0b541b68fd5804d0f797, type: 3}
+      propertyPath: m_Orbits.Array.data[2].m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 191566705839989608, guid: d2886926f0ad0b541b68fd5804d0f797, type: 3}
       propertyPath: m_RenderPostProcessing
