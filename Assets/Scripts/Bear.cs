@@ -8,10 +8,11 @@ public class Bear : MonoBehaviour
     {
         if (other.gameObject.name == "Rabbit" || other.gameObject.name == "Turtle")
         {
-            if (other.transform.GetChild(5).tag == "Food")
-            {
-                Destroy(other.transform.GetChild(5).gameObject);
-            }
+            if(other.transform.childCount>5)
+                if (other.transform.GetChild(5).tag == "Food")
+                {
+                     Destroy(other.transform.GetChild(5).gameObject);
+                }
                 
         }
     }
