@@ -9,6 +9,7 @@ public class FinishPoint : MonoBehaviour
     public int ScoreP2;
     public float timeRemaining = 120;
     public bool timerIsRunning = false;
+    public static int spawnRate=2;
     public TMP_Text S1;
     public TMP_Text S2;
     public TMP_Text Timer;
@@ -16,20 +17,22 @@ public class FinishPoint : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (other.transform.GetChild(5).tag == "Food")
-            {
-                Destroy(other.transform.GetChild(5).gameObject);
-                ScoreP2 += 1;
-                S2.text = ScoreP2.ToString();
-            }
+            if (other.transform.childCount > 5)
+                if (other.transform.GetChild(5).tag == "Food")
+                {
+                    Destroy(other.transform.GetChild(5).gameObject);
+                    ScoreP2 += 1;
+                    S2.text = ScoreP2.ToString();
+                }
         } else if (other.tag == "player2")
         {
-            if (other.transform.GetChild(5).tag == "Food")
-            {
-                Destroy(other.transform.GetChild(5).gameObject);
-                ScoreP1 += 1;
-                S1.text = ScoreP1.ToString();
-            }
+            if (other.transform.childCount > 5)
+                if (other.transform.GetChild(5).tag == "Food")
+                {
+                    Destroy(other.transform.GetChild(5).gameObject);
+                    ScoreP1 += 1;
+                    S1.text = ScoreP1.ToString();
+                }
 
         }
 
@@ -55,6 +58,11 @@ public class FinishPoint : MonoBehaviour
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;              
+            }
+            if (timerIsRunning)
+            {
+                spawnRate = (timeRemaining > 90 ? 2 : 1);
+
             }
         }
         if (timerIsRunning == false)

@@ -13,7 +13,7 @@ public class FoodSpawner : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "player2")
+        if ((other.tag == "player2")&& (other.GetComponent<Pickup>().CanPickUp))
         {
             Debug.Log(other.name);
             if (_food.GetComponent<Food>()._selected==false) {
@@ -23,13 +23,12 @@ public class FoodSpawner : MonoBehaviour
                 _food.transform.SetParent(other.transform);
                 _food.GetComponent<Food>()._selected = true;
                 StartCoroutine(Timer(6f));
-                
+
             }
 
         }
-        if (other.tag == "Player")
+        if ((other.tag == "Player")&&(other.GetComponent<Pickup>().CanPickUp))
         {
-            Debug.Log(other.name);
             if (_food.GetComponent<Food>()._selected==false)
             {
                 _food.transform.position = other.transform.GetChild(0).position;
@@ -38,7 +37,7 @@ public class FoodSpawner : MonoBehaviour
                 _food.transform.SetParent(other.transform);
                 _food.GetComponent<Food>()._selected = true;
                 StartCoroutine(Timer(6f));
-                
+
             }
         }
 

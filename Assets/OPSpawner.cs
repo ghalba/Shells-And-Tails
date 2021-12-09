@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class OPSpawner : MonoBehaviour
 {
-    public GameObject obPrefab;
+    public GameObject[] obPrefabs;
     private GameObject ob;
+    public int i;
+    public float j;
     public bool Spawn;
     private void Update()
     {
         if (Spawn)
         {
-
-            StartCoroutine(Timer(Random.Range(3f,7f)));
+            j = (FinishPoint.spawnRate == 2 ? 4f: 2f);
+            StartCoroutine(Timer(Random.Range(1f,j)));
         }
             
     }
@@ -21,7 +23,8 @@ public class OPSpawner : MonoBehaviour
     {
         Spawn = false;
         yield return new WaitForSeconds(x);
-        ob = Instantiate(obPrefab, transform.position, transform.rotation);
+        i = Random.Range(0,4);
+        ob = Instantiate(obPrefabs[i], transform.position, transform.rotation);
         Destroy(ob, 8f);
         Spawn = true;
     }

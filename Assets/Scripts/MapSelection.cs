@@ -164,8 +164,8 @@ public class MapSelection : MonoBehaviour
         p2winsText.transform.GetChild(p2wins).gameObject.SetActive(true);
         Debug.Log(p1winsText.transform.GetChild(p1wins).name);
         Debug.Log(p1wins);
-        p1winsText.text = ("Player 1");
-        p2winsText.text = ("Player 2");
-        playerTurnText.text =(p1CanSelect? "Player 1 Turn": "Player 2 Turn") ;
+        p1winsText.text = PlayerPrefs.GetString("Character0");
+        p2winsText.text = PlayerPrefs.GetString("Character1");
+        playerTurnText.text =(p1CanSelect? PlayerPrefs.GetString("Character0")+"s Turn": PlayerPrefs.GetString("Character1")+"s Turn") ;
     }
 }
