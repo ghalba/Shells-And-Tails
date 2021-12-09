@@ -5155,7 +5155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreP1: 0
   ScoreP2: 0
-  timeRemaining: 150
+  timeRemaining: 90
   timerIsRunning: 0
   S1: {fileID: 1965752153}
   S2: {fileID: 528748684}

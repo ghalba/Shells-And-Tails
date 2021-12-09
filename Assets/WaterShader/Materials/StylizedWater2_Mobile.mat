@@ -107,7 +107,7 @@ Material:
     - _CrossPan_IntersectionOn: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _Depth: 5.46
+    - _Depth: 7.5
     - _DepthExp: 1
     - _DepthMode: 0
     - _DepthTexture: 1
@@ -121,7 +121,7 @@ Material:
     - _FoamSize: 0.01
     - _FoamSpeed: 0.030000014
     - _FoamTiling: 0.049999908
-    - _FoamWaveMask: 0.831
+    - _FoamWaveMask: 0
     - _FoamWaveMaskExp: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -171,8 +171,8 @@ Material:
     - _SimpleLighting: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
-    - _SparkleIntensity: 5.23
-    - _SparkleSize: 0.497
+    - _SparkleIntensity: 5.51
+    - _SparkleSize: 0.503
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SunReflectionDistortion: 0.49
@@ -185,7 +185,7 @@ Material:
     - _Tiling: 0.5
     - _Translucency: 0
     - _WaveCount: 1
-    - _WaveDistance: 0.763
+    - _WaveDistance: 0.751
     - _WaveHeight: 0
     - _WaveNormalStr: 0.291
     - _WaveSpeed: 1
@@ -197,16 +197,16 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _AnimationParams: {r: 1, g: 1, b: 1, a: 0}
-    - _BaseColor: {r: 1, g: 0, b: 0.009047508, a: 0.9647059}
+    - _BaseColor: {r: 1, g: 0, b: 0.009047508, a: 0.6156863}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _DepthMapBounds: {r: -402.3, g: -459.43, b: 0.0012693577, a: 0}
     - _DistanceNormalParams: {r: 100, g: 300, b: 0.25, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 0.77215755, g: 0.77215755, b: 0.77215755, a: 0.09803922}
+    - _FoamColor: {r: 0, g: 0, b: 0, a: 0.09803922}
     - _HorizonColor: {r: 1, g: 0.0000000834465, b: 0, a: 1}
     - _IntersectionColor: {r: 0.7529412, g: 0, b: 0, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _ShallowColor: {r: 0, g: 0.84313726, b: 1, a: 0.39607844}
+    - _ShallowColor: {r: 1, g: 0.08282871, b: 0, a: 0.2901961}
     - _SlopeParams: {r: 0.5, g: 4, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _TranslucencyParams: {r: 1, g: 4, b: 0, a: 0}
