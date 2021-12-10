@@ -22,9 +22,6 @@ public class Shake : MonoBehaviour
             gameObject.transform.position = new Vector3(startingPos.x + Mathf.Sin(Time.time * speed) * amount, transform.position.y, transform.position.z);
 
         }
-            
-
-
-
     }
+
 }

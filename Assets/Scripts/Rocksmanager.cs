@@ -43,6 +43,7 @@ public class Rocksmanager : MonoBehaviour
         {
             x=Random.Range(0, Nbr);
             Nbr--;
+            StartCoroutine(Shake(3f));
             StartCoroutine(DestroyRock());
         }
             
@@ -50,23 +51,20 @@ public class Rocksmanager : MonoBehaviour
     }
     IEnumerator DestroyRock()
     {
-        StartCoroutine(Shake());
+
         timeToDestroy = 6;
-        Destroy(Rocks[x].gameObject);
-        Rocks.Remove(Rocks[x]);
-        yield return new WaitForSeconds(4f);
         
+        yield return new WaitForSeconds(4f);
+        Rocks[x].gameObject.SetActive(false);
+        Rocks.Remove(Rocks[x]);
     }
-    IEnumerator Shake()
+    IEnumerator Shake(float t)
     {
         Debug.Log(Rocks[x].name);
         Rocks[x].GetComponent<Shake>()._shake = true;
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(t);
     }
-    IEnumerator wait()
-    {
-        yield return new WaitForSeconds(3f);
-    }
+    
 
     void DisplayTime(float timeToDisplay)
     {
