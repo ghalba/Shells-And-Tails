@@ -5,7 +5,6 @@ using UnityEngine;
 public class Guard2 : MonoBehaviour
 {
     public static event System.Action onguardspotedPlayer;
-
     public float speed = 5;
     public float waitTime = .3f;
     public float turnSpeed = 90;
@@ -24,7 +23,7 @@ public class Guard2 : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("player2").transform;
-
+        
 
         viewAngle = spotlight.spotAngle;
         originalSpotlightColour = spotlight.color;
@@ -58,13 +57,6 @@ public class Guard2 : MonoBehaviour
         {
             Debug.Log("spotted");
             player.GetComponent<Respawn>()._respawn = true;
-            //seif : lena guard spota lplayer kamel el code bech tresert el player meloul
-
-            /* if (onguardspotedPlayer != null) {
-                 onguardspotedPlayer();
-
-             //parti hethi zeyda ama 5aleha just in case
-             }*/
         }
     }
 

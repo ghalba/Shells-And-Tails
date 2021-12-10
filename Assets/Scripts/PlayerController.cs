@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public InputAction jump;
     public InputAction Stealth;
     public bool candoublejump=true;
+    public Transform LastCheckPoint;
     [SerializeField]
     public float maximumSpeed;
 
@@ -177,6 +178,13 @@ public class PlayerController : MonoBehaviour
         {
             transform.parent = null;
 
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "CheckPoint")
+        {
+            LastCheckPoint = collision.transform.GetChild(0).transform;
         }
     }
 

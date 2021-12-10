@@ -12,6 +12,7 @@ TagManager:
   - Food
   - Platform
   - Bear
+  - CheckPoint
   layers:
   - Default
   - TransparentFX
