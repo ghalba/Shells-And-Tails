@@ -180,11 +180,12 @@ public class PlayerController : MonoBehaviour
 
         }
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag == "CheckPoint")
+        if (collision.tag == "CheckPoint")
         {
-            LastCheckPoint = collision.transform.GetChild(0).transform;
+            Debug.Log(collision.gameObject.name);
+            LastCheckPoint = collision.transform;
         }
     }
 

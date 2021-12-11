@@ -81,6 +81,8 @@ public class Guard : MonoBehaviour
         return false;
     }
 
+    bool turningPhase;
+
     IEnumerator FollowPath(Vector3[] waypoints)
     {
         if (waypoints.Length > 0)
@@ -96,8 +98,10 @@ public class Guard : MonoBehaviour
                     transform.position = Vector3.MoveTowards(transform.position, targetWaypoint, speed * Time.deltaTime);
                     if (transform.position == targetWaypoint)
                     {
+                        turningPhase = true;
                         targetWaypointIndex = (targetWaypointIndex + 1) % waypoints.Length;
                         targetWaypoint = waypoints[targetWaypointIndex];
+                        transform.GetChild(1).gameObject.GetComponent<Animator>().SetTrigger("Stop");
                         yield return new WaitForSeconds(waitTime);
                         yield return StartCoroutine(TurnToFace(targetWaypoint));
                     }
@@ -118,6 +122,8 @@ public class Guard : MonoBehaviour
             transform.eulerAngles = Vector3.up * angle;
             yield return null;
         }
+        turningPhase = false;
+        transform.GetChild(1).gameObject.GetComponent<Animator>().SetTrigger("Walk");
     }
 
     void OnDrawGizmos()
