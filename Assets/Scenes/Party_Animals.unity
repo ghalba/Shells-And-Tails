@@ -5877,6 +5877,8 @@ MonoBehaviour:
   deer: {fileID: 8251313578729772285, guid: 579cbd1f84d93e44c9ae2b22a9ff7f51, type: 3}
   raccoon: {fileID: 7600891378304537072, guid: b32c3d251a7dab2459a863ba33fde866, type: 3}
   tiger: {fileID: 9148618131384452083, guid: f3d32c1bda6aba04496b38bcb5975a54, type: 3}
+  _Spawn1: 0
+  _Spawn2: 0
 --- !u!4 &967232110
 Transform:
   m_ObjectHideFlags: 0
