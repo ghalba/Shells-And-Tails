@@ -33,7 +33,7 @@ public class MapSelection : MonoBehaviour
     private float _RL2;
     public void Start()
     {
-        mapsNb = 6;
+        mapsNb = 5;
     }
     
     private void Awake()
@@ -59,12 +59,11 @@ public class MapSelection : MonoBehaviour
 
     private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
-
         p1CanSelect = false;
         p2CanSelect = false;
         ShowUi = false;
         Time.timeScale = 1;
-        canvas.transform.GetChild(0).gameObject.SetActive(false);
+        canvas.transform.GetChild(0).gameObject.SetActive(false);        
     }
 
     private void OnDisable()
@@ -81,14 +80,47 @@ public class MapSelection : MonoBehaviour
         {
             if (_RL == -1)
             {
-                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(false);
+                if (PlayerPrefs.GetString("Character0") == "Turtle")
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(2).gameObject.SetActive(false);
+                }
+                else
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(1).gameObject.SetActive(false);
+                }
+                canvas.transform.GetChild(0).GetChild(M).localScale = new Vector3(0.15f, 0.3f, 0.3f);
                 M = (M != 0 ? M - 1 : mapsNb);
-                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(true);
-            }else if(_RL == 1)
+                canvas.transform.GetChild(0).GetChild(M).localScale = new Vector3(0.3f, 0.6f, 0.6f);
+                if (PlayerPrefs.GetString("Character0") == "Turtle")
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(2).gameObject.SetActive(true);
+                }
+                else
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(1).gameObject.SetActive(true);
+                }
+            }
+            else if(_RL == 1)
             {
-                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(false);
+                if (PlayerPrefs.GetString("Character0") == "Turtle")
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(2).gameObject.SetActive(false);
+                }
+                else
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(1).gameObject.SetActive(false);
+                }
+                canvas.transform.GetChild(0).GetChild(M).localScale = new Vector3(0.15f, 0.3f, 0.3f);
                 M = (M != mapsNb ? M + 1 : 0);
-                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(true);
+                canvas.transform.GetChild(0).GetChild(M).localScale = new Vector3(0.3f, 0.6f, 0.6f);
+                if (PlayerPrefs.GetString("Character0") == "Turtle")
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(2).gameObject.SetActive(true);
+                }
+                else
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(1).gameObject.SetActive(true);
+                }
             }
         }
 
@@ -100,15 +132,48 @@ public class MapSelection : MonoBehaviour
         {
             if (_RL2 == -1)
             {
-                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(false);
+                if (PlayerPrefs.GetString("Character0") == "Turtle")
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(1).gameObject.SetActive(false);
+                }
+                else
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(2).gameObject.SetActive(false);
+                }
+                canvas.transform.GetChild(0).GetChild(M).localScale=new Vector3(0.15f,0.3f,0.3f);
                 M = (M != 0 ? M - 1 : mapsNb);
-                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(true);
+                canvas.transform.GetChild(0).GetChild(M).localScale = new Vector3(0.3f, 0.6f, 0.6f);
+                if (PlayerPrefs.GetString("Character0") == "Turtle")
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(1).gameObject.SetActive(true);
+                }
+                else
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(2).gameObject.SetActive(true);
+                }
+                    
             }
             else if (_RL2 == 1)
             {
-                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(false);
+                if (PlayerPrefs.GetString("Character0") == "Turtle")
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(1).gameObject.SetActive(false);
+                }
+                else
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(2).gameObject.SetActive(false);
+                }
+                canvas.transform.GetChild(0).GetChild(M).localScale = new Vector3(0.15f, 0.3f, 0.3f);
                 M = (M != mapsNb ? M + 1 : 0);
-                canvas.transform.GetChild(0).GetChild(M).gameObject.SetActive(true);
+                canvas.transform.GetChild(0).GetChild(M).localScale = new Vector3(0.3f, 0.6f, 0.6f);
+                if (PlayerPrefs.GetString("Character0") == "Turtle")
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(1).gameObject.SetActive(true);
+                }
+                else
+                {
+                    canvas.transform.GetChild(0).GetChild(M).GetChild(2).gameObject.SetActive(true);
+                }
             }
         }
 
@@ -155,11 +220,12 @@ public class MapSelection : MonoBehaviour
 
     private void Update()
     {
+        
         if (ShowUi)
         {
             canvas.transform.GetChild(0).gameObject.SetActive(true);
             ShowUi = false;
-        }
+        }       
         p1winsText.transform.GetChild(p1wins).gameObject.SetActive(true);
         p2winsText.transform.GetChild(p2wins).gameObject.SetActive(true);
         Debug.Log(p1winsText.transform.GetChild(p1wins).name);
@@ -168,4 +234,5 @@ public class MapSelection : MonoBehaviour
         p2winsText.text = PlayerPrefs.GetString("Character1");
         playerTurnText.text =(p1CanSelect? PlayerPrefs.GetString("Character0")+"s Turn": PlayerPrefs.GetString("Character1")+"s Turn") ;
     }
+
 }
