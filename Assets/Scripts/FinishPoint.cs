@@ -7,7 +7,7 @@ public class FinishPoint : MonoBehaviour
 {
     public int ScoreP1;
     public int ScoreP2;
-    public float timeRemaining = 120;
+    public float timeRemaining = 80;
     public bool timerIsRunning = false;
     public static int spawnRate=2;
     public TMP_Text S1;
@@ -42,6 +42,16 @@ public class FinishPoint : MonoBehaviour
     {
         // Starts the timer automatically
         timerIsRunning = true;
+        if (PlayerPrefs.GetString("Character0") == "Turtle")
+        {
+            transform.GetChild(0).GetChild(0).GetChild(0).gameObject.SetActive(true);
+            transform.GetChild(1).GetChild(0).GetChild(1).gameObject.SetActive(true);
+        }
+        else
+        {
+            transform.GetChild(0).GetChild(0).GetChild(1).gameObject.SetActive(true);
+            transform.GetChild(1).GetChild(0).GetChild(0).gameObject.SetActive(true);
+        }
     }
 
     void Update()
@@ -61,7 +71,7 @@ public class FinishPoint : MonoBehaviour
             }
             if (timerIsRunning)
             {
-                spawnRate = (timeRemaining > 90 ? 2 : 1);
+                spawnRate = (timeRemaining > 40 ? 2 : 1);
 
             }
         }

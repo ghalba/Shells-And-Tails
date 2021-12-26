@@ -35,6 +35,16 @@ public class MapSelection : MonoBehaviour
     public void Start()
     {
         mapsNb = 5;
+        if (PlayerPrefs.GetString("Character0") == "Turtle")
+        {
+            canvas.transform.GetChild(0).GetChild(6).GetChild(0).GetChild(1).gameObject.SetActive(true);
+            canvas.transform.GetChild(0).GetChild(7).GetChild(0).GetChild(0).gameObject.SetActive(true);
+        }
+        else
+        {
+            canvas.transform.GetChild(0).GetChild(6).GetChild(0).GetChild(0).gameObject.SetActive(true);
+            canvas.transform.GetChild(0).GetChild(7).GetChild(0).GetChild(1).gameObject.SetActive(true);
+        }
     }
     
     private void Awake()
@@ -179,6 +189,7 @@ public class MapSelection : MonoBehaviour
         }
 
     }
+
     void Ready(InputAction.CallbackContext context)
     {
         if (p1CanSelect)
@@ -186,7 +197,7 @@ public class MapSelection : MonoBehaviour
             if (completedMaps.Find(x => x == MapsName[M]) != null)
             {
                 Debug.Log("you can't choose this map");
-               
+                
             }
             else
             {
@@ -230,8 +241,6 @@ public class MapSelection : MonoBehaviour
         p1winsText.transform.GetChild(p1wins).gameObject.SetActive(true);
         p2winsText.transform.GetChild(p2wins).gameObject.SetActive(true);
         Map_text.text = MapsName[M];
-        Debug.Log(p1winsText.transform.GetChild(p1wins).name);
-        Debug.Log(p1wins);
         p1winsText.text = PlayerPrefs.GetString("Character0");
         p2winsText.text = PlayerPrefs.GetString("Character1");
         playerTurnText.text =(p1CanSelect? PlayerPrefs.GetString("Character0")+"s Turn": PlayerPrefs.GetString("Character1")+"s Turn") ;
