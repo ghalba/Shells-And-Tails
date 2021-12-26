@@ -16,6 +16,7 @@ public class MapSelection : MonoBehaviour
     public TMP_Text p1winsText;
     public TMP_Text p2winsText;
     public TMP_Text playerTurnText;
+    public TMP_Text Map_text;
     public int M;
     public int mapsNb;
     public List<string> MapsName;
@@ -228,6 +229,7 @@ public class MapSelection : MonoBehaviour
         }       
         p1winsText.transform.GetChild(p1wins).gameObject.SetActive(true);
         p2winsText.transform.GetChild(p2wins).gameObject.SetActive(true);
+        Map_text.text = MapsName[M];
         Debug.Log(p1winsText.transform.GetChild(p1wins).name);
         Debug.Log(p1wins);
         p1winsText.text = PlayerPrefs.GetString("Character0");
