@@ -87,6 +87,7 @@ public class CharacterSelection : MonoBehaviour
     {
         yield return new WaitForSeconds(4);
         canvas2.transform.GetChild(0).gameObject.SetActive(true);
+        canvas2.transform.GetChild(1).gameObject.SetActive(true);
     }
     IEnumerator Timer()
     {
@@ -101,6 +102,7 @@ public class CharacterSelection : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         canvas.transform.GetChild(4).gameObject.SetActive(true);
+        Flip.SetActive(true);
         StartCoroutine(Timer());
 
     }
