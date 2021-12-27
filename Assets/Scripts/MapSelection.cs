@@ -74,7 +74,8 @@ public class MapSelection : MonoBehaviour
         p2CanSelect = false;
         ShowUi = false;
         Time.timeScale = 1;
-        canvas.transform.GetChild(0).gameObject.SetActive(false);        
+        canvas.transform.GetChild(0).gameObject.SetActive(false);
+        canvas.transform.GetChild(1).gameObject.SetActive(false);
     }
 
     private void OnDisable()
@@ -236,6 +237,7 @@ public class MapSelection : MonoBehaviour
         if (ShowUi)
         {
             canvas.transform.GetChild(0).gameObject.SetActive(true);
+            canvas.transform.GetChild(1).gameObject.SetActive(true);
             ShowUi = false;
         }       
         p1winsText.transform.GetChild(p1wins).gameObject.SetActive(true);
