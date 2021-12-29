@@ -15,11 +15,11 @@ C:/Users/Chrifa/Documents/Azizi/Shells And Tails
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57993
+59832
 Successfully changed project path to: C:/Users/Chrifa/Documents/Azizi/Shells And Tails
 C:/Users/Chrifa/Documents/Azizi/Shells And Tails
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 86.90 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 76.22 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.20f1 (41c4e627c95f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Resources/UnitySubsystems
@@ -30,94 +30,94 @@ Direct3D:
     Renderer: NVIDIA GeForce GTX 1650 Ti with Max-Q Design (ID=0x1f95)
     Vendor:   
     VRAM:     3962 MB
-    Driver:   30.0.14.9709
+    Driver:   30.0.14.9729
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56780
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001391 seconds.
+Registered in 0.108837 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 76.50 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 76.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.426 seconds
+- Completed reload, in  5.126 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1426ms)
-		BeginReloadAssembly (44ms)
+	ReloadAssembly (5126ms)
+		BeginReloadAssembly (2174ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (393ms)
-			LoadAssemblies (42ms)
+		EndReloadAssembly (648ms)
+			LoadAssemblies (2176ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (127ms)
+			SetupTypeCache (361ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (181ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (187ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (77ms)
 				BeforeProcessingInitializeOnLoad (14ms)
-				ProcessInitializeOnLoadAttributes (64ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
+				ProcessInitializeOnLoadAttributes (65ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002952 seconds.
+Registered in 0.412094 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 78.44 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 92.09 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.088 seconds
+- Completed reload, in  3.936 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1089ms)
-		BeginReloadAssembly (120ms)
+	ReloadAssembly (3941ms)
+		BeginReloadAssembly (123ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (916ms)
-			LoadAssemblies (76ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (3766ms)
+			LoadAssemblies (2281ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (285ms)
+			SetupTypeCache (735ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (384ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (571ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (79ms)
-				BeforeProcessingInitializeOnLoad (81ms)
-				ProcessInitializeOnLoadAttributes (213ms)
+				RefreshPlugins (92ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (377ms)
 				ProcessInitializeOnLoadMethodAttributes (4ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.68 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3325 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.9 MB.
-System memory in use after: 155.1 MB.
+System memory in use before: 154.8 MB.
+System memory in use after: 155.0 MB.
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3770.
-Total: 3.205500 ms (FindLiveObjects: 0.314500 ms CreateObjectMapping: 0.186800 ms MarkObjects: 2.620100 ms  DeleteObjects: 0.083200 ms)
+Total: 4.898200 ms (FindLiveObjects: 0.394700 ms CreateObjectMapping: 0.260900 ms MarkObjects: 4.140300 ms  DeleteObjects: 0.101100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -129,107 +129,4 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Scenes/Treasure_Hunt.unity
-  artifactKey: Guid(ba574ec8968eaee42819035e64347d40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Treasure_Hunt.unity using Guid(ba574ec8968eaee42819035e64347d40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9deaacc144a128ba2c2b83d295ad5209') in 0.016865 seconds 
-  Import took 0.021579 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 272.346456 seconds.
-  path: Assets/Sounds/treasure hunt
-  artifactKey: Guid(b2dd31f2344926e45a6c01be50fd9456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/treasure hunt using Guid(b2dd31f2344926e45a6c01be50fd9456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e9a421c0bf79fb3679bef280959a2ed') in 0.007097 seconds 
-  Import took 0.012836 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.082037 seconds.
-  path: Assets/Sounds/treasure hunt/410574__yummie__game-background-music-loop-short.mp3
-  artifactKey: Guid(3f739491e36669749b7d7241d6353edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/treasure hunt/410574__yummie__game-background-music-loop-short.mp3 using Guid(3f739491e36669749b7d7241d6353edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c8df7a101831b67de5484ee6d423926') in 0.070520 seconds 
-  Import took 0.075536 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.833629 seconds.
-  path: Assets/Sounds/treasure hunt/365919__inspectorj__waterfall-small-d.wav
-  artifactKey: Guid(0d9e188fe8d7d47488d2b1fd24c68c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/treasure hunt/365919__inspectorj__waterfall-small-d.wav using Guid(0d9e188fe8d7d47488d2b1fd24c68c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c302a183640b78febd5d48c87c799eae') in 0.017696 seconds 
-  Import took 0.024336 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 83.955682 seconds.
-  path: Assets/Sounds/metal gear
-  artifactKey: Guid(0067ee7f76f43e44a80a6bf6659c71c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/metal gear using Guid(0067ee7f76f43e44a80a6bf6659c71c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dbf886325fb9e935987d6322521634e') in 0.007677 seconds 
-  Import took 0.012891 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.169175 seconds.
-  path: Assets/Sounds/metal gear/177031__iampagan__droplets-in-a-cave.wav
-  artifactKey: Guid(2bdcfd84982b03545b238bd6ccffc220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/metal gear/177031__iampagan__droplets-in-a-cave.wav using Guid(2bdcfd84982b03545b238bd6ccffc220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '164b94740fb4f3a7d073edcacc628e86') in 0.017914 seconds 
-  Import took 0.024817 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 229.306148 seconds.
-  path: Assets/Sounds/metal gear/277192__thedweebman__eerie-tone-music-background-loop.wav
-  artifactKey: Guid(7cbac7d073d7bf24980c15ed9d09e69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/metal gear/277192__thedweebman__eerie-tone-music-background-loop.wav using Guid(7cbac7d073d7bf24980c15ed9d09e69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '019f4385ab22006f5fc2a80db45e509f') in 0.027449 seconds 
-  Import took 0.034091 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Sounds/metal gear/341807__drfx__some-background-i-made-for-my-game-ambient-music.mp3
-  artifactKey: Guid(03f93e8fe51ee8241be3d5bd6f40d640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/metal gear/341807__drfx__some-background-i-made-for-my-game-ambient-music.mp3 using Guid(03f93e8fe51ee8241be3d5bd6f40d640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba47636445ca42a0c1138c12d9d5cf6') in 0.013410 seconds 
-  Import took 0.018980 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 628.321267 seconds.
-  path: Assets/Scenes/Metal_Gear.unity
-  artifactKey: Guid(644817fabc59006469048845e62339e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Metal_Gear.unity using Guid(644817fabc59006469048845e62339e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be27618b9a712d575f67e663e5c034d6') in 0.007398 seconds 
-  Import took 0.014738 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 506.447696 seconds.
-  path: Assets/Sounds/metal gear/338674__newagesoup__wolf-growl.wav
-  artifactKey: Guid(826d12d971177a04f940d52b3b13a208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/metal gear/338674__newagesoup__wolf-growl.wav using Guid(826d12d971177a04f940d52b3b13a208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4757f0ca98ca57ec0526b5ce56989cc6') in 0.021078 seconds 
-  Import took 0.027885 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.413869 seconds.
-  path: Assets/Sounds/metal gear/66258__viorelvio__sunetul-de-lup-27386.mp3
-  artifactKey: Guid(5928798804852b647910b74a2bb9f5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/metal gear/66258__viorelvio__sunetul-de-lup-27386.mp3 using Guid(5928798804852b647910b74a2bb9f5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b728f07ca718c9f3ae4b2cd7a939f6d') in 0.014537 seconds 
-  Import took 0.020017 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.929545 seconds.
-  path: Assets/Sounds/489035__michael-db__game-music-01.wav
-  artifactKey: Guid(023b4a934ab952444929b0931360be26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/489035__michael-db__game-music-01.wav using Guid(023b4a934ab952444929b0931360be26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9de5a1667c20566bc40b664740d660ac') in 0.025677 seconds 
-  Import took 0.031134 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/Sounds/505391__vabsounds__little-village.wav
-  artifactKey: Guid(3f047d5fbaca90e439fccc680fa9bc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/505391__vabsounds__little-village.wav using Guid(3f047d5fbaca90e439fccc680fa9bc15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edb35c8802c4e6054a29367ff22c4b91') in 0.010513 seconds 
-  Import took 0.015083 seconds .
-
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
