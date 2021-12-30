@@ -13,6 +13,7 @@ public class AnimalSpawner : MonoBehaviour
     public GameObject raccoon;
     public GameObject tiger;
     int MaxSpawn = 0;
+    int MaxSpawn2 = 20;
     int bearcount= 0;
     int wolfcount = 0;
     int deercount = 0;
@@ -21,7 +22,7 @@ public class AnimalSpawner : MonoBehaviour
     int tigercount = 0;
     public bool _Spawn1;
     public bool _Spawn2;
-
+    //public List<> 
     private void Start()
     {
         _Spawn1 = true;
@@ -34,7 +35,7 @@ public class AnimalSpawner : MonoBehaviour
             StartCoroutine(Timer1(1f));
             
         }
-        Debug.Log(MaxSpawn);
+
         if (MaxSpawn == 10&& _Spawn1)
         {
             MaxSpawn = 0;
@@ -46,12 +47,14 @@ public class AnimalSpawner : MonoBehaviour
             tigercount = 0;
             _Spawn1 = false;
             _Spawn2 = true;
+            MaxSpawn2 = 0;
         }
         // Q&A 1
 
         // Stage 2
-        if (MaxSpawn < 15 && _Spawn2)
+        if (MaxSpawn2 < 15 && _Spawn2)
         {
+            _Spawn2 = true;
             Debug.Log("Stage 2");
             StartCoroutine(Timer2(1f));
         }
@@ -107,45 +110,45 @@ public class AnimalSpawner : MonoBehaviour
         int max = 10;
         int x;
         x = Random.Range(min, max);
-        if (x == 1 && MaxSpawn < 15)
+        if (x == 1 && MaxSpawn2< 15)
         {
             Instantiate(bear, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             bearcount++;
-            MaxSpawn++;
+            MaxSpawn2++;
         }
-        if (x == 2 && MaxSpawn < 15)
+        if (x == 2 && MaxSpawn2 < 15)
         {
             Instantiate(wolf, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             wolfcount++;
-            MaxSpawn++;
+            MaxSpawn2++;
         }
-        if (x == 3 && MaxSpawn < 15)
+        if (x == 3 && MaxSpawn2 < 15)
         {
             Instantiate(deer, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             deercount++;
-            MaxSpawn++;
+            MaxSpawn2++;
         }
-        if (x == 4 && MaxSpawn < 15)
+        if (x == 4 && MaxSpawn2 < 15)
         {
             Instantiate(raccoon, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             raccooncount++;
-            MaxSpawn++;
+            MaxSpawn2++;
         }
-        if (x == 5 && MaxSpawn < 15)
+        if (x == 5 && MaxSpawn2 < 15)
         {
             Instantiate(fox, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             foxcount++;
-            MaxSpawn++;
+            MaxSpawn2++;
         }
-        if (x == 6 && MaxSpawn < 15)
+        if (x == 6 && MaxSpawn2 < 15)
         {
             _Spawn2 = false;
             Instantiate(tiger, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             tigercount++;
-            MaxSpawn++;
-            yield return new WaitForSeconds(t);
-            _Spawn2 = true;
+            MaxSpawn2++;
+            
         }
-
+        yield return new WaitForSeconds(t);
+        _Spawn2 = true;
     }
 }

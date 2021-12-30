@@ -10,23 +10,22 @@ public class Cam_Anim : MonoBehaviour
     public PlayableDirector playableDirector;
     public GameObject P1;
     public GameObject P2;
+    public Canvas _canvas;
     public void OnPlay()
     {
         anim = gameObject.GetComponent<Animator>();
         anim.SetTrigger("Played");
-        playableDirector.Play();      
+        P1.SetActive(true);
+        P2.SetActive(true);
     }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             playableDirector.time = 80f;
+            _canvas.gameObject.SetActive(true);
         }
-        if(playableDirector.time > 76f)
-        {
-            P1.SetActive(true);
-            P2.SetActive(true);
-        }
+
     }
     public void Flip()
     {

@@ -32,6 +32,7 @@ public class MapSelection : MonoBehaviour
     [SerializeField]
     private InputAction _ready2;
     private float _RL2;
+    public AudioSource _clickSound;
     public void Start()
     {
         mapsNb = 5;
@@ -88,8 +89,10 @@ public class MapSelection : MonoBehaviour
     private void ONRLPreformed(InputAction.CallbackContext context)
     {
         _RL = RL.ReadValue<float>();
+        
         if (p1CanSelect)
         {
+            _clickSound.Play();
             if (_RL == -1)
             {
                 if (PlayerPrefs.GetString("Character0") == "Turtle")
@@ -140,8 +143,10 @@ public class MapSelection : MonoBehaviour
     private void ONRL2Preformed(InputAction.CallbackContext context)
     {
         _RL2 = RL2.ReadValue<float>();
+        
         if (p2CanSelect)
         {
+            _clickSound.Play();
             if (_RL2 == -1)
             {
                 if (PlayerPrefs.GetString("Character0") == "Turtle")

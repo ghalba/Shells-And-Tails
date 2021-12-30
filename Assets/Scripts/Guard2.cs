@@ -45,6 +45,7 @@ public class Guard2 : MonoBehaviour
         if (CanSeePlayer())
         {
             playervisibletimer += Time.deltaTime;
+            _howl.Play();
 
         }
         else
@@ -55,7 +56,7 @@ public class Guard2 : MonoBehaviour
         spotlight.color = Color.Lerp(originalSpotlightColour, Color.red, playervisibletimer / timetospotplayer);
         if (playervisibletimer >= timetospotplayer)
         {
-            _howl.Play();
+            
             Debug.Log("spotted");
             player.GetComponent<Respawn>()._respawn = true;
         }

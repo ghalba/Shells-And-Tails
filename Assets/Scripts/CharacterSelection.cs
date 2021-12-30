@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class CharacterSelection : MonoBehaviour
 {
+    public AudioSource _ClickSounds;
     [SerializeField]
     private InputAction RL;
     [SerializeField]
@@ -46,6 +47,7 @@ public class CharacterSelection : MonoBehaviour
     private void ONRLPreformed(InputAction.CallbackContext context)
     {
         _RL = RL.ReadValue<float>();
+        _ClickSounds.Play();
         if (_RL != 0)
         {
             if (_currentChild == 0)
