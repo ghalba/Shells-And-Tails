@@ -15,7 +15,7 @@ public class Guard2 : MonoBehaviour
     public LayerMask viewMask;
     float viewAngle;
     public float playervisibletimer;
-
+    public AudioSource _howl;
     public Transform pathHolder;
     Transform player;
     Color originalSpotlightColour;
@@ -55,6 +55,7 @@ public class Guard2 : MonoBehaviour
         spotlight.color = Color.Lerp(originalSpotlightColour, Color.red, playervisibletimer / timetospotplayer);
         if (playervisibletimer >= timetospotplayer)
         {
+            _howl.Play();
             Debug.Log("spotted");
             player.GetComponent<Respawn>()._respawn = true;
         }

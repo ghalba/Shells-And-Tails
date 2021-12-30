@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Guard : MonoBehaviour
 {
     public static event System.Action onguardspotedPlayer;
@@ -10,7 +9,7 @@ public class Guard : MonoBehaviour
     public float waitTime = .3f;
     public float turnSpeed = 90;
     public float timetospotplayer = .8f;
-
+    public AudioSource _howl;
     public Light spotlight;
     public float viewDistance;
     public LayerMask viewMask;
@@ -53,6 +52,7 @@ public class Guard : MonoBehaviour
         spotlight.color = Color.Lerp(originalSpotlightColour, Color.red, playervisibletimer / timetospotplayer);
         if (playervisibletimer >= timetospotplayer) {
             Debug.Log("spotted");
+            _howl.Play();
             player.GetComponent<Respawn>()._respawn = true;
             //seif : lena guard spota lplayer kamel el code bech tresert el player meloul
 
