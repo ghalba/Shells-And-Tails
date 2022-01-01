@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using TMPro;
 public class AnimalSpawner : MonoBehaviour
 {
     // Start is called before the first frame update
-
+    public TMP_Text QuestionsD;
+    public GameObject cam;
     public GameObject bear;
     public GameObject wolf;
     public GameObject fox;
@@ -22,7 +24,8 @@ public class AnimalSpawner : MonoBehaviour
     int tigercount = 0;
     public bool _Spawn1;
     public bool _Spawn2;
-    //public List<> 
+    public List<string> Questions;
+    public List<string> Questions2;
     private void Start()
     {
         _Spawn1 = true;
@@ -47,7 +50,8 @@ public class AnimalSpawner : MonoBehaviour
             tigercount = 0;
             _Spawn1 = false;
             _Spawn2 = true;
-            MaxSpawn2 = 0;
+            
+            StartCoroutine(Quiz(3f));
         }
         // Q&A 1
 
@@ -150,5 +154,15 @@ public class AnimalSpawner : MonoBehaviour
         }
         yield return new WaitForSeconds(t);
         _Spawn2 = true;
+    }
+    IEnumerator Quiz(float t)
+    {
+        cam.GetComponent<Animator>().SetTrigger("Phase1");
+        int x = Random.Range(0, 3);
+        QuestionsD.text = Questions[0];
+        yield return new WaitForSeconds(t);
+        MaxSpawn2 = 0;
+        cam.GetComponent<Animator>().SetTrigger("Phase2");
+        QuestionsD.text = "";
     }
 }
