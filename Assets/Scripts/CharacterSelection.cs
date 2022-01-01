@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
 
 public class CharacterSelection : MonoBehaviour
 {
+    public GameObject SpotL;
     public AudioSource _ClickSounds;
     [SerializeField]
     private InputAction RL;
@@ -24,7 +26,7 @@ public class CharacterSelection : MonoBehaviour
     public GameObject Flip;
     public Material _turtuleMaterial;
     public Material _rabbitMaterial;
-
+    public PlayableDirector playableDirector;
     private void Awake()
     {
         RL.performed += ONRLPreformed;
@@ -60,7 +62,8 @@ public class CharacterSelection : MonoBehaviour
     void Ready(InputAction.CallbackContext context)
     {        
         if (isReady) 
-            return;   
+            return;
+        SpotL.SetActive(true);
         int currentPlayer = (transform.name == "P1" ? 0 : 1);
         anim = transform.GetChild(_currentChild).GetComponent<Animator>();
         anim.SetTrigger("GettingUp");
@@ -102,6 +105,7 @@ public class CharacterSelection : MonoBehaviour
     }
     IEnumerator Timer2()
     {
+        
         yield return new WaitForSeconds(3);
         canvas.transform.GetChild(4).gameObject.SetActive(true);
         Flip.SetActive(true);
