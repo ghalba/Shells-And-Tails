@@ -273,7 +273,11 @@ Transform:
   m_GameObject: {fileID: 7294287}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.013861704, y: 0.87646115, z: 0.025278874, w: -0.48060864}
+=======
+  m_LocalRotation: {x: 0.013861703, y: 0.8764612, z: 0.025278874, w: -0.4806086}
+>>>>>>> parent of 37e7d9b (main menu)
 =======
   m_LocalRotation: {x: 0.013861703, y: 0.8764612, z: 0.025278874, w: -0.4806086}
 >>>>>>> parent of 37e7d9b (main menu)
@@ -425,7 +429,11 @@ Transform:
   m_GameObject: {fileID: 16253191}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.03381035, y: -0.07741993, z: 0.0026269953, w: 0.9964217}
+=======
+  m_LocalRotation: {x: 0.017352913, y: 0.5952145, z: -0.012858217, w: 0.80327666}
+>>>>>>> parent of 37e7d9b (main menu)
 =======
   m_LocalRotation: {x: 0.017352913, y: 0.5952145, z: -0.012858217, w: 0.80327666}
 >>>>>>> parent of 37e7d9b (main menu)
@@ -2320,7 +2328,11 @@ Transform:
   m_GameObject: {fileID: 191627046}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.043665547, y: -0.38522926, z: 0.01825209, w: 0.92160654}
+=======
+  m_LocalRotation: {x: 0.041758996, y: 0.6433241, z: -0.03517942, w: 0.76364446}
+>>>>>>> parent of 37e7d9b (main menu)
 =======
   m_LocalRotation: {x: 0.041758996, y: 0.6433241, z: -0.03517942, w: 0.76364446}
 >>>>>>> parent of 37e7d9b (main menu)
@@ -5022,7 +5034,11 @@ Transform:
   m_GameObject: {fileID: 445678359}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.03363851, y: -0.027711833, z: 0.0009330717, w: 0.99904937}
+=======
+  m_LocalRotation: {x: 0.0162786, y: 0.59793377, z: -0.0121473465, w: 0.8012882}
+>>>>>>> parent of 37e7d9b (main menu)
 =======
   m_LocalRotation: {x: 0.0162786, y: 0.59793377, z: -0.0121473465, w: 0.8012882}
 >>>>>>> parent of 37e7d9b (main menu)
@@ -6294,7 +6310,11 @@ Transform:
   m_GameObject: {fileID: 590028254}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.0014909152, y: -0.32851434, z: 0.00051856885, w: 0.9444977}
+=======
+  m_LocalRotation: {x: 0.0018344078, y: 0.49586847, z: -0.0010474783, w: 0.8683951}
+>>>>>>> parent of 37e7d9b (main menu)
 =======
   m_LocalRotation: {x: 0.0018344078, y: 0.49586847, z: -0.0010474783, w: 0.8683951}
 >>>>>>> parent of 37e7d9b (main menu)
@@ -7336,7 +7356,11 @@ Transform:
   m_GameObject: {fileID: 700932932}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.02468079, y: -0.3447705, z: 0.009068569, w: 0.93831867}
+=======
+  m_LocalRotation: {x: 0.021382956, y: 0.6284409, z: -0.01728637, w: 0.7773712}
+>>>>>>> parent of 37e7d9b (main menu)
 =======
   m_LocalRotation: {x: 0.021382956, y: 0.6284409, z: -0.01728637, w: 0.7773712}
 >>>>>>> parent of 37e7d9b (main menu)
@@ -7709,7 +7733,11 @@ Transform:
   m_GameObject: {fileID: 749412840}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.12223549, y: -0.73989743, z: 0.13988079, w: 0.64656293}
+=======
+  m_LocalRotation: {x: 0.014719071, y: 0.94911337, z: -0.044865765, w: 0.31137475}
+>>>>>>> parent of 37e7d9b (main menu)
 =======
   m_LocalRotation: {x: 0.014719071, y: 0.94911337, z: -0.044865765, w: 0.31137475}
 >>>>>>> parent of 37e7d9b (main menu)
@@ -10391,7 +10419,11 @@ Transform:
   m_GameObject: {fileID: 1020094029}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.0072907554, y: -0.3200887, z: 0.0024633692, w: 0.94735634}
+=======
+  m_LocalRotation: {x: 0.006015685, y: 0.61961854, z: -0.0047491305, w: 0.78486574}
+>>>>>>> parent of 37e7d9b (main menu)
 =======
   m_LocalRotation: {x: 0.006015685, y: 0.61961854, z: -0.0047491305, w: 0.78486574}
 >>>>>>> parent of 37e7d9b (main menu)
@@ -18613,7 +18645,11 @@ Transform:
   m_GameObject: {fileID: 1778290064}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: -0.026790721, y: 0.9590669, z: -0.26466623, w: -0.09708113}
+=======
+  m_LocalRotation: {x: 0.012236457, y: 0.928261, z: -0.030660737, w: 0.3704616}
+>>>>>>> parent of 37e7d9b (main menu)
 =======
   m_LocalRotation: {x: 0.012236457, y: 0.928261, z: -0.030660737, w: 0.3704616}
 >>>>>>> parent of 37e7d9b (main menu)
