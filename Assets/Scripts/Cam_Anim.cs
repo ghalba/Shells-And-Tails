@@ -33,6 +33,7 @@ public class Cam_Anim : MonoBehaviour
         anim.SetTrigger("CoinFlip");
         _Coin.GetComponent<Animator>().SetTrigger("Coin");
         _Coin.GetComponent<coinState>().Flip = true;
+        playableDirector.time = 500f;
 
     }
     public void QuitGame()
