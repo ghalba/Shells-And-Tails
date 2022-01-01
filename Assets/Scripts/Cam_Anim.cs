@@ -29,7 +29,6 @@ public class Cam_Anim : MonoBehaviour
     }
     public void Flip()
     {
-        playableDirector.time = 500f;
         anim = gameObject.GetComponent<Animator>();
         anim.SetTrigger("CoinFlip");
         _Coin.GetComponent<Animator>().SetTrigger("Coin");
