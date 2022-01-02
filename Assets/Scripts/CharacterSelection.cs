@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class CharacterSelection : MonoBehaviour
 {
+    public GameObject spotlight;
     public AudioSource _ClickSounds;
     [SerializeField]
     private InputAction RL;
@@ -60,7 +61,8 @@ public class CharacterSelection : MonoBehaviour
     void Ready(InputAction.CallbackContext context)
     {        
         if (isReady) 
-            return;   
+            return;
+        spotlight.SetActive(true);
         int currentPlayer = (transform.name == "P1" ? 0 : 1);
         anim = transform.GetChild(_currentChild).GetComponent<Animator>();
         anim.SetTrigger("GettingUp");
