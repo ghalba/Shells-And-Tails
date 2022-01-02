@@ -7,6 +7,10 @@ public class AnimalSpawner : MonoBehaviour
 {
     // Start is called before the first frame update
     public TMP_Text QuestionsD;
+    public GameObject r1;
+    public GameObject r2;
+    public GameObject r3;
+    public GameObject platform;
     public GameObject cam;
     public GameObject bear;
     public GameObject wolf;
@@ -14,6 +18,7 @@ public class AnimalSpawner : MonoBehaviour
     public GameObject deer;
     public GameObject raccoon;
     public GameObject tiger;
+    public List<int> AnimalsCount;
     int MaxSpawn = 0;
     int MaxSpawn2 = 20;
     int bearcount= 0;
@@ -86,22 +91,25 @@ public class AnimalSpawner : MonoBehaviour
         int max = 3;
         int x;
         x = Random.Range(min, max);
-        if (x == 1 )
+        if (x == 0 )
         {
             Instantiate(bear, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             bearcount++;
+            AnimalsCount[0]++;
+            MaxSpawn++;
+        }
+        if (x == 1 )
+        {
+            Instantiate(wolf, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
+            wolfcount++;
+            AnimalsCount[1]++;
             MaxSpawn++;
         }
         if (x == 2 )
         {
-            Instantiate(wolf, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
-            wolfcount++;
-            MaxSpawn++;
-        }
-        if (x == 3 )
-        {
             Instantiate(deer, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             deercount++;
+            AnimalsCount[2]++;
             MaxSpawn++;
         }
         yield return new WaitForSeconds(t);
@@ -114,37 +122,37 @@ public class AnimalSpawner : MonoBehaviour
         int max = 10;
         int x;
         x = Random.Range(min, max);
-        if (x == 1 && MaxSpawn2< 15)
+        if (x == 0 && MaxSpawn2< 15)
         {
             Instantiate(bear, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             bearcount++;
             MaxSpawn2++;
         }
-        if (x == 2 && MaxSpawn2 < 15)
+        if (x == 1 && MaxSpawn2 < 15)
         {
             Instantiate(wolf, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             wolfcount++;
             MaxSpawn2++;
         }
-        if (x == 3 && MaxSpawn2 < 15)
+        if (x == 2 && MaxSpawn2 < 15)
         {
             Instantiate(deer, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             deercount++;
             MaxSpawn2++;
         }
-        if (x == 4 && MaxSpawn2 < 15)
+        if (x == 3 && MaxSpawn2 < 15)
         {
             Instantiate(raccoon, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             raccooncount++;
             MaxSpawn2++;
         }
-        if (x == 5 && MaxSpawn2 < 15)
+        if (x == 4 && MaxSpawn2 < 15)
         {
             Instantiate(fox, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             foxcount++;
             MaxSpawn2++;
         }
-        if (x == 6 && MaxSpawn2 < 15)
+        if (x == 5 && MaxSpawn2 < 15)
         {
             _Spawn2 = false;
             Instantiate(tiger, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
@@ -159,10 +167,16 @@ public class AnimalSpawner : MonoBehaviour
     {
         cam.GetComponent<Animator>().SetTrigger("Phase1");
         int x = Random.Range(0, 3);
-        QuestionsD.text = Questions[0];
+        QuestionsD.text = Questions[x];
+        StartCoroutine(QuizA(5f));
         yield return new WaitForSeconds(t);
         MaxSpawn2 = 0;
         cam.GetComponent<Animator>().SetTrigger("Phase2");
         QuestionsD.text = "";
+    }
+    IEnumerator QuizA(float t)
+    {
+        //**
+        yield return new WaitForSeconds(t);
     }
 }
