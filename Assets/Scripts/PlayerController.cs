@@ -39,6 +39,8 @@ public class PlayerController : MonoBehaviour
     private float _Stealth;
     bool disabled;
     Rigidbody rb;
+    private float cooldown;
+
     private void Awake()
     {
         _tag = gameObject.tag;
@@ -116,6 +118,7 @@ public class PlayerController : MonoBehaviour
         {
             if (_Stealth != 0)
             {
+                cooldown++;
                 inputMagnitude /= 2;
                 transform.GetChild(0).gameObject.SetActive(true);
                 gameObject.tag = "Food";
@@ -123,6 +126,7 @@ public class PlayerController : MonoBehaviour
 
             else
             {
+                cooldown--;
                 transform.GetChild(0).gameObject.SetActive(false);
                 gameObject.tag = _tag;
             }
