@@ -7,6 +7,7 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool _MetalGear;
     public bool Stealthy=true;
     public string _tag;
     private float horizontalInput;
@@ -116,33 +117,16 @@ public class PlayerController : MonoBehaviour
             inputMagnitude /= 2;
             
         }
-        if (GetComponent<Abilityiii>()._MetalGear)
+        if (_MetalGear)
         {
             if (_Stealth != 0)
             {
-                
-                if (Stealthy)
-                {
-                    StartCoroutine(cooldownF());
                     inputMagnitude /= 2;
                     transform.GetChild(0).gameObject.SetActive(true);
                     gameObject.tag = "Food";
-
-                }else
-                {
-                    StartCoroutine(timer());
-                    transform.GetChild(0).gameObject.SetActive(false);
-                    gameObject.tag = _tag;
-                }
-
-               
             }
-
             else
-            {
                 transform.GetChild(0).gameObject.SetActive(false);
-                gameObject.tag = _tag;
-            }
 
         }
 
@@ -235,16 +219,6 @@ public class PlayerController : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
     }
-    IEnumerator cooldownF()
-    {
-        Stealthy = true;
-        yield return new WaitForSeconds(2);
-        Stealthy = false;
-    }
-    IEnumerator timer()
-    {
-        yield return new WaitForSeconds(2);
-        Stealthy = false;
-    }
+
 }
 

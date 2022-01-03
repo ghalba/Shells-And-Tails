@@ -187,19 +187,8 @@ public class AnimalSpawner : MonoBehaviour
         r1.transform.GetChild(0).GetComponent<TextMesh>().text = AnimalsCount[x].ToString();
         r2.transform.GetChild(0).GetComponent<TextMesh>().text = (AnimalsCount[x] + 1).ToString();
         r3.transform.GetChild(0).GetComponent<TextMesh>().text = (AnimalsCount[x]-1).ToString();
-        Debug.Log(y);
-        switch (y)
-        {
-            case 0:temp.position = r1.transform.position;
-                r1.transform.position = r3.transform.position;
-                    r3.transform.position = temp.position;
-                break;
-            case 1:
-                temp.position = r1.transform.position;
-                r1.transform.position = r2.transform.position;
-                r2.transform.position = temp.position;
-                break;
-        }
+        
+        
         StartCoroutine(QuizA(8f));
         yield return new WaitForSeconds(t);
         
@@ -211,6 +200,7 @@ public class AnimalSpawner : MonoBehaviour
         //**
         yield return new WaitForSeconds(t);
         //r1.SetActive(false);
+        platform.SetActive(false);
         r2.SetActive(false);
         r3.SetActive(false);
         cam.GetComponent<Animator>().SetTrigger("Phase2");
@@ -226,19 +216,7 @@ public class AnimalSpawner : MonoBehaviour
         r1.transform.GetChild(0).GetComponent<TextMesh>().text = AnimalsCount[x].ToString();
         r2.transform.GetChild(0).GetComponent<TextMesh>().text = (AnimalsCount[x] + 1).ToString();
         r3.transform.GetChild(0).GetComponent<TextMesh>().text = (AnimalsCount[x] - 1).ToString();
-        switch (y)
-        {
-            case 0:
-                temp.position = r1.transform.position;
-                r1.transform.position = r3.transform.position;
-                r3.transform.position = temp.position;
-                break;
-            case 1:
-                temp.position = r1.transform.position;
-                r1.transform.position = r2.transform.position;
-                r2.transform.position = temp.position;
-                break;
-        }
+
         StartCoroutine(QuizA2(8f));
         yield return new WaitForSeconds(t);
 
@@ -250,6 +228,7 @@ public class AnimalSpawner : MonoBehaviour
         //**
         yield return new WaitForSeconds(t);
         //r1.SetActive(false);
+        platform.SetActive(false);
         r2.SetActive(false);
         r3.SetActive(false);
         cam.GetComponent<Animator>().SetTrigger("Phase2");
