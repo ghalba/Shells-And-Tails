@@ -251,6 +251,11 @@ public class MapSelection : MonoBehaviour
         p1winsText.text = PlayerPrefs.GetString("Character0");
         p2winsText.text = PlayerPrefs.GetString("Character1");
         playerTurnText.text =(p1CanSelect? PlayerPrefs.GetString("Character0")+"s Turn": PlayerPrefs.GetString("Character1")+"s Turn") ;
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            canvas.transform.GetChild(2).gameObject.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 
 }
