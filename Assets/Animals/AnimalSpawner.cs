@@ -41,8 +41,7 @@ public class AnimalSpawner : MonoBehaviour
         // Stage 1
         if (MaxSpawn < 10 && _Spawn1)
         {
-            StartCoroutine(Timer1(1f));
-            
+            StartCoroutine(Timer1(1f)); 
         }
 
         if (MaxSpawn == 10&& _Spawn1)
@@ -61,10 +60,7 @@ public class AnimalSpawner : MonoBehaviour
             raccooncount = 0;
             foxcount = 0;
             tigercount = 0;
-            _Spawn1 = false;
-            
-            
-            
+            _Spawn1 = false;   
         }
         // Q&A 1
 
@@ -226,7 +222,7 @@ public class AnimalSpawner : MonoBehaviour
         cam.GetComponent<Animator>().SetTrigger("Phase1");
         int x = Random.Range(0, 6);
         int y = Random.Range(0, 3);
-        QuestionsD.text = Questions[x];
+        QuestionsD.text = Questions2[x];
         r1.transform.GetChild(0).GetComponent<TextMesh>().text = AnimalsCount[x].ToString();
         r2.transform.GetChild(0).GetComponent<TextMesh>().text = (AnimalsCount[x] + 1).ToString();
         r3.transform.GetChild(0).GetComponent<TextMesh>().text = (AnimalsCount[x] - 1).ToString();
