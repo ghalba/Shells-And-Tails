@@ -12,8 +12,15 @@ public class Rockrandomizer : MonoBehaviour
     public GameObject rock2;
     public GameObject rock3;
 
+    
 
     public void Start()
+    {
+
+        randomizer();
+
+    }
+    public void randomizer()
     {
         int x = Random.Range(0, 3);
         Debug.Log(x);
@@ -38,6 +45,5 @@ public class Rockrandomizer : MonoBehaviour
             Instantiate(rock3, pos1.position, Quaternion.Euler(0, 90, 0));
 
         }
-
     }
 }

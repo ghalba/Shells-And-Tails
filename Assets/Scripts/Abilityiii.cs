@@ -6,6 +6,4 @@ using UnityEngine.InputSystem;
 public class Abilityiii : MonoBehaviour
 {
     public bool _MetalGear;
-    // Update is called once per frame
-
 }

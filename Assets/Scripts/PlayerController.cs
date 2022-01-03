@@ -7,6 +7,7 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool Stealthy=true;
     public string _tag;
     private float horizontalInput;
     private float verticalInput;
@@ -39,10 +40,11 @@ public class PlayerController : MonoBehaviour
     private float _Stealth;
     bool disabled;
     Rigidbody rb;
-    private float cooldown;
+
 
     private void Awake()
     {
+        Stealthy = true;
         _tag = gameObject.tag;
         jump.performed += ONJumpPreformed;
         jump.canceled += ONJumpPreformed;
@@ -118,15 +120,26 @@ public class PlayerController : MonoBehaviour
         {
             if (_Stealth != 0)
             {
-                cooldown++;
-                inputMagnitude /= 2;
-                transform.GetChild(0).gameObject.SetActive(true);
-                gameObject.tag = "Food";
+                
+                if (Stealthy)
+                {
+                    StartCoroutine(cooldownF());
+                    inputMagnitude /= 2;
+                    transform.GetChild(0).gameObject.SetActive(true);
+                    gameObject.tag = "Food";
+
+                }else
+                {
+                    StartCoroutine(timer());
+                    transform.GetChild(0).gameObject.SetActive(false);
+                    gameObject.tag = _tag;
+                }
+
+               
             }
 
             else
             {
-                cooldown--;
                 transform.GetChild(0).gameObject.SetActive(false);
                 gameObject.tag = _tag;
             }
@@ -221,6 +234,17 @@ public class PlayerController : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
         }
+    }
+    IEnumerator cooldownF()
+    {
+        Stealthy = true;
+        yield return new WaitForSeconds(2);
+        Stealthy = false;
+    }
+    IEnumerator timer()
+    {
+        yield return new WaitForSeconds(2);
+        Stealthy = false;
     }
 }
 
