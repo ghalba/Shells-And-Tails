@@ -7,7 +7,7 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
-
+    public string _tag;
     private float horizontalInput;
     private float verticalInput;
     public InputAction movement;
@@ -39,8 +39,11 @@ public class PlayerController : MonoBehaviour
     private float _Stealth;
     bool disabled;
     Rigidbody rb;
+    private float cooldown;
+
     private void Awake()
     {
+        _tag = gameObject.tag;
         jump.performed += ONJumpPreformed;
         jump.canceled += ONJumpPreformed;
         Stealth.performed += ONStealthPreformed;
@@ -109,9 +112,28 @@ public class PlayerController : MonoBehaviour
         if (_Stealth!=0)
         {
             inputMagnitude /= 2;
+            
+        }
+        if (GetComponent<Abilityiii>()._MetalGear)
+        {
+            if (_Stealth != 0)
+            {
+                cooldown++;
+                inputMagnitude /= 2;
+                transform.GetChild(0).gameObject.SetActive(true);
+                gameObject.tag = "Food";
+            }
+
+            else
+            {
+                cooldown--;
+                transform.GetChild(0).gameObject.SetActive(false);
+                gameObject.tag = _tag;
+            }
+
         }
 
-       // animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
+        // animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
 
         float speed = inputMagnitude * maximumSpeed;
         movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
@@ -151,7 +173,7 @@ public class PlayerController : MonoBehaviour
        
 
         Vector3 velocity = movementDirection * speed;
-
+        
         velocity.y = ySpeed;
         characterController.Move(velocity * Time.deltaTime);
 

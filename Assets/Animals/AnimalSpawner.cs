@@ -31,6 +31,7 @@ public class AnimalSpawner : MonoBehaviour
     public bool _Spawn2;
     public List<string> Questions;
     public List<string> Questions2;
+    Transform temp;
     private void Start()
     {
         _Spawn1 = true;
@@ -40,8 +41,7 @@ public class AnimalSpawner : MonoBehaviour
         // Stage 1
         if (MaxSpawn < 10 && _Spawn1)
         {
-            StartCoroutine(Timer1(1f));
-            
+            StartCoroutine(Timer1(1f)); 
         }
 
         if (MaxSpawn == 10&& _Spawn1)
@@ -60,10 +60,7 @@ public class AnimalSpawner : MonoBehaviour
             raccooncount = 0;
             foxcount = 0;
             tigercount = 0;
-            _Spawn1 = false;
-            _Spawn2 = true;
-            
-            
+            _Spawn1 = false;   
         }
         // Q&A 1
 
@@ -136,35 +133,35 @@ public class AnimalSpawner : MonoBehaviour
         x = Random.Range(min, max);
         if (x == 0 && MaxSpawn2< 15)
         {
-            Instantiate(bear, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
+            Instantiate(bear, new Vector3(5, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             bearcount++;
             AnimalsCount[0]++;
             MaxSpawn2++;
         }
         if (x == 1 && MaxSpawn2 < 15)
         {
-            Instantiate(wolf, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
+            Instantiate(wolf, new Vector3(5, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             wolfcount++;
             AnimalsCount[1]++;
             MaxSpawn2++;
         }
         if (x == 2 && MaxSpawn2 < 15)
         {
-            Instantiate(deer, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
+            Instantiate(deer, new Vector3(5, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             deercount++;
             AnimalsCount[2]++;
             MaxSpawn2++;
         }
         if (x == 3 && MaxSpawn2 < 15)
         {
-            Instantiate(raccoon, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
+            Instantiate(raccoon, new Vector3(5, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             raccooncount++;
             AnimalsCount[3]++;
             MaxSpawn2++;
         }
         if (x == 4 && MaxSpawn2 < 15)
         {
-            Instantiate(fox, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
+            Instantiate(fox, new Vector3(5, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             foxcount++;
             AnimalsCount[4]++;
             MaxSpawn2++;
@@ -172,7 +169,7 @@ public class AnimalSpawner : MonoBehaviour
         if (x == 5 && MaxSpawn2 < 15)
         {
             _Spawn2 = false;
-            Instantiate(tiger, new Vector3(20, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
+            Instantiate(tiger, new Vector3(5, 0, Random.Range(45f, 48f)), Quaternion.Euler(0, 90, 0));
             tigercount++;
             AnimalsCount[5]++;
             MaxSpawn2++;
@@ -190,7 +187,20 @@ public class AnimalSpawner : MonoBehaviour
         r1.transform.GetChild(0).GetComponent<TextMesh>().text = AnimalsCount[x].ToString();
         r2.transform.GetChild(0).GetComponent<TextMesh>().text = (AnimalsCount[x] + 1).ToString();
         r3.transform.GetChild(0).GetComponent<TextMesh>().text = (AnimalsCount[x]-1).ToString();
-        StartCoroutine(QuizA(6f));
+        Debug.Log(y);
+        switch (y)
+        {
+            case 0:temp.position = r1.transform.position;
+                r1.transform.position = r3.transform.position;
+                    r3.transform.position = temp.position;
+                break;
+            case 1:
+                temp.position = r1.transform.position;
+                r1.transform.position = r2.transform.position;
+                r2.transform.position = temp.position;
+                break;
+        }
+        StartCoroutine(QuizA(8f));
         yield return new WaitForSeconds(t);
         
         
@@ -205,20 +215,34 @@ public class AnimalSpawner : MonoBehaviour
         r3.SetActive(false);
         cam.GetComponent<Animator>().SetTrigger("Phase2");
         MaxSpawn2 = 0;
+        _Spawn2 = true;
     }
     IEnumerator Quiz2(float t)
     {
         cam.GetComponent<Animator>().SetTrigger("Phase1");
         int x = Random.Range(0, 6);
         int y = Random.Range(0, 3);
-        QuestionsD.text = Questions[x];
+        QuestionsD.text = Questions2[x];
         r1.transform.GetChild(0).GetComponent<TextMesh>().text = AnimalsCount[x].ToString();
         r2.transform.GetChild(0).GetComponent<TextMesh>().text = (AnimalsCount[x] + 1).ToString();
         r3.transform.GetChild(0).GetComponent<TextMesh>().text = (AnimalsCount[x] - 1).ToString();
-        StartCoroutine(QuizA2(6f));
+        switch (y)
+        {
+            case 0:
+                temp.position = r1.transform.position;
+                r1.transform.position = r3.transform.position;
+                r3.transform.position = temp.position;
+                break;
+            case 1:
+                temp.position = r1.transform.position;
+                r1.transform.position = r2.transform.position;
+                r2.transform.position = temp.position;
+                break;
+        }
+        StartCoroutine(QuizA2(8f));
         yield return new WaitForSeconds(t);
 
-
+        Debug.Log("test");
         QuestionsD.text = "";
     }
     IEnumerator QuizA2(float t)
@@ -230,5 +254,6 @@ public class AnimalSpawner : MonoBehaviour
         r3.SetActive(false);
         cam.GetComponent<Animator>().SetTrigger("Phase2");
         MaxSpawn2 = 16;
+        
     }
 }
