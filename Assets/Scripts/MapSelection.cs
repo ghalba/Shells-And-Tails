@@ -13,6 +13,7 @@ public class MapSelection : MonoBehaviour
     public static bool ShowUi;
     public static int p1wins;
     public static int p2wins;
+    public TMP_Text WinerText;
     public TMP_Text p1winsText;
     public TMP_Text p2winsText;
     public TMP_Text playerTurnText;
@@ -238,6 +239,14 @@ public class MapSelection : MonoBehaviour
 
     private void Update()
     {
+        if ((p1wins == 3)||(p2wins==3))
+        {
+            WinerText.text = (p1wins == 3 ? "Player 1 Wins" : "Player 2 Wins");
+            canvas.transform.GetChild(4).gameObject.SetActive(true);
+            ShowUi = false;
+        }
+
+
         
         if (ShowUi)
         {
